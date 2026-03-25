@@ -1,9 +1,8 @@
 {
     "name": "flarum-aifav/chinese-simplified",
     "description": "Simplified Chinese Language Pack for Flarum 2.0",
-    "version": "2.0.0",
     "type": "flarum-extension",
-    "keywords": ["flarum", "locale", "chinese", "simplified", "2.0"],
+    "keywords": ["flarum", "locale", "extension", "chinese", "simplified", "简体中文"],
     "license": "MIT",
     "authors": [
         {
@@ -12,27 +11,38 @@
             "homepage": "https://www.aifav.cn"
         }
     ],
-    "require": {
-        "flarum/core": "^2.0.0-beta.8"
-    },
-    "extra": {
-        "flarum-extension": {
-            "title": "Simplified Chinese",
-            "icon": {
-                "name": "fas fa-language",
-                "color": "#e74c3c",
-                "backgroundColor": "#ffffff"
-            }
-        },
-        "flarum-locale": {
-            "code": "zh-CN",
-            "title": "简体中文"
-        }
-    },
     "support": {
         "issues": "https://github.com/flarum-aifav/chinese-simplified/issues",
         "source": "https://github.com/flarum-aifav/chinese-simplified",
-        "forum": "https://www.aifav.cn"
+        "forum": "https://discuss.flarum.org/d/22690"
+    },
+    "require": {
+        "flarum/core": "^2.0.0-beta.8"
+    },
+    "replace": {
+        "flarum-lang/chinese-simplified": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "flarum-extension": {
+            "title": "简体中文",
+            "category": "language",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#ffffff",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "extiverse": {
+            "discuss": "https://discuss.flarum.org/d/22690"
+        },
+        "flarum-locale": {
+            "code": "zh-Hans",
+            "title": "简体中文"
+        }
     },
     "minimum-stability": "beta",
     "prefer-stable": true

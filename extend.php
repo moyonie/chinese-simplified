@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of aifav/lang-chinese-simplified.
+ * This file is part of flarum-aifav/chinese-simplified.
  *
  * Copyright (c) 2026 AI Favorites Team.
  *
@@ -12,5 +12,6 @@
 use Flarum\Extend;
 
 return [
-    new Extend\LanguagePack(),
+    (new Extend\LanguagePack())
+        ->locale('zh-Hans'),
 ];
