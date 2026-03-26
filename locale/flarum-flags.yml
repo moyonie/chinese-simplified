@@ -1,0 +1,53 @@
+flarum-flags:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    permissions:
+      flag_posts_label: 举报帖子
+      view_flags_label: 查看举报的帖子
+
+    settings:
+      flag_own_posts_label: 允许用户举报自己的帖子
+      guidelines_url_label: 社区准则 URL
+      title: 举报设置
+
+  forum:
+    flag_post:
+      confirmation_message: 感谢您的举报。我们的版主将进行处理。
+      dismiss_button: => core.ref.okay
+      reason_details_placeholder: 附加详情（可选）
+      reason_inappropriate_label: 不适当
+      reason_inappropriate_text: "此帖子具有攻击性、侮辱性或违反我们的<a>社区准则</a>。"
+      reason_missing_message: 请为我们的版主提供一些详情。
+      reason_off_topic_label: 偏离主题
+      reason_off_topic_text: 此帖子与当前讨论无关，应移至其他地方。
+      reason_other_label: 其他（请指定）
+      reason_spam_label: 垃圾信息
+      reason_spam_text: 此帖子是广告。
+      submit_button: => flarum-flags.ref.flag_post
+      title: => flarum-flags.ref.flag_post
+
+    flagged_posts:
+      empty_text: 无举报
+      item_text: "{username} 在 <em>{discussion}</em>"
+      title: => flarum-flags.ref.flagged_posts
+      tooltip: => flarum-flags.ref.flagged_posts
+
+    post:
+      dismiss_flag_button: 忽略举报
+      flagged_by_text: "被 {username} 举报"
+      flagged_by_with_reason_text: "被 {username} 举报为 {reason}"
+
+    post_controls:
+      flag_button: 举报
+
+  ##
+  # REUSED TRANSLATIONS
+  ##
+
+  ref:
+    flag_post: 举报帖子
+    flagged_posts: 被举报的帖子

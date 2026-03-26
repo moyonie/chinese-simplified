@@ -1,0 +1,103 @@
+flarum-mentions:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    permissions:
+      mention_groups_label: 提及群组
+
+    settings:
+      allow_username_format_label: 允许用户名提及格式 (@Username)
+      allow_username_format_text: |
+        当前用户提及的格式是 @"显示名称"#ID。
+        此设置允许使用旧格式 @Username，但保存时仍会转换为新格式。
+
+  forum:
+    composer:
+      mention_tooltip: 提及用户、群组或帖子
+      reply_to_post_text: "回复 #{number}"
+
+    mentioned_by:
+      title: 对此帖子的回复
+      load_more_button: => core.ref.load_more
+
+    notifications:
+      others_text: => core.ref.some_others
+      post_mentioned_text: "{username} 回复了您的帖子"
+      user_mentioned_text: "{username} 提及了您"
+      group_mentioned_text: "{username} 提及了您所在的群组"
+
+    post:
+      mentioned_by_more_text: "{count} 更多回复。"
+      mentioned_by_self_text: "{users} 回复了此内容。"
+      mentioned_by_text: "{users} 回复了此内容。"
+      others_text: => core.ref.some_others
+      quote_button: 引用
+      reply_link: => core.ref.reply
+      you_text: => core.ref.you
+
+    settings:
+      notify_post_mentioned_label: 有人回复了我的帖子
+      notify_user_mentioned_label: 有人在帖子中提及了我
+      notify_group_mentioned_label: 有人在帖子中提及了我所在的群组
+
+    user:
+      mentions_link: 提及
+
+    post_mention:
+      deleted_text: "[未知]"
+
+    group_mention:
+      deleted_text: "[未知群组]"
+
+  email:
+    post_mentioned:
+      subject: "{replier_display_name} 在 {title} 中回复了您的帖子"
+      plain:
+        body: |
+          {replier_display_name} 在 {title} 中回复了您的帖子 (#{post_number})。
+
+          {url}
+
+          ---
+
+          {content}
+      html:
+        body: "{replier_display_name} 在 [{title}]({url}) 中回复了您的帖子 (#{post_number})。"
+
+    user_mentioned:
+      subject: "{mentioner_display_name} 在 {title} 中提及了您"
+      plain:
+        body: |
+          {mentioner_display_name} 在 {title} 中的帖子里提及了您。
+
+          {url}
+
+          ---
+
+          {content}
+      html:
+        body: "{mentioner_display_name} 在 [{title}]({url}) 中的帖子里提及了您。"
+
+    group_mentioned:
+      subject: "{mentioner_display_name} 在 {title} 中提及了您所在的群组"
+      plain:
+        body: |
+          {mentioner_display_name} 在 {title} 中提及了您所在的群组。
+
+          {url}
+
+          ---
+
+          {content}
+      html:
+        body: "{mentioner_display_name} 在 [{title}]({url}) 中提及了您所在的群组。"
+
+  lib:
+    gambits:
+      posts:
+        mentioned:
+          key: mentioned
+          hint: 被提及用户的 ID 或用户名

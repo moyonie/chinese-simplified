@@ -1,0 +1,33 @@
+flarum-lock:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    permissions:
+      lock_discussions_label: 锁定讨论
+
+  forum:
+    badge:
+      locked_tooltip: 已锁定
+
+    discussion_controls:
+      lock_button: 锁定
+      unlock_button: 解锁
+
+    notifications:
+      discussion_locked_text: "{username} 锁定了讨论"
+
+    post_stream:
+      discussion_locked_text: "{username} 在 {time} 锁定了讨论。"
+      discussion_unlocked_text: "{username} 在 {time} 解锁了讨论。"
+
+    settings:
+      notify_discussion_locked_label: 有人锁定了我发起的讨论
+
+  lib:
+    gambits:
+      discussions:
+        locked:
+          key: locked

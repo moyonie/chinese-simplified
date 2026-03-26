@@ -1,0 +1,76 @@
+flarum-subscriptions:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  forum:
+    badge:
+      following_tooltip: => flarum-subscriptions.ref.following
+      ignoring_tooltip: => flarum-subscriptions.ref.ignoring
+
+    discussion_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      unfollow_button: 取消关注
+      unignore_button: 取消忽略
+
+    following:
+      meta_title_text: => flarum-subscriptions.ref.following
+
+    index:
+      following_link: => flarum-subscriptions.ref.following
+
+    notifications:
+      new_post_text: "{username} 发布了新回复"
+
+    settings:
+      follow_after_reply_label: 自动关注我回复过的讨论
+      follow_after_create_label: 自动关注我发起的讨论
+      notify_for_all_posts_label: 接收所有新回复的通知，而不仅仅是讨论中的最后一条
+      notify_new_post_label: 有人在我关注的讨论中发布新回复
+
+    sub_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      following_button: => flarum-subscriptions.ref.following
+      following_text: 接收所有回复的通知。
+      ignoring_button: => flarum-subscriptions.ref.ignoring
+      ignoring_text: 从不接收通知。在讨论列表中隐藏。
+      not_following_button: 未关注
+      not_following_text: "仅在 @提及 时接收通知。"
+      notify_alert_tooltip: 有新回复时在论坛中接收通知
+      notify_email_tooltip: 有新回复时接收电子邮件
+
+  email:
+    new_post:
+      subject: "[新回复] {title}"
+      plain:
+        body: |
+          {poster_display_name} 在您关注的讨论中发布了新回复：{title}。
+
+          查看新动态，请访问以下链接：
+          {url}
+
+          ---
+
+          {content}
+
+          ---
+
+          在您查看之前，您不会收到关于此讨论的更多通知。
+      html:
+        body: |
+          {poster_display_name} 在您关注的讨论中发布了新回复：[{title}]({url})。
+
+          在您查看之前，您不会收到关于此讨论的更多通知。
+
+  lib:
+    gambits:
+      discussions:
+        subscription:
+          following_key: following
+          ignoring_key: ignoring
+
+  ref:
+    follow: 关注
+    following: 已关注
+    ignoring: 已忽略

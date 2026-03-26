@@ -1,0 +1,69 @@
+flarum-suspend:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    permissions:
+      suspend_users_label: 暂停用户
+
+  forum:
+    notifications:
+      user_suspended_text: "您已被暂停 {timeReadable}"
+      user_suspended_indefinite_text: 您已被无限期暂停
+      user_unsuspended_text: 您已被解除暂停
+
+    suspension_info:
+      dismiss_button: 关闭
+      indefinite: 这是无限期暂停
+      limited: "此暂停将持续至 {date}"
+      title: 此账户已被暂停
+
+    suspend_user:
+      display_message: 向用户显示消息
+      indefinitely_label: 无限期暂停
+      limited_time_days_text: " 天"
+      limited_time_label: 限时暂停...
+      not_suspended_label: 未暂停
+      placeholder_optional: 可选
+      reason: 暂停原因
+      status_heading: 暂停状态
+      submit_button: => core.ref.save_changes
+      title: "暂停 {username}"
+
+    user_badge:
+      suspended_tooltip: 已暂停
+
+    user_controls:
+      suspend_button: 暂停
+
+  email:
+    no_reason_given: 未提供暂停原因。
+    suspended:
+      subject: 您的账户已被暂停
+      plain:
+        body: |
+          您因以下原因被暂停：
+
+          ---
+          {suspension_message}
+          ---
+      html:
+        body: "您因以下原因被 {forumTitle} 暂停："
+
+    unsuspended:
+      subject: 您的账户已被解除暂停
+      plain:
+        body: |
+          您已被解除暂停。您可以点击以下链接返回论坛：
+
+          {forum_url}
+      html:
+        body: "您已被解除暂停。准备好后可以返回 [{forumTitle}]({forum_url})。"
+
+  lib:
+    gambits:
+      users:
+        suspended:
+          key: suspended

@@ -1,0 +1,43 @@
+flarum-likes:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    permissions:
+      like_posts_label: 点赞帖子
+
+    settings:
+      like_own_posts_help: 启用后，在符合权限的情况下，用户可以在论坛上"点赞"自己的帖子。要防止用户点赞自己的帖子，请禁用此设置。
+      like_own_posts_label: 用户可以点赞自己的帖子
+
+  forum:
+    notifications:
+      others_text: => core.ref.some_others
+      post_liked_text: "{username} 赞了您的帖子"
+
+    post:
+      like_link: 赞
+      liked_by_self_text: "{users} 赞了此内容。"
+      liked_by_text: "{count, plural, one {{users} 赞了此内容} other {{users} 赞了此内容}}。"
+      others_link: => core.ref.some_others
+      unlike_link: 取消赞
+      you_text: => core.ref.you
+
+    post_likes:
+      title: 点赞此内容的用户
+      load_more_button: => core.ref.load_more
+
+    settings:
+      notify_post_liked_label: 有人赞了我的帖子
+
+    user:
+      likes_link: 赞
+
+  lib:
+    gambits:
+      posts:
+        likedBy:
+          key: likedBy
+          hint: 点赞用户的 ID 或用户名

@@ -1,0 +1,35 @@
+flarum-sticky:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    settings:
+      enable_display_excerpt: 当置顶讨论未读时显示首帖摘要
+      only_sticky_unread_discussions_label: 仅置顶未读讨论
+      only_sticky_unread_discussions_help: 在"所有讨论"页面，未读的置顶讨论会固定在顶部，而已读的置顶讨论则按正常顺序排列。
+
+    permissions:
+      sticky_discussions_label: 置顶讨论
+
+  forum:
+    badge:
+      sticky_tooltip: => flarum-sticky.ref.sticky
+
+    discussion_controls:
+      sticky_button: => flarum-sticky.ref.sticky
+      unsticky_button: 取消置顶
+
+    post_stream:
+      discussion_stickied_text: "{username} 在 {time} 置顶了讨论。"
+      discussion_unstickied_text: "{username} 在 {time} 取消了置顶。"
+
+  lib:
+    gambits:
+      discussions:
+        sticky:
+          key: sticky
+
+  ref:
+    sticky: 置顶

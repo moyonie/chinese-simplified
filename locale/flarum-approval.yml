@@ -1,0 +1,24 @@
+flarum-approval:
+
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    permissions:
+      approve_posts_label: 批准帖子
+      reply_without_approval_label: 无需批准即可回复讨论
+      start_discussions_without_approval_label: 无需批准即可发起讨论
+
+  forum:
+    badge:
+      awaiting_approval_tooltip: => flarum-approval.ref.awaiting_approval
+
+    post:
+      awaiting_approval_text: => flarum-approval.ref.awaiting_approval
+
+    post_controls:
+      approve_button: 批准
+
+  ref:
+    awaiting_approval: 等待批准
