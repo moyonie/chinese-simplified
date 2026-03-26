@@ -9,6 +9,11 @@ core:
       user_menu: 用户菜单
       toggle_navigation: 切换导航
       aria_label: 页眉
+    lib:
+      loading_indicator:
+        accessible_label: 加载中...
+      error_message: 加载完整网站时出现问题。请尝试强制刷新页面以修复此错误。
+      no_script_message: 本网站在现代浏览器并启用 JavaScript 时浏览效果最佳。
     nav:
       home: 首页
       discussions: 讨论
@@ -96,6 +101,11 @@ core:
       heading_button: 标题
       separator_button: 分隔线
       spoiler_button: 剧透
+    composer_reply:
+      body_placeholder: 撰写回复...
+      discard_confirmation: 您尚未发布回复。确定要放弃吗？
+    composer_edit:
+      discard_confirmation: 您尚未保存更改。确定要放弃吗？
     notification:
       tooltip: 通知
       mark_as_read: 标记为已读
@@ -110,6 +120,7 @@ core:
       post_flagged: '{user} 举报了你的帖子'
       user_followed: '{user} 关注了你'
       settings_button: 通知设置
+      empty_text: 暂无通知
     index:
       all_discussions_button: 所有讨论
       latest_button: 最新
@@ -124,6 +135,10 @@ core:
       refresh_button: 刷新
       filter_label: 筛选
       sort_label: 排序
+    discussion_list:
+      empty_text: 这里似乎还没有讨论。
+      load_more_button: 加载更多
+      refresh_button: 刷新
     search:
       discussions_heading: 讨论
       users_heading: 用户
@@ -185,7 +200,7 @@ core:
       log_out_button: 退出登录
       delete_account_button: 删除账号
       delete_account_confirmation: 确定要删除账号吗？此操作不可撤销。
-    notifications:
+    user_notifications:
       title: 通知设置
       alert_label: 提醒
       email_label: 邮件
@@ -402,3 +417,340 @@ core:
       icon_label: 图标
       is_hidden_label: 隐藏
       member_count: '{count} 个成员'
+
+  # P0 - ref 命名空间（全局引用键）
+  ref:
+    all_discussions: 所有讨论
+    change_email: 更改电子邮件
+    change_password: 更改密码
+    color: 颜色
+    confirm_password: 确认密码
+    confirm_email: 确认电子邮件
+    confirmation_email_sent: '我们已向 {email} 发送了一封确认邮件。如果没有收到，请检查垃圾邮件文件夹。'
+    custom_footer_text: 添加 HTML 代码以显示在页面最底部。
+    custom_footer_title: 编辑自定义页脚
+    custom_header_text: 添加 HTML 代码以显示在页面最顶部，位于 Flarum 自有页眉之上。
+    custom_header_title: 编辑自定义页眉
+    dark_hc_mode_label: 深色高对比度模式
+    dark_mode_label: 深色模式
+    delete: 删除
+    delete_forever: 永久删除
+    discussions: 讨论
+    edit: 编辑
+    edit_user: 编辑用户
+    email: 电子邮件
+    extensions: 扩展
+    generic_confirmation_message: 确定要继续吗？此操作无法撤销。
+    icon: 图标
+    icon_text: '输入任何 <a>FontAwesome</a> 图标类的名称，<em>包括</em>前缀（例如 <code>fas fa-flag</code> 或 <code>fa-solid fa-flag</code>）。'
+    invalid_login_message: 您的登录信息不正确。
+    light_hc_mode_label: 浅色高对比度模式
+    light_mode_label: 浅色模式
+    load_more: 加载更多
+    loading: 加载中...
+    log_in: 登录
+    log_out: 退出登录
+    mark_all_as_read: 全部标记为已读
+    never: 从不
+    new_token: 新令牌
+    newest: 最新
+    next_page: 下一页
+    notifications: 通知
+    okay: 确定
+    oldest: 最旧
+    password: 密码
+    posts: 帖子
+    previous_page: 上一页
+    relevance: 相关性
+    remember_me_label: 记住我
+    remove: 移除
+    rename: 重命名
+    reply: 回复
+    refresh: 刷新
+    reset_your_password: 重置密码
+    restore: 恢复
+    save_changes: 保存更改
+    search_users: 搜索用户
+    security: 安全
+    settings: 设置
+    sign_up: 注册
+    some_others: '{count, plural, one {# 其他} other {# 其他}}'
+    start_a_discussion: 开始讨论
+    username: 用户名
+    username_or_email_placeholder: 用户名或电子邮件
+    users: 用户
+    view: 查看
+    write_a_reply: 撰写回复...
+    you: 您
+
+  # P0 - lib 命名空间（通用组件和错误消息）
+  lib:
+    debug_button: 调试
+    alert:
+      dismiss_a11y_label: 关闭提示
+    badge:
+      hidden_tooltip: 隐藏
+    dropdown:
+      toggle_dropdown_accessible_label: 切换下拉菜单
+    data_segment:
+      label: '{label}:'
+    edit_user:
+      activate_button: 激活用户
+      email_heading: 电子邮件
+      email_label: 电子邮件
+      groups_heading: 用户组
+      password_heading: 密码
+      password_label: 密码
+      set_password_label: 设置新密码
+      submit_button: 保存更改
+      title: 编辑用户
+      username_heading: 用户名
+      username_label: 用户名
+      nothing_available: 您无权编辑此用户。
+    error:
+      circular_dependencies_message: '检测到循环依赖：{extensions}。已中止。请禁用其中一个扩展后重试。'
+      db_error_message: 数据库查询失败。这可能是由于扩展与您的数据库驱动程序不兼容所致。
+      dependent_extensions_message: '在禁用以下依赖扩展之前，无法禁用 {extension}：{extensions}'
+      extension_initialiation_failed_message: '{extension} 初始化失败，请检查浏览器控制台以获取更多信息。'
+      extension_runtime_failed_message: '{extension} 运行时遇到错误。请检查浏览器控制台以获取更多信息。'
+      generic_message: 哎呀！出错了。请重新加载页面后重试。
+      generic_cross_origin_message: 哎呀！跨域请求期间出错。请重新加载页面后重试。
+      missing_dependencies_message: '在启用以下依赖项之前，无法启用 {extension}：{extensions}'
+      not_found_message: 未找到请求的资源。
+      payload_too_large_message: 请求载荷过大。
+      permission_denied_message: 您没有权限执行此操作。
+      rate_limit_exceeded_message: 您的操作太快了。请在几秒钟后重试。
+      render_failed_message: 抱歉，显示此内容时遇到错误。如果您是用户，请稍后重试。如果您是管理员，请查看 Flarum 日志文件以获取更多信息。
+    gambits:
+      group_keys:
+        allows: 允许
+        has: 拥有
+        is: 是
+      discussions:
+        author:
+          key: 作者
+          hint: 用户名或以逗号分隔的用户名列表
+        created:
+          key: 创建时间
+          hint: 2020-12-31 或 2020-12-31..2021-09-30
+        hidden:
+          key: 隐藏
+        unread:
+          key: 未读
+      posts:
+        discussion:
+          key: 讨论
+          hint: 讨论的 ID
+      users:
+        email:
+          key: 电子邮件
+          hint: example@machine.local
+        group:
+          key: 用户组
+          hint: 单数或复数的用户组名称
+    input:
+      clear_button: 清除输入
+    loading_indicator:
+      accessible_label: 加载中...
+    meta_titles:
+      with_page_title: '{pageNumber, plural, =1 {{pageTitle} - {forumName}} other {{pageTitle}: 第 # 页 - {forumName}}}'
+      without_page_title: '{pageNumber, plural, =1 {{forumName}} other {第 # 页 - {forumName}}}'
+    modal:
+      close: 关闭
+    multi_select:
+      placeholder: 选择多个选项
+    nav:
+      drawer_button: 打开导航抽屉
+    notices:
+      bisecting: 正在运行扩展二分法进程以确定哪个扩展导致问题。
+      bisecting_continue: 继续二分法
+      maintenance_mode_low: 维护中。仅管理员可以访问论坛。
+      maintenance_mode_safe: 安全模式维护中。仅管理员可以访问论坛，且不启动任何扩展。
+    number_suffix:
+      kilo_text: 千
+      mega_text: 百万
+    pagination:
+      back_button: 上一页
+      first_button: 前往第一页
+      go_to_page_textbox_a11y_label: 直接跳转到页码
+      last_button: 前往最后一页
+      next_button: 下一页
+      page_counter: 第 {current} 页，共 {total} 页
+    search:
+      gambit_plus_button_a11y_label: 添加正向筛选器
+      gambit_minus_button_a11y_label: 添加负向筛选器
+      title: 搜索
+      no_results_text: 这里似乎没有结果。
+      no_search_text: 您还没有搜索任何内容。
+      options_heading: 搜索选项
+      placeholder: 搜索...
+      preview_heading: 搜索预览
+      search_clear_button_accessible_label: 清除搜索查询
+    search_source:
+      discussions:
+        all_button: '在所有讨论中搜索 "{query}"'
+        heading: 讨论
+      posts:
+        all_button: '在所有帖子中搜索 "{query}"'
+        heading: 帖子
+      users:
+        heading: 用户
+    series:
+      glue_text: '、'
+      three_text: '{first}、{second} 和 {third}'
+      two_text: '{first} 和 {second}'
+    user_selection_modal:
+      empty_results: 没有找到匹配搜索的用户。
+      max_items_to_select: '{count, plural, one {最多选择 # 个用户} other {最多选择 # 个用户}}'
+      search_placeholder: 搜索用户
+      submit_button: 确定
+      title: 选择相关用户
+    username:
+      deleted_text: '[已删除]'
+    datetime_formats:
+      fullTime: LLLL
+      humanTimeShort: D MMM
+      humanTimeLong: ll
+      scrubber: YYYY 年 MM 月
+      userListJoinDate: LLL
+
+  # P1 - views 命名空间（HTML 视图）
+  views:
+    admin:
+      extensions:
+        caption: 扩展
+        disable: 禁用
+        empty: 没有已安装的扩展
+        enable: 启用
+        name: 扩展名称
+        package_name: 包名
+        version: 版本
+      info:
+        caption: 应用信息
+      title: 管理
+    confirm_email:
+      submit_button: 确认电子邮件
+      text: 点击下面的按钮以确认您账户的电子邮件。
+      title: 确认电子邮件
+    content:
+      javascript_disabled_message: 本网站在使用现代浏览器并启用 JavaScript 时效果最佳。
+      load_error_message: 加载此网站的完整版本时出错。尝试强制刷新此页面以修复错误。
+      loading_text: 加载中...
+    discussion:
+      next_page_button: 下一页
+      previous_page_button: 上一页
+    error:
+      csrf_token_mismatch: 您已 inactive 太久。
+      csrf_token_mismatch_return_link: 返回，重试
+      invalid_confirmation_token: 此确认链接已被使用或无效。
+      maintenance_mode_link: 管理员登录
+      maintenance_mode_message: 本论坛目前正在维护。请稍后回来查看。
+      maintenance_mode_title: 维护中
+      method_not_allowed: 此页面不支持该请求方法。
+      not_authenticated: 您没有权限访问此页面。请在登录后重试。
+      not_found: 找不到您请求的页面。
+      not_found_return_link: '返回 {forum}'
+      permission_denied: 您没有权限访问此页面。
+      unknown: 加载此页面时发生错误。
+    index:
+      all_discussions_heading: 所有讨论
+      next_page_button: 下一页
+      previous_page_button: 上一页
+    layout:
+      skip_to_content: 跳转到内容
+    log_out:
+      log_out_button: 退出登录
+      log_out_confirmation: 确定要退出 {forum} 吗？
+      title: 退出登录
+    log_in:
+      invalid_login_message: 您的登录信息不正确。
+      username_or_email_placeholder: 用户名或电子邮件
+      password_placeholder: 密码
+      remember_me_label: 记住我
+      submit_button: 登录
+      title: 登录
+    reset_password:
+      confirm_password_label: 确认新密码
+      new_password_label: 新密码
+      submit_button: 保存更改
+      title: 重置密码
+    unsubscribe_email:
+      title: 取消订阅确认
+      return_to_forum: 返回 {forumTitle}
+      confirm_button: 确认
+      immediate_helptext: 确认后您将立即取消订阅。
+      confirm_message: '您已请求取消订阅来自 {forumTitle} 的 "{type}" 电子邮件通知。'
+      success_message: '您已成功取消订阅来自 {forumTitle} 的 "{type}" 通知。如果您希望再次接收，请 [更新您的设置]({settingsLink})。'
+      invalid_message: '此取消订阅链接无效或已被使用。如需更改来自 {forumTitle} 的电子邮件通知，请 [检查您的设置]({settingsLink})。'
+
+  # P1 - api 命名空间（API 消息）
+  api:
+    invalid_username_message: 用户名只能包含字母、数字和连字符，且必须至少包含一个字母。
+    invalid_filter_type:
+      must_be_numeric_message: '{filter} 筛选器必须是数字。'
+      must_not_be_array_message: '{filter} 筛选器不能是数组。'
+      must_not_be_multidimensional_array_message: '{filter} 筛选器不能是多维数组。'
+
+  # P1 - email 命名空间（邮件模板）
+  email:
+    greeting: '您好，{displayName}，'
+    signoff: '{forumTitle} 团队'
+    informational:
+      default_title: 信息
+      footer: '这封电子邮件已发送至 {userEmail}，作为与您在 [{forumTitle}]({forumUrl}) 账户相关的信息服务。'
+      footer_plain: '这封电子邮件已发送至 {userEmail}，作为与您在 {forumTitle} 账户相关的信息服务。'
+    notification:
+      default_title: 通知
+      footer:
+        main_text: '这封电子邮件已发送至 {email}，因为您订阅了 [{forumTitle}]({forumUrl}) 上的 "{type}" 通知。'
+        main_text_plain: '这封电子邮件已发送至 {email}，因为您订阅了 {forumTitle} 上的 "{type}" 通知。'
+        unsubscribe_text: '如果您希望停止接收此类通知，[请在此处取消订阅]({unsubscribeLink})。'
+        unsubscribe_text_plain: '如果您希望停止接收此类通知，请在此处取消订阅：{unsubscribeLink}'
+        settings_text: '[在此处]({settingsLink}) 管理您的通知设置。'
+        settings_text_plain: '在此处管理您的通知设置：{settingsLink}'
+    activate_account:
+      subject: 激活您的新账户
+      body: |
+        有人（希望是您！）已使用此电子邮件地址在 {forum} 注册。
+
+        如果是您，只需点击以下链接，您的账户将被激活：
+        {url}
+
+        如果您没有注册，请忽略此电子邮件。
+    confirm_email:
+      subject: 确认您的新电子邮件地址
+      body: |
+        有人（希望是您！）已在 {forum} 将电子邮件地址更改为此地址。
+
+        如果是您，只需点击以下链接，您的电子邮件将被确认：
+        {url}
+
+        如果不是您，请忽略此电子邮件。
+    reset_password:
+      subject: 重置密码
+      body: |
+        有人（希望是您！）已为您在 {forum} 的账户提交了忘记密码请求。
+
+        如果是您，请点击以下链接重置密码：
+        {url}
+
+        如果您不希望更改密码，只需忽略此电子邮件，不会发生任何事情。
+    send_test:
+      subject: Flarum 电子邮件测试
+      body: |
+        这是一封测试电子邮件，用于确认您的 Flarum 电子邮件配置正常工作。
+
+        如果是您，这封电子邮件意味着您的配置正常工作！
+
+        如果不是您，请忽略此电子邮件。
+
+  # group 命名空间（用户组名称）
+  group:
+    admin: 管理员
+    admins: 管理员们
+    guest: 访客
+    guests: 访客们
+    member: 成员
+    members: 成员们
+    mod: 版主
+    mods: 版主们
