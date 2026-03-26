@@ -179,7 +179,6 @@ core:
     away: 离开
     busy: 忙碌
     invisible: 隐身
-    status: 状态
     message: 消息
     messages: 消息
     conversation: 对话
