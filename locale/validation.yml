@@ -60,8 +60,8 @@ core:
     warning: 警告
     info: 信息
     confirm: 确认
-    true: 是
-    false: 否
+    'true': 是
+    'false': 否
     ok: 确定
     apply: 应用
     done: 完成
