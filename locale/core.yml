@@ -1,0 +1,423 @@
+---
+# Flarum 2.0 简体中文语言包
+# 版本：2.0.1
+# 最后更新：2026-03-27
+# 完整性：100%
+# 兼容性：Flarum 2.0.0-beta.8+
+# 术语标准：zh-Hans (简体中文)
+# 周起始日：周一 (weekStart: 1)
+
+# ============================================
+# 前台论坛 (Forum)
+# ============================================
+forum:
+  header:
+    log_in: 登录
+    sign_up: 注册
+    search: 搜索
+    search_placeholder: 搜索...
+    close_menu: 关闭菜单
+    user_menu: 用户菜单
+    toggle_navigation: 切换导航
+    aria_label: 页眉
+  nav:
+    home: 首页
+    discussions: 讨论
+    tags: 标签
+    users: 用户
+    admin: 管理
+    log_out: 退出登录
+    profile: 个人资料
+    settings: 设置
+  discussion:
+    start_post_button: 新建讨论
+    empty_message: 还没有讨论
+    title_placeholder: 输入标题...
+    compose_button: 开始讨论
+    reply_count: '{count} 条回复'
+    view_count: '{count} 次浏览'
+    participant_count: '{count} 人参与'
+    rename_button: 重命名
+    delete_button: 删除
+    delete_confirmation: 确定要删除此讨论吗？
+    cannot_delete_button: 无法删除
+    add_tags_button: 添加标签
+    stickied_text: 已置顶
+    locked_text: 已锁定
+    hidden_text: 已隐藏
+    restored_text: 已恢复
+    edited_text: 已编辑
+    number_tooltip: '帖子 #{number}'
+    permalink_tooltip: 永久链接
+    share_button: 分享
+    more_button: 更多
+  post:
+    edited_text: 已编辑
+    reply_button: 回复
+    like_button: 点赞
+    liked_text: '{count} 人点赞'
+    unlike_button: 取消点赞
+    edit_button: 编辑
+    delete_button: 删除
+    delete_confirmation: 确定要删除此帖子吗？
+    number_tooltip: '帖子 #{number}'
+    edited_tooltip: '由 {user} 于 {time} 编辑'
+    quote_button: 引用
+    flag_button: 举报
+    flagged_text: 已举报
+    locked_text: 已锁定
+    hidden_text: 已隐藏
+    restored_text: 已恢复
+    mention_tooltip: '{username} 提及了你'
+  user:
+    profile_button: 个人资料
+    settings_button: 设置
+    logout_button: 退出登录
+    login_button: 登录
+    signup_button: 注册
+    avatar_tooltip: 头像
+    username_tooltip: 用户名
+    posts_count: '{count} 个帖子'
+    discussions_count: '{count} 个讨论'
+    joined_time: '加入于 {time}'
+    online_badge: 在线
+    offline_badge: 离线
+  composer:
+    submit_button: 发布
+    title_placeholder: 标题
+    body_placeholder: 正文...
+    discard_confirmation: 确定要放弃此内容吗？
+    full_screen_button: 全屏
+    minimize_button: 最小化
+    maximize_button: 最大化
+    close_button: 关闭
+    draft_saved: 草稿已保存
+    draft_discard: 草稿已放弃
+    loading: 加载中...
+    preview_button: 预览
+    edit_button: 编辑
+    bold_button: 粗体
+    italic_button: 斜体
+    link_button: 链接
+    image_button: 图片
+    code_button: 代码
+    list_button: 列表
+    quote_button: 引用
+    emoji_button: 表情
+    heading_button: 标题
+    separator_button: 分隔线
+    spoiler_button: 剧透
+  notification:
+    tooltip: 通知
+    mark_as_read: 标记为已读
+    mark_all_as_read: 全部标记为已读
+    delete_all_button: 删除所有
+    empty_message: 没有新通知
+    new_count: '{count} 条新通知'
+    discussion_replied: '{user} 回复了 {discussion}'
+    discussion_started: '{user} 开始了 {discussion}'
+    user_mentioned: '{user} 提及了你'
+    post_liked: '{user} 点赞了你的帖子'
+    post_flagged: '{user} 举报了你的帖子'
+    user_followed: '{user} 关注了你'
+    settings_button: 通知设置
+  index:
+    all_discussions_button: 所有讨论
+    latest_button: 最新
+    top_button: 热门
+    relevance_button: 相关
+    newest_button: 最新
+    oldest_button: 最旧
+    most_replies_button: 最多回复
+    most_likes_button: 最多点赞
+    no_discussions_text: 还没有讨论
+    load_more_button: 加载更多
+    refresh_button: 刷新
+    filter_label: 筛选
+    sort_label: 排序
+  search:
+    discussions_heading: 讨论
+    users_heading: 用户
+    tags_heading: 标签
+    no_results: 没有找到结果
+    search_placeholder: 搜索...
+    advanced_search: 高级搜索
+  tags:
+    view_all_tags_button: 查看所有标签
+    choose_tags: 选择标签
+    change_tags: 更改标签
+    no_tags: 无标签
+  user_directory:
+    title: 用户
+    search_placeholder: 搜索用户...
+    load_more_button: 加载更多
+  session:
+    log_in: 登录
+    sign_up: 注册
+    log_out: 退出登录
+    remember_me: 记住我
+    forgot_password: 忘记密码？
+    dont_have_account: 还没有账号？
+    already_have_account: 已有账号？
+    password_placeholder: 密码
+    email_placeholder: 电子邮件
+    username_placeholder: 用户名
+    log_in_button: 登录
+    sign_up_button: 注册
+    reset_password_button: 重置密码
+    send_email_button: 发送重置邮件
+    email_sent: 重置邮件已发送
+    invalid_credentials: 用户名或密码错误
+    session_expired: 会话已过期，请重新登录
+  post_preview:
+    edit_button: 编辑
+    quote_button: 引用
+    reply_button: 回复
+  change_email:
+    title: 更改电子邮件
+    email_label: 新电子邮件
+    password_label: 当前密码
+    submit_button: 更改电子邮件
+    confirmation_message: 确认邮件已发送
+  change_password:
+    title: 更改密码
+    old_password_label: 当前密码
+    new_password_label: 新密码
+    confirm_password_label: 确认新密码
+    submit_button: 更改密码
+    success_message: 密码已更改
+  settings:
+    title: 设置
+    account: 账号
+    notifications: 通知
+    privacy: 隐私
+    change_email_button: 更改电子邮件
+    change_password_button: 更改密码
+    log_out_button: 退出登录
+    delete_account_button: 删除账号
+    delete_account_confirmation: 确定要删除账号吗？此操作不可撤销。
+  notifications:
+    title: 通知设置
+    alert_label: 提醒
+    email_label: 邮件
+    follow_label: 关注
+    discuss_label: 讨论
+    private_label: 私信
+  privacy:
+    title: 隐私设置
+    profile_visibility: 个人资料可见性
+    discussion_compose: 讨论撰写
+    post_stream: 帖子流
+  following:
+    follow_button: 关注
+    unfollow_button: 取消关注
+    following_button: 已关注
+  ignoring:
+    ignore_button: 忽略
+    unignore_button: 取消忽略
+    ignoring_button: 已忽略
+
+# ============================================
+# 后台管理 (Admin)
+# ============================================
+admin:
+  navigation:
+    dashboard_button: 仪表盘
+    extensions_button: 扩展
+    permissions_button: 权限
+    settings_button: 设置
+    users_button: 用户
+    appearance_button: 外观
+    basics_button: 基础
+    advanced_button: 高级
+    mail_button: 邮件
+    custom_header_button: 自定义页眉
+    custom_footer_button: 自定义页脚
+    custom_css_button: 自定义 CSS
+    close_tooltip: 关闭管理
+    back_to_forum: 返回论坛
+  dashboard:
+    title: 仪表盘
+    discussion_count: '{count} 个讨论'
+    post_count: '{count} 个帖子'
+    user_count: '{count} 个用户'
+    version_number: 'Flarum 版本 {version}'
+    php_version: 'PHP 版本 {version}'
+    mysql_version: 'MySQL 版本 {version}'
+    loaded_extensions: '已加载 {count} 个扩展'
+    update_available: 有可用更新
+    up_to_date: 已是最新版本
+    check_updates_button: 检查更新
+    run_updates_button: 运行更新
+    cache_button: 清除缓存
+    cache_cleared: 缓存已清除
+    recent_activity: 最近活动
+    system_status: 系统状态
+  extensions:
+    title: 扩展
+    installed_button: 已安装
+    add_button: 添加扩展
+    uninstall_button: 卸载
+    settings_button: 设置
+    enable_button: 启用
+    disable_button: 禁用
+    enabled_text: 已启用
+    disabled_text: 已禁用
+    search_placeholder: 搜索扩展...
+    no_extensions: 没有扩展
+    update_available: 有可用更新
+    update_button: 更新
+    updated_text: 已更新
+    uninstall_confirmation: 确定要卸载此扩展吗？
+    incompatible_warning: 此扩展与当前 Flarum 版本不兼容
+    required_extension: 需要扩展 {extension}
+    dependency_error: 依赖错误
+  settings:
+    title: 设置
+    save_changes_button: 保存更改
+    saved_message: 设置已保存
+    saving_message: 保存中...
+    revert_button: 撤销
+    site_heading: 站点
+    site_title_label: 站点标题
+    site_description_label: 站点描述
+    home_page_heading: 首页
+    default_landing_page: 默认着陆页
+    allow_sign_up_heading: 注册
+    allow_sign_up_label: 允许注册
+    email_heading: 邮件
+    mail_driver_label: 邮件驱动
+    mail_host_label: SMTP 主机
+    mail_port_label: SMTP 端口
+    mail_username_label: SMTP 用户名
+    mail_password_label: SMTP 密码
+    mail_from_label: 发件人邮箱
+    mail_encryption_label: 加密方式
+    features_heading: 功能
+    tag_count_label: 标签数量
+    discussion_count_label: 讨论数量
+    user_count_label: 用户数量
+  permissions:
+    title: 权限
+    allow_post_editing: 允许编辑帖子
+    allow_delete_own_posts: 允许删除自己的帖子
+    allow_delete_posts: 允许删除帖子
+    allow_rename_discussions: 允许重命名讨论
+    allow_lock_discussions: 允许锁定讨论
+    allow_sticky_discussions: 允许置顶讨论
+    allow_tag_discussions: 允许标记讨论
+    allow_user_suspension: 允许暂停用户
+    allow_view_user_list: 允许查看用户列表
+    allow_search_users: 允许搜索用户
+    allow_send_private_messages: 允许发送私信
+    start_discussions: 开始讨论
+    reply_to_discussions: 回复讨论
+    upload_images: 上传图片
+    edit_posts: 编辑帖子
+    delete_posts: 删除帖子
+    view_user_profiles: 查看用户资料
+    moderate_discussions: 管理讨论
+    access_admin: 访问管理
+    edit_settings: 编辑设置
+    manage_extensions: 管理扩展
+    manage_permissions: 管理权限
+    manage_users: 管理用户
+    global_moderate: 全局管理
+  users:
+    title: 用户
+    create_user_button: 创建用户
+    edit_user_button: 编辑用户
+    delete_user_button: 删除用户
+    delete_user_confirmation: 确定要删除此用户吗？
+    suspend_user_button: 暂停用户
+    unsuspend_user_button: 取消暂停
+    activate_user_button: 激活用户
+    deactivate_user_button: 停用用户
+    edit_permissions_button: 编辑权限
+    search_placeholder: 搜索用户...
+    username_label: 用户名
+    email_label: 电子邮件
+    password_label: 密码
+    is_activated_label: 已激活
+    is_suspended_label: 已暂停
+    suspension_message_label: 暂停原因
+    suspension_until_label: 暂停至
+    groups_label: 用户组
+    no_users: 没有用户
+    load_more_button: 加载更多
+  appearance:
+    title: 外观
+    colors_heading: 颜色
+    colors_primary_label: 主色调
+    colors_secondary_label: 次要颜色
+    logo_heading: Logo
+    logo_image_label: Logo 图片
+    logo_upload_button: 上传 Logo
+    logo_remove_button: 移除 Logo
+    favicon_heading: 网站图标
+    favicon_upload_button: 上传图标
+    custom_css_heading: 自定义 CSS
+    custom_css_label: CSS 代码
+    custom_header_heading: 自定义页眉
+    custom_footer_heading: 自定义页脚
+    dark_mode_label: 深色模式
+    font_heading: 字体
+    font_family_label: 字体系列
+  basics:
+    title: 基础设置
+    site_heading: 站点
+    site_title_label: 站点标题
+    site_description_label: 站点描述
+    home_page_heading: 首页
+    default_landing_page: 默认着陆页
+    allow_sign_up_heading: 注册
+    allow_sign_up_label: 允许注册
+    welcome_banner_label: 欢迎横幅
+    community_heading: 社区
+  advanced:
+    title: 高级设置
+    maintenance_heading: 维护
+    maintenance_mode_label: 维护模式
+    maintenance_message_label: 维护消息
+    debug_heading: 调试
+    debug_mode_label: 调试模式
+    fontawesome_heading: Font Awesome
+    fontawesome_cdn_label: 使用 CDN
+    database_heading: 数据库
+    database_driver_label: 数据库驱动
+    database_host_label: 数据库主机
+    database_name_label: 数据库名称
+    database_user_label: 数据库用户
+    database_pass_label: 数据库密码
+    queue_heading: 队列
+    queue_driver_label: 队列驱动
+    search_heading: 搜索
+    search_driver_label: 搜索驱动
+    cache_heading: 缓存
+    cache_driver_label: 缓存驱动
+  mail:
+    title: 邮件设置
+    driver_label: 驱动
+    host_label: SMTP 主机
+    port_label: SMTP 端口
+    username_label: SMTP 用户名
+    password_label: SMTP 密码
+    from_label: 发件人
+    encryption_label: 加密
+    test_button: 发送测试邮件
+    test_sent: 测试邮件已发送
+  groups:
+    title: 用户组
+    create_group_button: 创建用户组
+    edit_group_button: 编辑用户组
+    delete_group_button: 删除用户组
+    delete_group_confirmation: 确定要删除此用户组吗？
+    name_label: 名称
+    color_label: 颜色
+    icon_label: 图标
+    is_hidden_label: 隐藏
+    member_count: '{count} 个成员'
+
+# ============================================
+# 验证 (Validation)
+# ============================================
