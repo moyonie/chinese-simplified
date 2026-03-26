@@ -1,6 +1,6 @@
 {
     "name": "flarum-aifav/chinese-simplified",
-    "description": "Simplified Chinese Language Pack for Flarum 2.0",
+    "description": "Simplified Chinese Language Pack for Flarum 2.0（有BUG，暂时不可用）",
     "type": "flarum-extension",
     "keywords": ["flarum", "locale", "extension", "chinese", "simplified", "简体中文"],
     "license": "MIT",
