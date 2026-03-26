@@ -1,8 +1,11 @@
 ---
 # Flarum 2.0 简体中文语言包
-# 版本：2.0.0
-# 最后更新：2026-03-26
+# 版本：2.0.1
+# 最后更新：2026-03-27
 # 完整性：100%
+# 兼容性：Flarum 2.0.0-beta.8+
+# 术语标准：zh-Hans (简体中文)
+# 周起始日：周一 (weekStart: 1)
 
 # ============================================
 # 前台论坛 (Forum)
@@ -555,6 +558,67 @@ lib:
   lowest: 最低
   ascending: 升序
   descending: 降序
+  # Flarum 2.0 新增
+  copy_link: 复制链接
+  copy_link_success: 链接已复制
+  copy_link_error: 复制失败
+  share: 分享
+  share_on: 分享到 {platform}
+  bookmark: 收藏
+  bookmarked: 已收藏
+  unbookmark: 取消收藏
+  follow: 关注
+  unfollow: 取消关注
+  following: 已关注
+  follower: 粉丝
+  followers: 粉丝
+  mute: 屏蔽
+  unmute: 取消屏蔽
+  blocked: 已屏蔽
+  block: 屏蔽
+  unblock: 解除屏蔽
+  report: 举报
+  report_submitted: 举报已提交
+  thanks: 感谢
+  welcome: 欢迎
+  goodbye: 再见
+  congratulations: 恭喜
+  sorry: 抱歉
+  attention: 注意
+  important: 重要
+  notice: 提示
+  announcement: 公告
+  notification: 通知
+  notifications: 通知
+  mark_as_read: 标记为已读
+  mark_as_unread: 标记为未读
+  unread: 未读
+  read: 已读
+  online: 在线
+  offline: 离线
+  away: 离开
+  busy: 忙碌
+  invisible: 隐身
+  status: 状态
+  message: 消息
+  messages: 消息
+  conversation: 对话
+  conversations: 对话
+  reply: 回复
+  replies: 回复
+  quote: 引用
+  mention: 提及
+  like: 点赞
+  likes: 点赞
+  unlike: 取消点赞
+  vote: 投票
+  votes: 投票
+  upvote: 支持
+  downvote: 反对
+  subscribe: 订阅
+  unsubscribe: 取消订阅
+  subscribed: 已订阅
+  unsubscribe: 取消订阅
 
 # ============================================
 # 日期时间 (Date)
@@ -563,13 +627,19 @@ date:
   today: 今天
   yesterday: 昨天
   tomorrow: 明天
+  just_now: 刚刚
   minutes_ago: '{count} 分钟前'
   hours_ago: '{count} 小时前'
   days_ago: '{count} 天前'
   weeks_ago: '{count} 周前'
   months_ago: '{count} 月前'
   years_ago: '{count} 年前'
-  just_now: 刚刚
+  in_minutes: '{count} 分钟后'
+  in_hours: '{count} 小时后'
+  in_days: '{count} 天后'
+  in_weeks: '{count} 周后'
+  in_months: '{count} 月后'
+  in_years: '{count} 年后'
   second: 秒
   seconds: 秒
   minute: 分钟
@@ -596,6 +666,17 @@ date:
   october: 十月
   november: 十一月
   december: 十二月
+  jan: 1 月
+  feb: 2 月
+  mar: 3 月
+  apr: 4 月
+  jun: 6 月
+  jul: 7 月
+  aug: 8 月
+  sep: 9 月
+  oct: 10 月
+  nov: 11 月
+  dec: 12 月
   monday: 星期一
   tuesday: 星期二
   wednesday: 星期三
@@ -603,38 +684,77 @@ date:
   friday: 星期五
   saturday: 星期六
   sunday: 星期日
+  mon: 周一
+  tue: 周二
+  wed: 周三
+  thu: 周四
+  fri: 周五
+  sat: 周六
+  sun: 周日
+  am: 上午
+  pm: 下午
+  # 日期格式
   format_date: 'Y 年 m 月 d 日'
+  format_date_short: 'm-d'
+  format_date_long: 'Y 年 m 月 d 日'
   format_time: 'H:i'
+  format_time_12h: 'a h:i'
   format_datetime: 'Y 年 m 月 d 日 H:i'
+  format_datetime_short: 'm-d H:i'
+  format_datetime_long: 'Y 年 m 月 d 日 H:i:s'
+  format_day: 'd 日'
+  format_month: 'Y 年 m 月'
+  format_year: 'Y 年'
+  format_weekday: 'EEEE'
+  format_relative: 'relative'
 
 # ============================================
 # 错误 (Error)
 # ============================================
 error:
   not_found: 未找到
+  not_found_message: 请求的内容不存在
   permission_denied: 权限不足
+  permission_denied_message: 您没有执行此操作的权限
   session_expired: 会话已过期
+  session_expired_message: 您的会话已过期，请重新登录
   generic: 发生错误
+  generic_message: 抱歉，发生了一些问题
   unknown: 未知错误
   validation: 验证错误
   network: 网络错误
+  network_message: 网络连接失败，请检查网络设置
   timeout: 请求超时
+  timeout_message: 请求超时，请重试
   server_error: 服务器错误
+  server_error_message: 服务器暂时无法处理您的请求
   bad_request: 请求错误
   unauthorized: 未授权
+  unauthorized_message: 请先登录
   forbidden: 禁止访问
   conflict: 冲突
   gone: 已删除
   too_many_requests: 请求过多
+  too_many_requests_message: 操作过于频繁，请稍后再试
   unavailable: 服务不可用
   internal: 内部错误
   discussion_locked: 讨论已锁定
+  discussion_locked_message: 此讨论已锁定，无法回复
   discussion_hidden: 讨论已隐藏
+  discussion_hidden_message: 此讨论已隐藏，无法查看
   post_hidden: 帖子已隐藏
+  post_hidden_message: 此帖子已隐藏，无法查看
   user_suspended: 用户已被暂停
+  user_suspended_message: 该用户已被暂停
   email_confirmation_required: 需要确认电子邮件
+  email_confirmation_required_message: 请先确认您的电子邮件地址
   login_required: 需要登录
+  login_required_message: 请先登录以继续操作
   rate_limit_exceeded: 超过请求限制
+  rate_limit_exceeded_message: 操作过于频繁，请 {retryAfter} 后再试
+  csrf_token_invalid: 安全令牌无效，请刷新页面后重试
+  model_not_found: 请求的内容不存在
+  access_denied: 访问被拒绝
 
 # ============================================
 # 扩展翻译 - 官方扩展
@@ -845,64 +965,84 @@ flarum-sticky:
 flarum-messages:
   forum:
     composer:
-      send_message: 发送消息
-      message_placeholder: 输入消息...
+      send_message: 发送私信
+      message_placeholder: 输入私信内容...
       recipient_label: 收件人
-      recipient_placeholder: 选择收件人...
+      recipient_placeholder: 搜索用户...
     nav:
-      messages: 消息
-      new_message: 新消息
+      messages: 私信
+      new_message: 新建私信
     index:
-      title: 消息
-      no_messages: 没有消息
-      start_conversation: 开始对话
+      title: 私信
+      no_messages: 暂无私信
+      start_conversation: 发起对话
+    notification:
+      new_message: '{username} 给你发送了私信'
+      message_received: 收到新私信
+    modal:
+      title: 发送私信
+      send_button: 发送
+      cancel_button: 取消
     discussion:
       reply_placeholder: 回复...
-      leave_conversation: 离开对话
+      leave_conversation: 退出对话
       delete_conversation: 删除对话
-      delete_confirmation: 确定要删除此对话吗？
+      delete_confirmation: 确定要删除此对话吗？此操作不可撤销。
     user:
-      send_message_button: 发送消息
-      messages_link: 消息
+      send_message_button: 发私信
+      messages_link: 私信箱
   admin:
     permissions:
       send_private_messages_label: 发送私信
       receive_private_messages_label: 接收私信
+      create_private_messages_label: 创建私信对话
     settings:
-      messages_heading: 消息
-      allow_messages_label: 允许私信
-      max_recipients_label: 最大收件人数
+      messages_heading: 私信设置
+      allow_messages_label: 允许私信功能
+      max_recipients_label: 单次私信最大收件人数
+      message_length_limit_label: 私信长度限制
 
 # flarum/realtime (实时更新)
 flarum-realtime:
   forum:
+    connection:
+      connection_lost: 网络连接已断开
+      reconnecting: 正在重新连接...
+      reconnected: 已恢复连接
+      reconnect_failed: 重新连接失败
+      reconnect_retry: '{seconds}秒后重试'
     push:
-      discussion_list_new_activity: '{count} 条新活动'
-      new_discussion: '{username} 开始了新讨论'
+      discussion_list_new_activity: '发现 {count} 条新动态'
+      new_discussion: '{username} 发布了新讨论'
       new_post: '{username} 回复了讨论'
+      post_updated: 帖子已更新
+      discussion_renamed: 讨论已重命名
     typing_indicator:
-      people_are_typing: '{number} 人正在输入'
-      person_is_typing: '{username} 正在输入'
-    connection_lost: 连接已断开
-    reconnecting: 重新连接中...
-    reconnected: 已重新连接
+      people_are_typing: '{number} 人正在输入...'
+      person_is_typing: '{username} 正在输入...'
+      typing_stopped: 已停止输入
+    notification:
+      push_permission_required: 需要推送通知权限
+      enable_push: 启用推送通知
   admin:
     settings:
       realtime_heading: 实时更新
       enable_realtime_label: 启用实时更新
       push_notifications_label: 推送通知
-      typing_indicator_label: 输入指示器
+      typing_indicator_label: 正在输入提示
 
 # flarum/extension-manager (扩展管理器)
 flarum-extension-manager:
   admin:
     composer:
-      add_repository_label: 添加仓库
-      repository_url_placeholder: 输入仓库 URL...
-      delete_repository_confirmation: 确定要删除此仓库吗？
-      install_package: 安装包
+      add_repository_label: 添加软件源
+      repository_url_placeholder: 输入软件源 URL...
+      delete_repository_confirmation: 确定要删除此软件源吗？
+      install_package: 安装扩展包
       package_name_placeholder: 包名 (vendor/package)
       install_button: 安装
+      remove_package: 移除扩展包
+      update_package: 更新扩展包
     extensions:
       install: 安装
       remove: 移除
@@ -916,18 +1056,23 @@ flarum-extension-manager:
       install_success: 扩展安装成功
       remove_success: 扩展移除成功
       update_success: 扩展更新成功
-      install_error: 安装失败
-      remove_error: 移除失败
-      update_error: 更新失败
+      install_error: '安装失败：{error}'
+      remove_error: '移除失败：{error}'
+      update_error: '更新失败：{error}'
+      confirm_install: 确定要安装 {package} 吗？
+      confirm_remove: 确定要移除 {package} 吗？
+      confirm_update: 确定要更新 {package} 吗？
     settings:
       queue_jobs: 队列任务
       task_retention_days: 任务保留天数
-      repositories_heading: 仓库
-      repositories_description: 管理 Composer 仓库
-      add_repository_button: 添加仓库
-      default_repositories: 默认仓库
+      repositories_heading: 软件源
+      repositories_description: 管理 Composer 软件源
+      add_repository_button: 添加软件源
+      default_repositories: 默认软件源
       packagist_url: 'https://packagist.org'
       github_url: 'https://api.github.com'
+      allow_custom_repositories_label: 允许自定义软件源
+      require_https_label: 要求 HTTPS 连接
   forum:
     composer:
       installing: '正在安装 {package}...'
@@ -935,6 +1080,8 @@ flarum-extension-manager:
       updating: '正在更新 {package}...'
       completed: 完成
       failed: 失败
+      retry_button: 重试
+      cancel_button: 取消
 
 # ============================================
 # API 翻译

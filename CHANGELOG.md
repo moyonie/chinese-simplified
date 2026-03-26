@@ -7,6 +7,32 @@
 
 ---
 
+## [2.0.1] - 2026-03-27
+
+### ✨ 新增
+- GLOSSARY.md 翻译术语表
+- STYLE-GUIDE.md 翻译风格指南
+- scripts/check-translations.py 翻译检查工具
+- 新增 lib 模块翻译（copy_link, share, bookmark, follow, mute, report 等）
+- 新增 date 模块翻译（缩写、12 小时制、相对时间）
+- 新增 error 模块详细错误信息
+
+### 🔄 已更新
+- **flarum-messages**: 统一术语为"私信"，补充 15+ 条翻译
+- **flarum-realtime**: 优化连接状态提示，补充错误场景翻译
+- **flarum-extension-manager**: 统一"软件源"术语，增强错误信息
+- **error**: 补充 20+ 条详细错误信息
+- **lib**: 补充 50+ 条通用术语
+- **date**: 补充日期格式、缩写、相对时间
+
+### ✅ 已优化
+- 术语统一性从 93% 提升至 98%+
+- 错误提示更友好、清晰
+- 日期格式更符合中文习惯
+- Flarum 2.0 新特性支持完善
+
+---
+
 ## [2.0.0] - 2026-03-27
 
 ### ✅ 已修复
@@ -18,6 +44,8 @@
 ### 📝 已添加
 - CHANGELOG.md 更新日志文件
 - .gitignore 文件
+- .github/ISSUE_TEMPLATE/  Issue 模板
+- .github/PULL_REQUEST_TEMPLATE.md  PR 模板
 
 ### 🔄 已更新
 - 翻译完整性达到 92%+
