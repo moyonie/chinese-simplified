@@ -1,16 +1,4 @@
----
-# Flarum 2.0 简体中文语言包
 core:
-  # 版本：2.0.1
-  # 最后更新：2026-03-27
-  # 完整性：100%
-  # 兼容性：Flarum 2.0.0-beta.8+
-  # 术语标准：zh-Hans (简体中文)
-  # 周起始日：周一 (weekStart: 1)
-
-  # ============================================
-  # 前台论坛 (Forum)
-  # ============================================
   forum:
     header:
       log_in: 登录
@@ -62,7 +50,7 @@ core:
       delete_button: 删除
       delete_confirmation: 确定要删除此帖子吗？
       number_tooltip: '帖子 #{number}'
-      edited_tooltip: '由 {user} 于 {time} 编辑'
+      edited_tooltip: 由 {user} 于 {time} 编辑
       quote_button: 引用
       flag_button: 举报
       flagged_text: 已举报
@@ -80,7 +68,7 @@ core:
       username_tooltip: 用户名
       posts_count: '{count} 个帖子'
       discussions_count: '{count} 个讨论'
-      joined_time: '加入于 {time}'
+      joined_time: 加入于 {time}
       online_badge: 在线
       offline_badge: 离线
     composer:
@@ -217,10 +205,6 @@ core:
       ignore_button: 忽略
       unignore_button: 取消忽略
       ignoring_button: 已忽略
-
-  # ============================================
-  # 后台管理 (Admin)
-  # ============================================
   admin:
     navigation:
       dashboard_button: 仪表盘
@@ -242,10 +226,10 @@ core:
       discussion_count: '{count} 个讨论'
       post_count: '{count} 个帖子'
       user_count: '{count} 个用户'
-      version_number: 'Flarum 版本 {version}'
-      php_version: 'PHP 版本 {version}'
-      mysql_version: 'MySQL 版本 {version}'
-      loaded_extensions: '已加载 {count} 个扩展'
+      version_number: Flarum 版本 {version}
+      php_version: PHP 版本 {version}
+      mysql_version: MySQL 版本 {version}
+      loaded_extensions: 已加载 {count} 个扩展
       update_available: 有可用更新
       up_to_date: 已是最新版本
       check_updates_button: 检查更新
@@ -418,7 +402,3 @@ core:
       icon_label: 图标
       is_hidden_label: 隐藏
       member_count: '{count} 个成员'
-
-  # ============================================
-  # 验证 (Validation)
-  # ============================================

@@ -1,5 +1,3 @@
----
-# Flarum 2.0 简体中文语言包 - 验证信息
 core:
   validation:
     required: '{attribute} 是必需的'
@@ -7,26 +5,26 @@ core:
     min: '{attribute} 至少需要{min}个字符'
     max: '{attribute} 不能超过{max}个字符'
     unique: '{attribute} 已被使用'
-    accepted: '必须接受{attribute}'
+    accepted: 必须接受{attribute}
     array: '{attribute} 必须是数组'
     between: '{attribute} 必须在{min}到{max}之间'
     confirmed: '{attribute} 确认不匹配'
     date: '{attribute} 必须是有效的日期'
     digits: '{attribute} 必须是{digits}位数字'
     different: '{attribute} 必须不同'
-    exists: '选择的{attribute}无效'
+    exists: 选择的{attribute}无效
     image: '{attribute} 必须是图片'
-    in: '选择的{attribute}无效'
+    in: 选择的{attribute}无效
     integer: '{attribute} 必须是整数'
     ip: '{attribute} 必须是有效的 IP 地址'
     json: '{attribute} 必须是有效的 JSON'
     mime_types: '{attribute} 必须是以下类型：{values}'
-    not_in: '选择的{attribute}无效'
+    not_in: 选择的{attribute}无效
     numeric: '{attribute} 必须是数字'
     present: '{attribute} 必须存在'
     regex: '{attribute} 格式不正确'
-    required_if: '当{other}为{value}时，{attribute}是必需的'
-    required_with: '当存在{values}时，{attribute}是必需的'
+    required_if: 当{other}为{value}时，{attribute}是必需的
+    required_with: 当存在{values}时，{attribute}是必需的
     same: '{attribute} 必须与{other}相同'
     size: '{attribute} 必须是{size}个字符'
     string: '{attribute} 必须是字符串'
@@ -41,10 +39,6 @@ core:
       body: 正文
       tag: 标签
       tags: 标签
-
-  # ============================================
-  # 通用库 (Lib)
-  # ============================================
   lib:
     username: 用户名
     password: 密码
@@ -66,8 +60,8 @@ core:
     warning: 警告
     info: 信息
     confirm: 确认
-    yes: 是
-    no: 否
+    true: 是
+    false: 否
     ok: 确定
     apply: 应用
     done: 完成
@@ -138,7 +132,6 @@ core:
     lowest: 最低
     ascending: 升序
     descending: 降序
-    # Flarum 2.0 新增
     copy_link: 复制链接
     copy_link_success: 链接已复制
     copy_link_error: 复制失败
@@ -197,11 +190,6 @@ core:
     subscribe: 订阅
     unsubscribe: 取消订阅
     subscribed: 已订阅
-    unsubscribe: 取消订阅
-
-  # ============================================
-  # 日期时间 (Date)
-  # ============================================
   date:
     today: 今天
     yesterday: 昨天
@@ -272,24 +260,19 @@ core:
     sun: 周日
     am: 上午
     pm: 下午
-    # 日期格式
-    format_date: 'Y 年 m 月 d 日'
-    format_date_short: 'm-d'
-    format_date_long: 'Y 年 m 月 d 日'
-    format_time: 'H:i'
-    format_time_12h: 'a h:i'
-    format_datetime: 'Y 年 m 月 d 日 H:i'
-    format_datetime_short: 'm-d H:i'
-    format_datetime_long: 'Y 年 m 月 d 日 H:i:s'
-    format_day: 'd 日'
-    format_month: 'Y 年 m 月'
-    format_year: 'Y 年'
-    format_weekday: 'EEEE'
-    format_relative: 'relative'
-
-  # ============================================
-  # 错误 (Error)
-  # ============================================
+    format_date: Y 年 m 月 d 日
+    format_date_short: m-d
+    format_date_long: Y 年 m 月 d 日
+    format_time: H:i
+    format_time_12h: a h:i
+    format_datetime: Y 年 m 月 d 日 H:i
+    format_datetime_short: m-d H:i
+    format_datetime_long: Y 年 m 月 d 日 H:i:s
+    format_day: d 日
+    format_month: Y 年 m 月
+    format_year: Y 年
+    format_weekday: EEEE
+    format_relative: relative
   error:
     not_found: 未找到
     not_found_message: 请求的内容不存在
@@ -334,12 +317,6 @@ core:
     csrf_token_invalid: 安全令牌无效，请刷新页面后重试
     model_not_found: 请求的内容不存在
     access_denied: 访问被拒绝
-
-  # ============================================
-  # 扩展翻译 - 官方扩展
-  # ============================================
-
-  # flarum/likes
   flarum-likes:
     forum:
       post:
@@ -351,8 +328,6 @@ core:
     admin:
       permissions:
         like_posts_label: 点赞帖子
-
-  # flarum/lock
   flarum-lock:
     forum:
       post:
@@ -364,8 +339,6 @@ core:
     admin:
       permissions:
         lock_discussions_label: 锁定讨论
-
-  # flarum/tags
   flarum-tags:
     forum:
       index:
@@ -393,8 +366,6 @@ core:
       is_hidden_label: 隐藏
       is_child_label: 子标签
       require_parent_label: 需要父标签
-
-  # flarum/subscriptions
   flarum-subscriptions:
     forum:
       following:
@@ -412,8 +383,6 @@ core:
     admin:
       permissions:
         follow_discussions_label: 关注讨论
-
-  # flarum/mentions
   flarum-mentions:
     forum:
       post:
@@ -427,8 +396,6 @@ core:
       permissions:
         mention_users_label: 提及用户
         mention_groups_label: 提及用户组
-
-  # flarum/emoji
   flarum-emoji:
     forum:
       composer:
@@ -438,8 +405,6 @@ core:
       settings:
         emoji_heading: 表情
         emoji_driver_label: 表情驱动
-
-  # flarum/flags
   flarum-flags:
     forum:
       post:
@@ -472,8 +437,6 @@ core:
       permissions:
         flag_posts_label: 举报帖子
         view_flags_label: 查看举报
-
-  # flarum/approval
   flarum-approval:
     forum:
       discussion:
@@ -487,13 +450,11 @@ core:
         approve_posts_label: 审核帖子
         reply_without_approval_label: 无需审核即可回复
         start_discussions_without_approval_label: 无需审核即可开始讨论
-
-  # flarum/suspend
   flarum-suspend:
     forum:
       user:
         suspended_text: 已被禁言
-        suspended_until: '暂停至 {time}'
+        suspended_until: 暂停至 {time}
         permanently_suspended: 永久暂停
       suspend_user_button: 暂停用户
       unsuspend_user_button: 取消暂停
@@ -508,8 +469,6 @@ core:
     admin:
       permissions:
         suspend_users_label: 暂停用户
-
-  # flarum/nicknames
   flarum-nicknames:
     forum:
       user:
@@ -524,8 +483,6 @@ core:
         nickname_required_label: 昵称必填
         nickname_min_length_label: 最小长度
         nickname_max_length_label: 最大长度
-
-  # flarum/sticky
   flarum-sticky:
     forum:
       discussion:
@@ -535,11 +492,6 @@ core:
     admin:
       permissions:
         sticky_discussions_label: 置顶讨论
-
-  # ============================================
-  # ============================================
-
-  # flarum/messages (私信)
   flarum-messages:
     forum:
       composer:
@@ -579,8 +531,6 @@ core:
         allow_messages_label: 允许私信功能
         max_recipients_label: 单次私信最大收件人数
         message_length_limit_label: 私信长度限制
-
-  # flarum/realtime (实时更新)
   flarum-realtime:
     forum:
       connection:
@@ -590,7 +540,7 @@ core:
         reconnect_failed: 重新连接失败
         reconnect_retry: '{seconds}秒后重试'
       push:
-        discussion_list_new_activity: '发现 {count} 条新动态'
+        discussion_list_new_activity: 发现 {count} 条新动态
         new_discussion: '{username} 发布了新讨论'
         new_post: '{username} 回复了讨论'
         post_updated: 帖子已更新
@@ -608,8 +558,6 @@ core:
         enable_realtime_label: 启用实时更新
         push_notifications_label: 推送通知
         typing_indicator_label: 正在输入提示
-
-  # flarum/extension-manager (扩展管理器)
   flarum-extension-manager:
     admin:
       composer:
@@ -634,9 +582,9 @@ core:
         install_success: 扩展安装成功
         remove_success: 扩展移除成功
         update_success: 扩展更新成功
-        install_error: '安装失败：{error}'
-        remove_error: '移除失败：{error}'
-        update_error: '更新失败：{error}'
+        install_error: 安装失败：{error}
+        remove_error: 移除失败：{error}
+        update_error: 更新失败：{error}
         confirm_install: 确定要安装 {package} 吗？
         confirm_remove: 确定要移除 {package} 吗？
         confirm_update: 确定要更新 {package} 吗？
@@ -647,23 +595,19 @@ core:
         repositories_description: 管理 Composer 软件源
         add_repository_button: 添加软件源
         default_repositories: 默认软件源
-        packagist_url: 'https://packagist.org'
-        github_url: 'https://api.github.com'
+        packagist_url: https://packagist.org
+        github_url: https://api.github.com
         allow_custom_repositories_label: 允许自定义软件源
         require_https_label: 要求 HTTPS 连接
     forum:
       composer:
-        installing: '正在安装 {package}...'
-        removing: '正在移除 {package}...'
-        updating: '正在更新 {package}...'
+        installing: 正在安装 {package}...
+        removing: 正在移除 {package}...
+        updating: 正在更新 {package}...
         completed: 完成
         failed: 失败
         retry_button: 重试
         cancel_button: 取消
-
-  # ============================================
-  # API 翻译
-  # ============================================
   api:
     discussion:
       title: 标题
@@ -697,10 +641,6 @@ core:
       description: 描述
       color: 颜色
       position: 位置
-
-  # ============================================
-  # Ref (引用)
-  # ============================================
   ref:
     discussion_title: 讨论标题
     username: 用户名
