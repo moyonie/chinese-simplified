@@ -11,7 +11,4 @@
 
 use Flarum\Extend;
 
-return [
-    (new Extend\LanguagePack())
-        ->locale('zh-Hans'),
-];
+return new Flarum\Extend\LanguagePack();
