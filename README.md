@@ -1,4 +1,4 @@
-# Flarum 2.0 简体中文语言包
+# Flarum 2.0 简体中文语言包（有BUG，暂时不可用）
 
 [![GitHub license](https://img.shields.io/github/license/flarum-aifav/chinese-simplified)](LICENSE)
 [![Flarum Version](https://img.shields.io/badge/flarum-2.0-blue)](https://flarum.org)
