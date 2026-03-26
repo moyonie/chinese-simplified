@@ -12,13 +12,13 @@ core:
       admin_button: 'TBD: Administration'
       back_to_index_tooltip: 'TBD: Back to Discussion List'
       locale_dropdown_accessible_label: 'TBD: Change forum locale'
-      log_in_link: 'TBD: => core.ref.log_in'
-      log_out_button: 'TBD: => core.ref.log_out'
+      log_in_link: 'TBD: => ref.log_in'
+      log_out_button: 'TBD: => ref.log_out'
       profile_button: 'TBD: Profile'
       search_role_label: 'TBD: Search Forum'
       session_dropdown_accessible_label: 'TBD: Toggle session options dropdown menu'
-      settings_button: 'TBD: => core.ref.settings'
-      sign_up_link: 'TBD: => core.ref.sign_up'
+      settings_button: 'TBD: => ref.settings'
+      sign_up_link: 'TBD: => ref.sign_up'
     lib:
       loading_indicator:
         accessible_label: 加载中...
@@ -86,18 +86,18 @@ core:
       joined_time: 加入于 {time}
       online_badge: 在线
       offline_badge: 离线
-      avatar_remove_button: 'TBD: => core.ref.remove'
+      avatar_remove_button: 'TBD: => ref.remove'
       avatar_upload_button: 'TBD: Upload'
       avatar_upload_tooltip: 'TBD: Upload a new avatar'
-      discussions_link: 'TBD: => core.ref.discussions'
+      discussions_link: 'TBD: => ref.discussions'
       in_discussion_text: 'TBD: In {discussion}'
       joined_date_text: 'TBD: Joined {ago}'
       online_text: 'TBD: Online'
       posts_empty_text: 'TBD: It looks like there are no posts here.'
-      posts_link: 'TBD: => core.ref.posts'
-      posts_load_more_button: 'TBD: => core.ref.load_more'
-      security_link: 'TBD: => core.ref.security'
-      settings_link: 'TBD: => core.ref.settings'
+      posts_link: 'TBD: => ref.posts'
+      posts_load_more_button: 'TBD: => ref.load_more'
+      security_link: 'TBD: => ref.security'
+      settings_link: 'TBD: => ref.settings'
     composer:
       submit_button: 发布
       title_placeholder: 标题
@@ -133,13 +133,13 @@ core:
       discard_confirmation: 您尚未发布回复。确定要放弃吗？
       posted_message: 'TBD: Your reply was posted.'
       submit_button: 'TBD: Post Reply'
-      view_button: 'TBD: => core.ref.view'
+      view_button: 'TBD: => ref.view'
     composer_edit:
       discard_confirmation: 您尚未保存更改。确定要放弃吗？
       edited_message: 'TBD: Your edit was made.'
       post_link: 'TBD: Post #{number} in {discussion}'
-      submit_button: 'TBD: => core.ref.save_changes'
-      view_button: 'TBD: => core.ref.view'
+      submit_button: 'TBD: => ref.save_changes'
+      view_button: 'TBD: => ref.view'
     notification:
       tooltip: 通知
       mark_as_read: 标记为已读
@@ -169,14 +169,14 @@ core:
       refresh_button: 刷新
       filter_label: 筛选
       sort_label: 排序
-      all_discussions_link: 'TBD: => core.ref.all_discussions'
+      all_discussions_link: 'TBD: => ref.all_discussions'
       cannot_start_discussion_button: 'TBD: Can''t Start Discussion'
       mark_all_as_read_confirmation: 'TBD: Are you sure you want to mark all discussions
         as read?'
-      mark_all_as_read_tooltip: 'TBD: => core.ref.mark_all_as_read'
-      meta_title_text: 'TBD: => core.ref.all_discussions'
-      refresh_tooltip: 'TBD: => core.ref.refresh'
-      start_discussion_button: 'TBD: => core.ref.start_a_discussion'
+      mark_all_as_read_tooltip: 'TBD: => ref.mark_all_as_read'
+      meta_title_text: 'TBD: => ref.all_discussions'
+      refresh_tooltip: 'TBD: => ref.refresh'
+      start_discussion_button: 'TBD: => ref.start_a_discussion'
       skip_to_main_content: 'TBD: Skip to main content'
       toggle_sidenav_dropdown_accessible_label: 'TBD: Toggle navigation dropdown menu'
     discussion_list:
@@ -234,8 +234,8 @@ core:
       password_label: 当前密码
       submit_button: 更改电子邮件
       confirmation_message: 确认邮件已发送
-      confirm_password_placeholder: 'TBD: => core.ref.confirm_password'
-      dismiss_button: 'TBD: => core.ref.okay'
+      confirm_password_placeholder: 'TBD: => ref.confirm_password'
+      dismiss_button: 'TBD: => ref.okay'
       incorrect_password_message: 'TBD: The password you entered is incorrect.'
     change_password:
       title: 更改密码
@@ -261,14 +261,14 @@ core:
       color_scheme_heading: 'TBD: Color Scheme'
       color_schemes:
         auto_mode_label: 'TBD: System preference'
-        dark_hc_mode_label: 'TBD: => core.ref.dark_hc_mode_label'
-        dark_mode_label: 'TBD: => core.ref.dark_mode_label'
-        light_hc_mode_label: 'TBD: => core.ref.light_hc_mode_label'
-        light_mode_label: 'TBD: => core.ref.light_mode_label'
+        dark_hc_mode_label: 'TBD: => ref.dark_hc_mode_label'
+        dark_mode_label: 'TBD: => ref.dark_mode_label'
+        light_hc_mode_label: 'TBD: => ref.light_hc_mode_label'
+        light_mode_label: 'TBD: => ref.light_mode_label'
       notification_checkbox_a11y_label_template: 'TBD: Receive "{description}" notifications
         via {method}'
-      notifications_heading: 'TBD: => core.ref.notifications'
-      notify_by_email_heading: 'TBD: => core.ref.email'
+      notifications_heading: 'TBD: => ref.notifications'
+      notify_by_email_heading: 'TBD: => ref.email'
       notify_by_web_heading: 'TBD: Web'
       notify_discussion_renamed_label: 'TBD: Someone renames a discussion I started'
       device_heading: 'TBD: Device'
@@ -306,17 +306,17 @@ core:
     discussion_controls:
       cannot_reply_button: 'TBD: Can''t Reply'
       cannot_reply_text: 'TBD: You don''t have permission to reply to this discussion.'
-      delete_button: 'TBD: => core.ref.delete'
+      delete_button: 'TBD: => ref.delete'
       delete_confirmation: 'TBD: Are you sure you want to delete this discussion?'
-      delete_forever_button: 'TBD: => core.ref.delete_forever'
+      delete_forever_button: 'TBD: => ref.delete_forever'
       log_in_to_reply_button: 'TBD: Log In to Reply'
-      rename_button: 'TBD: => core.ref.rename'
-      reply_button: 'TBD: => core.ref.reply'
-      restore_button: 'TBD: => core.ref.restore'
+      rename_button: 'TBD: => ref.rename'
+      reply_button: 'TBD: => ref.reply'
+      restore_button: 'TBD: => ref.restore'
       toggle_dropdown_accessible_label: 'TBD: Toggle discussion actions dropdown menu'
     forgot_password:
-      dismiss_button: 'TBD: => core.ref.okay'
-      email_placeholder: 'TBD: => core.ref.email'
+      dismiss_button: 'TBD: => ref.okay'
+      email_placeholder: 'TBD: => ref.email'
       email_sent_message: 'TBD: If the email you entered is registered with this site,
         we''ll send you an email containing a link to reset your password. Check your
         spam folder if you don''t receive it within the next minute or two.'
@@ -327,44 +327,44 @@ core:
       title: 扩展健康
     index_sort:
       latest_button: 'TBD: Latest'
-      newest_button: 'TBD: => core.ref.newest'
-      oldest_button: 'TBD: => core.ref.oldest'
-      relevance_button: 'TBD: => core.ref.relevance'
+      newest_button: 'TBD: => ref.newest'
+      oldest_button: 'TBD: => ref.oldest'
+      relevance_button: 'TBD: => ref.relevance'
       toggle_dropdown_accessible_label: 'TBD: Change discussion list sorting'
       top_button: 'TBD: Top'
     log_in:
       forgot_password_link: 'TBD: Forgot password?'
-      invalid_login_message: 'TBD: => core.ref.invalid_login_message'
-      password_placeholder: 'TBD: => core.ref.password'
-      remember_me_label: 'TBD: => core.ref.remember_me_label'
+      invalid_login_message: 'TBD: => ref.invalid_login_message'
+      password_placeholder: 'TBD: => ref.password'
+      remember_me_label: 'TBD: => ref.remember_me_label'
       sign_up_text: 'TBD: Don''t have an account? <a>Sign Up</a>'
-      submit_button: 'TBD: => core.ref.log_in'
+      submit_button: 'TBD: => ref.log_in'
       title: 扩展健康
-      username_or_email_placeholder: 'TBD: => core.ref.username_or_email_placeholder'
+      username_or_email_placeholder: 'TBD: => ref.username_or_email_placeholder'
     notifications:
       delete_all_confirm: 'TBD: Are you sure you want to delete all notifications?
         This action is not reversible'
       delete_all_tooltip: 'TBD: Delete all notifications'
       discussion_renamed_text: 'TBD: {username} changed the title'
       empty_text: 'TBD: No Notifications'
-      mark_all_as_read_tooltip: 'TBD: => core.ref.mark_all_as_read'
+      mark_all_as_read_tooltip: 'TBD: => ref.mark_all_as_read'
       mark_as_read_tooltip: 'TBD: Mark as Read'
       title: 扩展健康
       toggle_dropdown_accessible_label: 'TBD: View notifications'
-      tooltip: 'TBD: => core.ref.notifications'
+      tooltip: 'TBD: => ref.notifications'
     post_controls:
-      delete_button: 'TBD: => core.ref.delete'
+      delete_button: 'TBD: => ref.delete'
       delete_confirmation: 'TBD: Are you sure you want to delete this post forever?
         This action cannot be undone.'
-      delete_forever_button: 'TBD: => core.ref.delete_forever'
-      edit_button: 'TBD: => core.ref.edit'
+      delete_forever_button: 'TBD: => ref.delete_forever'
+      edit_button: 'TBD: => ref.edit'
       hide_confirmation: 'TBD: Are you sure you want to delete this post?'
-      restore_button: 'TBD: => core.ref.restore'
+      restore_button: 'TBD: => ref.restore'
       toggle_dropdown_accessible_label: 'TBD: Toggle post controls dropdown menu'
     post_list:
       empty_text: 'TBD: It looks as though there are no posts here.'
       in_discussion_text: 'TBD: In {discussion}'
-      load_more_button: 'TBD: => core.ref.load_more'
+      load_more_button: 'TBD: => ref.load_more'
     post_scrubber:
       now_link: 'TBD: Now'
       original_post_link: 'TBD: Original Post'
@@ -374,18 +374,18 @@ core:
     post_stream:
       discussion_renamed_old_tooltip: 'TBD: The old title was: "{old}"'
       discussion_renamed_text: 'TBD: {username} changed the title to {new} {time}.'
-      load_more_button: 'TBD: => core.ref.load_more'
-      reply_placeholder: 'TBD: => core.ref.write_a_reply'
+      load_more_button: 'TBD: => ref.load_more'
+      reply_placeholder: 'TBD: => ref.write_a_reply'
       time_lapsed_text: 'TBD: {period} later'
     posts_sort:
-      newest_button: 'TBD: => core.ref.newest'
-      oldest_button: 'TBD: => core.ref.oldest'
-      relevance_button: 'TBD: => core.ref.relevance'
+      newest_button: 'TBD: => ref.newest'
+      oldest_button: 'TBD: => ref.oldest'
+      relevance_button: 'TBD: => ref.relevance'
     posts:
       meta_title_text: 'TBD: Post search results'
-      refresh_tooltip: 'TBD: => core.ref.refresh'
+      refresh_tooltip: 'TBD: => ref.refresh'
     rename_discussion:
-      submit_button: 'TBD: => core.ref.rename'
+      submit_button: 'TBD: => ref.rename'
       title: 扩展健康
     security:
       browser_on_operating_system: 'TBD: {browser} on {os}'
@@ -400,49 +400,49 @@ core:
         help_text: 'TBD: Clears current cookie session, terminates all sessions, revokes
           developer tokens, and invalidates any email confirmation or password reset
           emails.'
-        log_out_button: 'TBD: => core.ref.log_out'
+        log_out_button: 'TBD: => ref.log_out'
       hide_access_token: 'TBD: Hide Token'
       last_activity: 'TBD: Last activity'
-      never: 'TBD: => core.ref.never'
-      new_access_token_button: 'TBD: => core.ref.new_token'
+      never: 'TBD: => ref.never'
+      new_access_token_button: 'TBD: => ref.new_token'
       new_access_token_modal:
         submit_button: 'TBD: Create Token'
         title: 扩展健康
         title_placeholder: 'TBD: Title'
       revoke_access_token: 'TBD: Revoke'
-      revoke_access_token_confirmation: 'TBD: => core.ref.generic_confirmation_message'
+      revoke_access_token_confirmation: 'TBD: => ref.generic_confirmation_message'
       sessions_heading: 'TBD: Active Sessions'
       session_terminated: 'TBD: {count, plural, one {Session terminated} other {#
         Sessions terminated}}.'
       session_termination_failed: 'TBD: An error occurred while terminating your sessions.'
       show_access_token: 'TBD: View Token'
       terminate_all_other_sessions: 'TBD: Terminate all other sessions'
-      terminate_all_other_sessions_confirmation: 'TBD: => core.ref.generic_confirmation_message'
+      terminate_all_other_sessions_confirmation: 'TBD: => ref.generic_confirmation_message'
       terminate_session: 'TBD: Terminate'
       title: 扩展健康
       token_revoked: 'TBD: Token revoked.'
       token_item_title: 'TBD: {title} - {token}'
       token_title_placeholder: 'TBD: /'
     sign_up:
-      dismiss_button: 'TBD: => core.ref.okay'
-      email_placeholder: 'TBD: => core.ref.email'
+      dismiss_button: 'TBD: => ref.okay'
+      email_placeholder: 'TBD: => ref.email'
       log_in_text: 'TBD: Already have an account? <a>Log In</a>'
-      password_placeholder: 'TBD: => core.ref.password'
-      submit_button: 'TBD: => core.ref.sign_up'
+      password_placeholder: 'TBD: => ref.password'
+      submit_button: 'TBD: => ref.sign_up'
       title: 扩展健康
-      username_placeholder: 'TBD: => core.ref.username'
+      username_placeholder: 'TBD: => ref.username'
       welcome_text: 'TBD: Welcome, {username}!'
     user_controls:
       button: 'TBD: Controls'
-      delete_button: 'TBD: => core.ref.delete'
+      delete_button: 'TBD: => ref.delete'
       delete_confirmation: 'TBD: Are you sure you want to delete this user? The user''s
         posts will NOT be deleted.'
       delete_error_message: 'TBD: Deletion of user <i>{username} ({email})</i> failed'
       delete_success_message: 'TBD: User <i>{username} ({email})</i> was deleted'
-      edit_button: 'TBD: => core.ref.edit'
+      edit_button: 'TBD: => ref.edit'
       toggle_dropdown_accessible_label: 'TBD: Toggle user controls dropdown menu'
     user_email_confirmation:
-      alert_message: 'TBD: => core.ref.confirmation_email_sent'
+      alert_message: 'TBD: => ref.confirmation_email_sent'
       resend_button: 'TBD: Resend Confirmation Email'
       sent_message: 'TBD: Sent'
     welcome_hero:
@@ -546,7 +546,7 @@ core:
       discussion_count_label: 讨论数量
       user_count_label: 用户数量
       select_dropdown_custom_label: 'TBD: Custom'
-      submit_button: 'TBD: => core.ref.save_changes'
+      submit_button: 'TBD: => ref.save_changes'
     permissions:
       title: 权限
       allow_post_editing: 允许编辑帖子
@@ -598,7 +598,7 @@ core:
       remove_scope_confirmation: 确定要移除 {scope} 范围吗？
       rename_discussions_label: 'TBD: Rename discussions'
       reply_to_discussions_label: 'TBD: Reply to discussions'
-      search_users_label: 'TBD: => core.ref.search_users'
+      search_users_label: 'TBD: => ref.search_users'
       sign_up_label: 'TBD: Sign up'
       start_discussions_label: 'TBD: Start discussions'
       view_forum_label: 查看论坛（讨论和用户）
@@ -644,7 +644,7 @@ core:
           user_actions:
             title: 扩展健康
             edit_user:
-              button: 'TBD: => core.ref.edit'
+              button: 'TBD: => ref.edit'
               tooltip: 'TBD: Edit {username}'
           user_id:
             title: 扩展健康
@@ -674,15 +674,15 @@ core:
       allow_user_color_scheme_label: 允许用户选择自己的配色方案
       colored_header_label: 彩色页眉
       colors_text: 选择两种颜色来定制您的论坛主题。第一种将用作高亮颜色，第二种将用于样式化背景元素。
-      custom_footer_text: 'TBD: => core.ref.custom_footer_text'
-      custom_header_text: 'TBD: => core.ref.custom_header_text'
+      custom_footer_text: 'TBD: => ref.custom_footer_text'
+      custom_header_text: 'TBD: => ref.custom_header_text'
       custom_styles_cannot_use_less_features: 自定义 Less 中不允许使用 @import 和 data-uri 功能。
       custom_styles_heading: 自定义样式
       custom_styles_text: 通过添加您自己的 Less/CSS 代码到 Flarum 默认样式之上，来定制您的论坛外观。
       description: 配置您的论坛高级设置。
       edit_css_button: 编辑自定义 CSS
-      edit_footer_button: 'TBD: => core.ref.custom_footer_title'
-      edit_header_button: 'TBD: => core.ref.custom_header_title'
+      edit_footer_button: 'TBD: => ref.custom_footer_title'
+      edit_header_button: 'TBD: => ref.custom_header_title'
       enter_hex_message: 请输入十六进制颜色代码。
       favicon_text: 上传图片以显示为论坛的快捷方式图标。
       logo_text: 上传图片以替代论坛标题显示。
@@ -691,10 +691,10 @@ core:
       color_scheme_label: 配色方案（默认）
       color_schemes:
         auto_mode_label: 'TBD: User system or configured preference'
-        dark_hc_mode_label: 'TBD: => core.ref.dark_hc_mode_label'
-        dark_mode_label: 'TBD: => core.ref.dark_mode_label'
-        light_hc_mode_label: 'TBD: => core.ref.light_hc_mode_label'
-        light_mode_label: 'TBD: => core.ref.light_mode_label'
+        dark_hc_mode_label: 'TBD: => ref.dark_hc_mode_label'
+        dark_mode_label: 'TBD: => ref.dark_mode_label'
+        light_hc_mode_label: 'TBD: => ref.light_hc_mode_label'
+        light_mode_label: 'TBD: => ref.light_mode_label'
     basics:
       title: 基础设置
       site_heading: 站点
@@ -706,7 +706,7 @@ core:
       allow_sign_up_label: 允许注册
       welcome_banner_label: 欢迎横幅
       community_heading: 社区
-      all_discussions_label: 'TBD: => core.ref.all_discussions'
+      all_discussions_label: 'TBD: => ref.all_discussions'
       default_language_heading: 默认语言
       description: 配置您的论坛高级设置。
       display_name_driver_options:
@@ -880,14 +880,14 @@ core:
       is_hidden_label: 隐藏
       member_count: '{count} 个成员'
     create_user:
-      email_placeholder: 'TBD: => core.ref.email'
+      email_placeholder: 'TBD: => ref.email'
       email_confirmed_label: 要求用户确认此电子邮件
-      password_placeholder: 'TBD: => core.ref.password'
+      password_placeholder: 'TBD: => ref.password'
       submit_and_create_another_button: 创建并添加另一个
       submit_button: 'TBD: Create user'
       title: 扩展健康
       use_random_password: 生成随机密码
-      username_placeholder: 'TBD: => core.ref.username'
+      username_placeholder: 'TBD: => ref.username'
     announcements:
       comments_label: '{count, plural, one {# 条评论} other {# 条评论}}'
       description: 配置您的论坛高级设置。
@@ -931,28 +931,28 @@ core:
     edit_css:
       customize_text: 'TBD: Customize your forum''s appearance by adding your own
         Less/CSS code to be applied on top of Flarum''s <a>default styles</a>.'
-      submit_button: 'TBD: => core.ref.save_changes'
+      submit_button: 'TBD: => ref.save_changes'
       title: 扩展健康
     edit_footer:
-      customize_text: 'TBD: => core.ref.custom_footer_text'
-      submit_button: 'TBD: => core.ref.save_changes'
+      customize_text: 'TBD: => ref.custom_footer_text'
+      submit_button: 'TBD: => ref.save_changes'
       title: 扩展健康
     edit_group:
-      color_label: 'TBD: => core.ref.color'
+      color_label: 'TBD: => ref.color'
       delete_button: 'TBD: Delete Group'
       delete_confirmation: 'TBD: Are you sure you want to delete this group? The group
         members will NOT be deleted.'
       hide_label: 'TBD: Hide on forum'
-      icon_label: 'TBD: => core.ref.icon'
-      icon_text: 'TBD: => core.ref.icon_text'
+      icon_label: 'TBD: => ref.icon'
+      icon_text: 'TBD: => ref.icon_text'
       name_label: 'TBD: Name'
       plural_placeholder: 'TBD: Plural (e.g. Mods)'
       singular_placeholder: 'TBD: Singular (e.g. Mod)'
-      submit_button: 'TBD: => core.ref.save_changes'
+      submit_button: 'TBD: => ref.save_changes'
       title: 扩展健康
     edit_header:
-      customize_text: 'TBD: => core.ref.custom_header_text'
-      submit_button: 'TBD: => core.ref.save_changes'
+      customize_text: 'TBD: => ref.custom_header_text'
+      submit_button: 'TBD: => ref.save_changes'
       title: 扩展健康
     email:
       addresses_heading: 地址
@@ -979,7 +979,7 @@ core:
       mail_mailgun_domain_label: 'TBD: Domain'
       mail_mailgun_region_label: 'TBD: Region'
       mail_mailgun_secret_label: 'TBD: Secret key'
-      mail_password_label: 'TBD: => core.ref.password'
+      mail_password_label: 'TBD: => ref.password'
       mail_port_label: 'TBD: Port'
       mail_postmark_message_stream_label: 'TBD: Message stream'
       mail_postmark_token_label: 'TBD: Server token'
@@ -987,7 +987,7 @@ core:
       mail_smtp_verify_peer_help: 'TBD: Verify the server''s SSL certificate when
         using TLS or SSL encryption. Disable only if your mail server uses a self-signed
         certificate.'
-      mail_username_label: 'TBD: => core.ref.username'
+      mail_username_label: 'TBD: => ref.username'
       mailgun_heading: 'TBD: Mailgun Settings'
       postmark_heading: 'TBD: Postmark Settings'
       postmark_description: 'TBD: Send email via Postmark''s HTTP API. Optionally
@@ -1037,15 +1037,15 @@ core:
         booted and their settings are therefore inaccessible.'
     header:
       get_help: 'TBD: Get Help'
-      log_out_button: 'TBD: => core.ref.log_out'
+      log_out_button: 'TBD: => ref.log_out'
       search_placeholder: 'TBD: Search...'
       search_role_label: 'TBD: Search'
     loading:
       title: 扩展健康
     models:
-      discussions: 'TBD: => core.ref.discussions'
-      posts: 'TBD: => core.ref.posts'
-      users: 'TBD: => core.ref.users'
+      discussions: 'TBD: => ref.discussions'
+      posts: 'TBD: => ref.posts'
+      users: 'TBD: => ref.users'
     nav:
       advanced_button: 'TBD: => core.admin.advanced.title'
       advanced_title: 'TBD: => core.admin.advanced.description'
@@ -1067,7 +1067,7 @@ core:
         theme: 'TBD: Themes'
       dashboard_button: 'TBD: => core.admin.dashboard.title'
       dashboard_title: 'TBD: => core.admin.dashboard.description'
-      email_button: 'TBD: => core.ref.email'
+      email_button: 'TBD: => ref.email'
       email_title: 'TBD: => core.admin.email.description'
       permissions_button: 'TBD: => core.admin.permissions.title'
       permissions_title: 'TBD: => core.admin.permissions.description'
@@ -1076,7 +1076,7 @@ core:
       search_placeholder: 'TBD: Search Extensions'
     permissions_controls:
       allow_indefinitely_button: 'TBD: Indefinitely'
-      allow_never_button: 'TBD: => core.ref.never'
+      allow_never_button: 'TBD: => ref.never'
       allow_some_minutes_button: 'TBD: {count, plural, one {For # minute} other {For
         # minutes}}'
       allow_ten_minutes_button: 'TBD: For 10 minutes'
@@ -1089,7 +1089,7 @@ core:
       general:
         heading: 'TBD: General'
     upload_image:
-      remove_button: 'TBD: => core.ref.remove'
+      remove_button: 'TBD: => ref.remove'
       upload_button: 'TBD: Choose an Image...'
   ref:
     all_discussions: 所有讨论
