@@ -1,715 +1,717 @@
-validation:
-  required: '{attribute} 是必需的'
-  email: 请输入有效的电子邮件地址
-  min: '{attribute} 至少需要{min}个字符'
-  max: '{attribute} 不能超过{max}个字符'
-  unique: '{attribute} 已被使用'
-  accepted: '必须接受{attribute}'
-  array: '{attribute} 必须是数组'
-  between: '{attribute} 必须在{min}到{max}之间'
-  confirmed: '{attribute} 确认不匹配'
-  date: '{attribute} 必须是有效的日期'
-  digits: '{attribute} 必须是{digits}位数字'
-  different: '{attribute} 必须不同'
-  exists: '选择的{attribute}无效'
-  image: '{attribute} 必须是图片'
-  in: '选择的{attribute}无效'
-  integer: '{attribute} 必须是整数'
-  ip: '{attribute} 必须是有效的 IP 地址'
-  json: '{attribute} 必须是有效的 JSON'
-  mime_types: '{attribute} 必须是以下类型：{values}'
-  not_in: '选择的{attribute}无效'
-  numeric: '{attribute} 必须是数字'
-  present: '{attribute} 必须存在'
-  regex: '{attribute} 格式不正确'
-  required_if: '当{other}为{value}时，{attribute}是必需的'
-  required_with: '当存在{values}时，{attribute}是必需的'
-  same: '{attribute} 必须与{other}相同'
-  size: '{attribute} 必须是{size}个字符'
-  string: '{attribute} 必须是字符串'
-  timezone: '{attribute} 必须是有效的时区'
-  url: '{attribute} 必须是有效的 URL'
-  attributes:
+---
+# Flarum 2.0 简体中文语言包 - 验证信息
+core:
+  validation:
+    required: '{attribute} 是必需的'
+    email: 请输入有效的电子邮件地址
+    min: '{attribute} 至少需要{min}个字符'
+    max: '{attribute} 不能超过{max}个字符'
+    unique: '{attribute} 已被使用'
+    accepted: '必须接受{attribute}'
+    array: '{attribute} 必须是数组'
+    between: '{attribute} 必须在{min}到{max}之间'
+    confirmed: '{attribute} 确认不匹配'
+    date: '{attribute} 必须是有效的日期'
+    digits: '{attribute} 必须是{digits}位数字'
+    different: '{attribute} 必须不同'
+    exists: '选择的{attribute}无效'
+    image: '{attribute} 必须是图片'
+    in: '选择的{attribute}无效'
+    integer: '{attribute} 必须是整数'
+    ip: '{attribute} 必须是有效的 IP 地址'
+    json: '{attribute} 必须是有效的 JSON'
+    mime_types: '{attribute} 必须是以下类型：{values}'
+    not_in: '选择的{attribute}无效'
+    numeric: '{attribute} 必须是数字'
+    present: '{attribute} 必须存在'
+    regex: '{attribute} 格式不正确'
+    required_if: '当{other}为{value}时，{attribute}是必需的'
+    required_with: '当存在{values}时，{attribute}是必需的'
+    same: '{attribute} 必须与{other}相同'
+    size: '{attribute} 必须是{size}个字符'
+    string: '{attribute} 必须是字符串'
+    timezone: '{attribute} 必须是有效的时区'
+    url: '{attribute} 必须是有效的 URL'
+    attributes:
+      username: 用户名
+      email: 电子邮件
+      password: 密码
+      title: 标题
+      content: 内容
+      body: 正文
+      tag: 标签
+      tags: 标签
+
+  # ============================================
+  # 通用库 (Lib)
+  # ============================================
+  lib:
     username: 用户名
-    email: 电子邮件
     password: 密码
-    title: 标题
-    content: 内容
-    body: 正文
-    tag: 标签
-    tags: 标签
-
-# ============================================
-# 通用库 (Lib)
-# ============================================
-lib:
-  username: 用户名
-  password: 密码
-  email: 电子邮件
-  remember_me: 记住我
-  forgot_password: 忘记密码
-  reset_password: 重置密码
-  cancel: 取消
-  close: 关闭
-  delete: 删除
-  edit: 编辑
-  save: 保存
-  save_changes: 保存更改
-  loading: 加载中...
-  load_more: 加载更多
-  error: 错误
-  errors: 错误
-  success: 成功
-  warning: 警告
-  info: 信息
-  confirm: 确认
-  yes: 是
-  no: 否
-  ok: 确定
-  apply: 应用
-  done: 完成
-  back: 返回
-  next: 下一步
-  previous: 上一步
-  submit: 提交
-  upload: 上传
-  remove: 移除
-  add: 添加
-  create: 创建
-  update: 更新
-  refresh: 刷新
-  search: 搜索
-  filter: 筛选
-  sort: 排序
-  view: 查看
-  hide: 隐藏
-  show: 显示
-  more: 更多
-  less: 更少
-  all: 全部
-  none: 无
-  other: 其他
-  select: 选择
-  selected: 已选择
-  choose: 选择
-  change: 更改
-  reset: 重置
-  clear: 清除
-  copy: 复制
-  paste: 粘贴
-  cut: 剪切
-  undo: 撤销
-  redo: 重做
-  help: 帮助
-  settings: 设置
-  preferences: 偏好
-  options: 选项
-  details: 详情
-  summary: 摘要
-  description: 描述
-  name: 名称
-  title_label: 标题
-  content_label: 内容
-  status: 状态
-  active: 活跃
-  inactive: 不活跃
-  enabled: 已启用
-  disabled: 已禁用
-  public: 公开
-  private: 私密
-  draft: 草稿
-  published: 已发布
-  archived: 已归档
-  featured: 精选
-  recommended: 推荐
-  popular: 热门
-  recent: 最近
-  trending: 趋势
-  new: 新
-  old: 旧
-  latest: 最新
-  oldest: 最旧
-  best: 最佳
-  worst: 最差
-  highest: 最高
-  lowest: 最低
-  ascending: 升序
-  descending: 降序
-  # Flarum 2.0 新增
-  copy_link: 复制链接
-  copy_link_success: 链接已复制
-  copy_link_error: 复制失败
-  share: 分享
-  share_on: 分享到 {platform}
-  bookmark: 收藏
-  bookmarked: 已收藏
-  unbookmark: 取消收藏
-  follow: 关注
-  unfollow: 取消关注
-  following: 已关注
-  follower: 粉丝
-  followers: 粉丝
-  mute: 屏蔽
-  unmute: 取消屏蔽
-  blocked: 已屏蔽
-  block: 屏蔽
-  unblock: 解除屏蔽
-  report: 举报
-  report_submitted: 举报已提交
-  thanks: 感谢
-  welcome: 欢迎
-  goodbye: 再见
-  congratulations: 恭喜
-  sorry: 抱歉
-  attention: 注意
-  important: 重要
-  notice: 提示
-  announcement: 公告
-  notification: 通知
-  notifications: 通知
-  mark_as_read: 标记为已读
-  mark_as_unread: 标记为未读
-  unread: 未读
-  read: 已读
-  online: 在线
-  offline: 离线
-  away: 离开
-  busy: 忙碌
-  invisible: 隐身
-  status: 状态
-  message: 消息
-  messages: 消息
-  conversation: 对话
-  conversations: 对话
-  reply: 回复
-  replies: 回复
-  quote: 引用
-  mention: 提及
-  like: 点赞
-  likes: 点赞
-  unlike: 取消点赞
-  vote: 投票
-  votes: 投票
-  upvote: 支持
-  downvote: 反对
-  subscribe: 订阅
-  unsubscribe: 取消订阅
-  subscribed: 已订阅
-  unsubscribe: 取消订阅
-
-# ============================================
-# 日期时间 (Date)
-# ============================================
-date:
-  today: 今天
-  yesterday: 昨天
-  tomorrow: 明天
-  just_now: 刚刚
-  minutes_ago: '{count} 分钟前'
-  hours_ago: '{count} 小时前'
-  days_ago: '{count} 天前'
-  weeks_ago: '{count} 周前'
-  months_ago: '{count} 月前'
-  years_ago: '{count} 年前'
-  in_minutes: '{count} 分钟后'
-  in_hours: '{count} 小时后'
-  in_days: '{count} 天后'
-  in_weeks: '{count} 周后'
-  in_months: '{count} 月后'
-  in_years: '{count} 年后'
-  second: 秒
-  seconds: 秒
-  minute: 分钟
-  minutes: 分钟
-  hour: 小时
-  hours: 小时
-  day: 天
-  days: 天
-  week: 周
-  weeks: 周
-  month: 月
-  months: 月
-  year: 年
-  years: 年
-  january: 一月
-  february: 二月
-  march: 三月
-  april: 四月
-  may: 五月
-  june: 六月
-  july: 七月
-  august: 八月
-  september: 九月
-  october: 十月
-  november: 十一月
-  december: 十二月
-  jan: 1 月
-  feb: 2 月
-  mar: 3 月
-  apr: 4 月
-  jun: 6 月
-  jul: 7 月
-  aug: 8 月
-  sep: 9 月
-  oct: 10 月
-  nov: 11 月
-  dec: 12 月
-  monday: 星期一
-  tuesday: 星期二
-  wednesday: 星期三
-  thursday: 星期四
-  friday: 星期五
-  saturday: 星期六
-  sunday: 星期日
-  mon: 周一
-  tue: 周二
-  wed: 周三
-  thu: 周四
-  fri: 周五
-  sat: 周六
-  sun: 周日
-  am: 上午
-  pm: 下午
-  # 日期格式
-  format_date: 'Y 年 m 月 d 日'
-  format_date_short: 'm-d'
-  format_date_long: 'Y 年 m 月 d 日'
-  format_time: 'H:i'
-  format_time_12h: 'a h:i'
-  format_datetime: 'Y 年 m 月 d 日 H:i'
-  format_datetime_short: 'm-d H:i'
-  format_datetime_long: 'Y 年 m 月 d 日 H:i:s'
-  format_day: 'd 日'
-  format_month: 'Y 年 m 月'
-  format_year: 'Y 年'
-  format_weekday: 'EEEE'
-  format_relative: 'relative'
-
-# ============================================
-# 错误 (Error)
-# ============================================
-error:
-  not_found: 未找到
-  not_found_message: 请求的内容不存在
-  permission_denied: 权限不足
-  permission_denied_message: 您没有执行此操作的权限
-  session_expired: 会话已过期
-  session_expired_message: 您的会话已过期，请重新登录
-  generic: 发生错误
-  generic_message: 抱歉，发生了一些问题
-  unknown: 未知错误
-  validation: 验证错误
-  network: 网络错误
-  network_message: 网络连接失败，请检查网络设置
-  timeout: 请求超时
-  timeout_message: 请求超时，请重试
-  server_error: 服务器错误
-  server_error_message: 服务器暂时无法处理您的请求
-  bad_request: 请求错误
-  unauthorized: 未授权
-  unauthorized_message: 请先登录
-  forbidden: 禁止访问
-  conflict: 冲突
-  gone: 已删除
-  too_many_requests: 请求过多
-  too_many_requests_message: 操作过于频繁，请稍后再试
-  unavailable: 服务不可用
-  internal: 内部错误
-  discussion_locked: 讨论已锁定
-  discussion_locked_message: 此讨论已锁定，无法回复
-  discussion_hidden: 讨论已隐藏
-  discussion_hidden_message: 此讨论已隐藏，无法查看
-  post_hidden: 帖子已隐藏
-  post_hidden_message: 此帖子已隐藏，无法查看
-  user_suspended: 用户已被暂停
-  user_suspended_message: 该用户已被暂停
-  email_confirmation_required: 需要确认电子邮件
-  email_confirmation_required_message: 请先确认您的电子邮件地址
-  login_required: 需要登录
-  login_required_message: 请先登录以继续操作
-  rate_limit_exceeded: 超过请求限制
-  rate_limit_exceeded_message: 操作过于频繁，请 {retryAfter} 后再试
-  csrf_token_invalid: 安全令牌无效，请刷新页面后重试
-  model_not_found: 请求的内容不存在
-  access_denied: 访问被拒绝
-
-# ============================================
-# 扩展翻译 - 官方扩展
-# ============================================
-
-# flarum/likes
-flarum-likes:
-  forum:
-    post:
-      like_button: 点赞
-      liked_text: '{count} 人点赞'
-      unlike_button: 取消点赞
-      you_and_others: 你和其他{count}人
-      others_only: '{count} 人'
-  admin:
-    permissions:
-      like_posts_label: 点赞帖子
-
-# flarum/lock
-flarum-lock:
-  forum:
-    post:
-      locked_text: 已锁定
-    discussion:
-      lock_button: 锁定
-      unlock_button: 解锁
-      locked_message: 此讨论已锁定
-  admin:
-    permissions:
-      lock_discussions_label: 锁定讨论
-
-# flarum/tags
-flarum-tags:
-  forum:
-    index:
-      more_tags_text: 更多标签
-      all_tags_button: 所有标签
-    composer:
-      choose_tags: 选择标签
-      edit_tags: 编辑标签
-    tag:
-      discussions: '{count} 个讨论'
-  admin:
-    create_tag_button: 创建标签
-    edit_tag_button: 编辑标签
-    delete_tag_button: 删除标签
-    delete_tag_confirmation: 确定要删除此标签吗？
-    name_label: 名称
-    slug_label: 别名
-    description_label: 描述
-    color_label: 颜色
-    icon_label: 图标
-    position_label: 位置
-    parent_label: 父标签
-    child_tags: 子标签
-    hide_from_discussion_list: 在讨论列表中隐藏
-    is_hidden_label: 隐藏
-    is_child_label: 子标签
-    require_parent_label: 需要父标签
-
-# flarum/subscriptions
-flarum-subscriptions:
-  forum:
-    following:
-      follow_button: 关注
-      unfollow_button: 取消关注
-      following_button: 已关注
-      stop_following_button: 停止关注
-      follow_tooltip: 关注此讨论
-      unfollow_tooltip: 取消关注此讨论
-    index:
-      following_filter: 已关注
-    discussion:
-      follow_button: 关注
-      unfollow_button: 取消关注
-  admin:
-    permissions:
-      follow_discussions_label: 关注讨论
-
-# flarum/mentions
-flarum-mentions:
-  forum:
-    post:
-      mentioned_by: '{username} 提及了你'
-      mentioned_by_others: '{username} 和其他{count}人提及了你'
-    user:
-      mentioned_link: 提及
-    composer:
-      mention_tooltip: '@{username}'
-  admin:
-    permissions:
-      mention_users_label: 提及用户
-      mention_groups_label: 提及用户组
-
-# flarum/emoji
-flarum-emoji:
-  forum:
-    composer:
-      emoji_button: 表情
-      emoji_tooltip: 插入表情
-  admin:
-    settings:
-      emoji_heading: 表情
-      emoji_driver_label: 表情驱动
-
-# flarum/flags
-flarum-flags:
-  forum:
-    post:
-      flag_button: 举报
-      flagged_text: 已举报
-      flag_tooltip: 举报此帖子
-      unflag_button: 取消举报
-    discussion:
-      flagged_badge: 已举报
-    flag_modal:
-      title: 举报帖子
-      reason_label: 举报原因
-      reason_placeholder: 请说明举报原因...
-      submit_button: 提交举报
-      cancel_button: 取消
-      thanks_message: 感谢你的举报
-  admin:
-    title: 举报
-    flags_heading: 举报
-    post_heading: 帖子
-    flagged_by: 举报者
-    flagged_at: 举报时间
-    reason_label: 原因
-    action_heading: 操作
-    dismiss_button: 忽略
-    delete_button: 删除帖子
-    suspend_user_button: 暂停用户
-    view_post_button: 查看帖子
-    no_flags: 没有举报
-    permissions:
-      flag_posts_label: 举报帖子
-      view_flags_label: 查看举报
-
-# flarum/approval
-flarum-approval:
-  forum:
-    discussion:
-      awaiting_approval_text: 等待审核
-      approved_text: 已审核
-    post:
-      awaiting_approval_text: 等待审核
-      approved_text: 已审核
-  admin:
-    permissions:
-      approve_posts_label: 审核帖子
-      reply_without_approval_label: 无需审核即可回复
-      start_discussions_without_approval_label: 无需审核即可开始讨论
-
-# flarum/suspend
-flarum-suspend:
-  forum:
-    user:
-      suspended_text: 已被禁言
-      suspended_until: '暂停至 {time}'
-      permanently_suspended: 永久暂停
-    suspend_user_button: 暂停用户
-    unsuspend_user_button: 取消暂停
-    suspend_modal:
-      title: 暂停用户
-      indefinitely_label: 无限期
-      until_label: 暂停至
-      reason_label: 原因
-      reason_placeholder: 请说明暂停原因...
-      submit_button: 暂停
-      cancel_button: 取消
-  admin:
-    permissions:
-      suspend_users_label: 暂停用户
-
-# flarum/nicknames
-flarum-nicknames:
-  forum:
-    user:
-      nickname_label: 昵称
-    settings:
-      nickname_heading: 昵称
-      nickname_label: 昵称
-      nickname_placeholder: 输入昵称...
-  admin:
-    settings:
-      nickname_heading: 昵称
-      nickname_required_label: 昵称必填
-      nickname_min_length_label: 最小长度
-      nickname_max_length_label: 最大长度
-
-# flarum/sticky
-flarum-sticky:
-  forum:
-    discussion:
-      stickied_text: 已置顶
-      sticky_button: 置顶
-      unsticky_button: 取消置顶
-  admin:
-    permissions:
-      sticky_discussions_label: 置顶讨论
-
-# ============================================
-# Flarum 2.0 新增扩展
-# ============================================
-
-# flarum/messages (私信)
-flarum-messages:
-  forum:
-    composer:
-      send_message: 发送私信
-      message_placeholder: 输入私信内容...
-      recipient_label: 收件人
-      recipient_placeholder: 搜索用户...
-    nav:
-      messages: 私信
-      new_message: 新建私信
-    index:
-      title: 私信
-      no_messages: 暂无私信
-      start_conversation: 发起对话
-    notification:
-      new_message: '{username} 给你发送了私信'
-      message_received: 收到新私信
-    modal:
-      title: 发送私信
-      send_button: 发送
-      cancel_button: 取消
-    discussion:
-      reply_placeholder: 回复...
-      leave_conversation: 退出对话
-      delete_conversation: 删除对话
-      delete_confirmation: 确定要删除此对话吗？此操作不可撤销。
-    user:
-      send_message_button: 发私信
-      messages_link: 私信箱
-  admin:
-    permissions:
-      send_private_messages_label: 发送私信
-      receive_private_messages_label: 接收私信
-      create_private_messages_label: 创建私信对话
-    settings:
-      messages_heading: 私信设置
-      allow_messages_label: 允许私信功能
-      max_recipients_label: 单次私信最大收件人数
-      message_length_limit_label: 私信长度限制
-
-# flarum/realtime (实时更新)
-flarum-realtime:
-  forum:
-    connection:
-      connection_lost: 网络连接已断开
-      reconnecting: 正在重新连接...
-      reconnected: 已恢复连接
-      reconnect_failed: 重新连接失败
-      reconnect_retry: '{seconds}秒后重试'
-    push:
-      discussion_list_new_activity: '发现 {count} 条新动态'
-      new_discussion: '{username} 发布了新讨论'
-      new_post: '{username} 回复了讨论'
-      post_updated: 帖子已更新
-      discussion_renamed: 讨论已重命名
-    typing_indicator:
-      people_are_typing: '{number} 人正在输入...'
-      person_is_typing: '{username} 正在输入...'
-      typing_stopped: 已停止输入
-    notification:
-      push_permission_required: 需要推送通知权限
-      enable_push: 启用推送通知
-  admin:
-    settings:
-      realtime_heading: 实时更新
-      enable_realtime_label: 启用实时更新
-      push_notifications_label: 推送通知
-      typing_indicator_label: 正在输入提示
-
-# flarum/extension-manager (扩展管理器)
-flarum-extension-manager:
-  admin:
-    composer:
-      add_repository_label: 添加软件源
-      repository_url_placeholder: 输入软件源 URL...
-      delete_repository_confirmation: 确定要删除此软件源吗？
-      install_package: 安装扩展包
-      package_name_placeholder: 包名 (vendor/package)
-      install_button: 安装
-      remove_package: 移除扩展包
-      update_package: 更新扩展包
-    extensions:
-      install: 安装
-      remove: 移除
-      update: 更新
-      installed: 已安装
-      available: 可用
-      updates_available: '{count} 个更新可用'
-      update_all: 全部更新
-      checking_updates: 检查更新中...
-      no_updates: 没有可用更新
-      install_success: 扩展安装成功
-      remove_success: 扩展移除成功
-      update_success: 扩展更新成功
-      install_error: '安装失败：{error}'
-      remove_error: '移除失败：{error}'
-      update_error: '更新失败：{error}'
-      confirm_install: 确定要安装 {package} 吗？
-      confirm_remove: 确定要移除 {package} 吗？
-      confirm_update: 确定要更新 {package} 吗？
-    settings:
-      queue_jobs: 队列任务
-      task_retention_days: 任务保留天数
-      repositories_heading: 软件源
-      repositories_description: 管理 Composer 软件源
-      add_repository_button: 添加软件源
-      default_repositories: 默认软件源
-      packagist_url: 'https://packagist.org'
-      github_url: 'https://api.github.com'
-      allow_custom_repositories_label: 允许自定义软件源
-      require_https_label: 要求 HTTPS 连接
-  forum:
-    composer:
-      installing: '正在安装 {package}...'
-      removing: '正在移除 {package}...'
-      updating: '正在更新 {package}...'
-      completed: 完成
-      failed: 失败
-      retry_button: 重试
-      cancel_button: 取消
-
-# ============================================
-# API 翻译
-# ============================================
-api:
-  discussion:
-    title: 标题
-    content: 内容
-    slug: 别名
-    created_at: 创建时间
-    updated_at: 更新时间
-    last_posted_at: 最后回复时间
-    user: 用户
-    first_post: 首帖
-    last_post: 末帖
-  post:
-    content: 内容
-    created_at: 创建时间
-    updated_at: 更新时间
-    user: 用户
-    discussion: 讨论
-  user:
-    username: 用户名
     email: 电子邮件
-    password: 密码
-    created_at: 创建时间
-    last_seen_at: 最后在线
-  group:
-    name: 名称
-    color: 颜色
-    icon: 图标
-  tag:
-    name: 名称
-    slug: 别名
+    remember_me: 记住我
+    forgot_password: 忘记密码
+    reset_password: 重置密码
+    cancel: 取消
+    close: 关闭
+    delete: 删除
+    edit: 编辑
+    save: 保存
+    save_changes: 保存更改
+    loading: 加载中...
+    load_more: 加载更多
+    error: 错误
+    errors: 错误
+    success: 成功
+    warning: 警告
+    info: 信息
+    confirm: 确认
+    yes: 是
+    no: 否
+    ok: 确定
+    apply: 应用
+    done: 完成
+    back: 返回
+    next: 下一步
+    previous: 上一步
+    submit: 提交
+    upload: 上传
+    remove: 移除
+    add: 添加
+    create: 创建
+    update: 更新
+    refresh: 刷新
+    search: 搜索
+    filter: 筛选
+    sort: 排序
+    view: 查看
+    hide: 隐藏
+    show: 显示
+    more: 更多
+    less: 更少
+    all: 全部
+    none: 无
+    other: 其他
+    select: 选择
+    selected: 已选择
+    choose: 选择
+    change: 更改
+    reset: 重置
+    clear: 清除
+    copy: 复制
+    paste: 粘贴
+    cut: 剪切
+    undo: 撤销
+    redo: 重做
+    help: 帮助
+    settings: 设置
+    preferences: 偏好
+    options: 选项
+    details: 详情
+    summary: 摘要
     description: 描述
-    color: 颜色
-    position: 位置
+    name: 名称
+    title_label: 标题
+    content_label: 内容
+    status: 状态
+    active: 活跃
+    inactive: 不活跃
+    enabled: 已启用
+    disabled: 已禁用
+    public: 公开
+    private: 私密
+    draft: 草稿
+    published: 已发布
+    archived: 已归档
+    featured: 精选
+    recommended: 推荐
+    popular: 热门
+    recent: 最近
+    trending: 趋势
+    new: 新
+    old: 旧
+    latest: 最新
+    oldest: 最旧
+    best: 最佳
+    worst: 最差
+    highest: 最高
+    lowest: 最低
+    ascending: 升序
+    descending: 降序
+    # Flarum 2.0 新增
+    copy_link: 复制链接
+    copy_link_success: 链接已复制
+    copy_link_error: 复制失败
+    share: 分享
+    share_on: 分享到 {platform}
+    bookmark: 收藏
+    bookmarked: 已收藏
+    unbookmark: 取消收藏
+    follow: 关注
+    unfollow: 取消关注
+    following: 已关注
+    follower: 粉丝
+    followers: 粉丝
+    mute: 屏蔽
+    unmute: 取消屏蔽
+    blocked: 已屏蔽
+    block: 屏蔽
+    unblock: 解除屏蔽
+    report: 举报
+    report_submitted: 举报已提交
+    thanks: 感谢
+    welcome: 欢迎
+    goodbye: 再见
+    congratulations: 恭喜
+    sorry: 抱歉
+    attention: 注意
+    important: 重要
+    notice: 提示
+    announcement: 公告
+    notification: 通知
+    notifications: 通知
+    mark_as_read: 标记为已读
+    mark_as_unread: 标记为未读
+    unread: 未读
+    read: 已读
+    online: 在线
+    offline: 离线
+    away: 离开
+    busy: 忙碌
+    invisible: 隐身
+    status: 状态
+    message: 消息
+    messages: 消息
+    conversation: 对话
+    conversations: 对话
+    reply: 回复
+    replies: 回复
+    quote: 引用
+    mention: 提及
+    like: 点赞
+    likes: 点赞
+    unlike: 取消点赞
+    vote: 投票
+    votes: 投票
+    upvote: 支持
+    downvote: 反对
+    subscribe: 订阅
+    unsubscribe: 取消订阅
+    subscribed: 已订阅
+    unsubscribe: 取消订阅
 
-# ============================================
-# Ref (引用)
-# ============================================
-ref:
-  discussion_title: 讨论标题
-  username: 用户名
-  post_number: '帖子 #{number}'
-  discussion: 讨论
-  post: 帖子
-  user: 用户
-  group: 用户组
-  tag: 标签
-  created: 创建
-  updated: 更新
-  deleted: 删除
-  restored: 恢复
+  # ============================================
+  # 日期时间 (Date)
+  # ============================================
+  date:
+    today: 今天
+    yesterday: 昨天
+    tomorrow: 明天
+    just_now: 刚刚
+    minutes_ago: '{count} 分钟前'
+    hours_ago: '{count} 小时前'
+    days_ago: '{count} 天前'
+    weeks_ago: '{count} 周前'
+    months_ago: '{count} 月前'
+    years_ago: '{count} 年前'
+    in_minutes: '{count} 分钟后'
+    in_hours: '{count} 小时后'
+    in_days: '{count} 天后'
+    in_weeks: '{count} 周后'
+    in_months: '{count} 月后'
+    in_years: '{count} 年后'
+    second: 秒
+    seconds: 秒
+    minute: 分钟
+    minutes: 分钟
+    hour: 小时
+    hours: 小时
+    day: 天
+    days: 天
+    week: 周
+    weeks: 周
+    month: 月
+    months: 月
+    year: 年
+    years: 年
+    january: 一月
+    february: 二月
+    march: 三月
+    april: 四月
+    may: 五月
+    june: 六月
+    july: 七月
+    august: 八月
+    september: 九月
+    october: 十月
+    november: 十一月
+    december: 十二月
+    jan: 1 月
+    feb: 2 月
+    mar: 3 月
+    apr: 4 月
+    jun: 6 月
+    jul: 7 月
+    aug: 8 月
+    sep: 9 月
+    oct: 10 月
+    nov: 11 月
+    dec: 12 月
+    monday: 星期一
+    tuesday: 星期二
+    wednesday: 星期三
+    thursday: 星期四
+    friday: 星期五
+    saturday: 星期六
+    sunday: 星期日
+    mon: 周一
+    tue: 周二
+    wed: 周三
+    thu: 周四
+    fri: 周五
+    sat: 周六
+    sun: 周日
+    am: 上午
+    pm: 下午
+    # 日期格式
+    format_date: 'Y 年 m 月 d 日'
+    format_date_short: 'm-d'
+    format_date_long: 'Y 年 m 月 d 日'
+    format_time: 'H:i'
+    format_time_12h: 'a h:i'
+    format_datetime: 'Y 年 m 月 d 日 H:i'
+    format_datetime_short: 'm-d H:i'
+    format_datetime_long: 'Y 年 m 月 d 日 H:i:s'
+    format_day: 'd 日'
+    format_month: 'Y 年 m 月'
+    format_year: 'Y 年'
+    format_weekday: 'EEEE'
+    format_relative: 'relative'
+
+  # ============================================
+  # 错误 (Error)
+  # ============================================
+  error:
+    not_found: 未找到
+    not_found_message: 请求的内容不存在
+    permission_denied: 权限不足
+    permission_denied_message: 您没有执行此操作的权限
+    session_expired: 会话已过期
+    session_expired_message: 您的会话已过期，请重新登录
+    generic: 发生错误
+    generic_message: 抱歉，发生了一些问题
+    unknown: 未知错误
+    validation: 验证错误
+    network: 网络错误
+    network_message: 网络连接失败，请检查网络设置
+    timeout: 请求超时
+    timeout_message: 请求超时，请重试
+    server_error: 服务器错误
+    server_error_message: 服务器暂时无法处理您的请求
+    bad_request: 请求错误
+    unauthorized: 未授权
+    unauthorized_message: 请先登录
+    forbidden: 禁止访问
+    conflict: 冲突
+    gone: 已删除
+    too_many_requests: 请求过多
+    too_many_requests_message: 操作过于频繁，请稍后再试
+    unavailable: 服务不可用
+    internal: 内部错误
+    discussion_locked: 讨论已锁定
+    discussion_locked_message: 此讨论已锁定，无法回复
+    discussion_hidden: 讨论已隐藏
+    discussion_hidden_message: 此讨论已隐藏，无法查看
+    post_hidden: 帖子已隐藏
+    post_hidden_message: 此帖子已隐藏，无法查看
+    user_suspended: 用户已被暂停
+    user_suspended_message: 该用户已被暂停
+    email_confirmation_required: 需要确认电子邮件
+    email_confirmation_required_message: 请先确认您的电子邮件地址
+    login_required: 需要登录
+    login_required_message: 请先登录以继续操作
+    rate_limit_exceeded: 超过请求限制
+    rate_limit_exceeded_message: 操作过于频繁，请 {retryAfter} 后再试
+    csrf_token_invalid: 安全令牌无效，请刷新页面后重试
+    model_not_found: 请求的内容不存在
+    access_denied: 访问被拒绝
+
+  # ============================================
+  # 扩展翻译 - 官方扩展
+  # ============================================
+
+  # flarum/likes
+  flarum-likes:
+    forum:
+      post:
+        like_button: 点赞
+        liked_text: '{count} 人点赞'
+        unlike_button: 取消点赞
+        you_and_others: 你和其他{count}人
+        others_only: '{count} 人'
+    admin:
+      permissions:
+        like_posts_label: 点赞帖子
+
+  # flarum/lock
+  flarum-lock:
+    forum:
+      post:
+        locked_text: 已锁定
+      discussion:
+        lock_button: 锁定
+        unlock_button: 解锁
+        locked_message: 此讨论已锁定
+    admin:
+      permissions:
+        lock_discussions_label: 锁定讨论
+
+  # flarum/tags
+  flarum-tags:
+    forum:
+      index:
+        more_tags_text: 更多标签
+        all_tags_button: 所有标签
+      composer:
+        choose_tags: 选择标签
+        edit_tags: 编辑标签
+      tag:
+        discussions: '{count} 个讨论'
+    admin:
+      create_tag_button: 创建标签
+      edit_tag_button: 编辑标签
+      delete_tag_button: 删除标签
+      delete_tag_confirmation: 确定要删除此标签吗？
+      name_label: 名称
+      slug_label: 别名
+      description_label: 描述
+      color_label: 颜色
+      icon_label: 图标
+      position_label: 位置
+      parent_label: 父标签
+      child_tags: 子标签
+      hide_from_discussion_list: 在讨论列表中隐藏
+      is_hidden_label: 隐藏
+      is_child_label: 子标签
+      require_parent_label: 需要父标签
+
+  # flarum/subscriptions
+  flarum-subscriptions:
+    forum:
+      following:
+        follow_button: 关注
+        unfollow_button: 取消关注
+        following_button: 已关注
+        stop_following_button: 停止关注
+        follow_tooltip: 关注此讨论
+        unfollow_tooltip: 取消关注此讨论
+      index:
+        following_filter: 已关注
+      discussion:
+        follow_button: 关注
+        unfollow_button: 取消关注
+    admin:
+      permissions:
+        follow_discussions_label: 关注讨论
+
+  # flarum/mentions
+  flarum-mentions:
+    forum:
+      post:
+        mentioned_by: '{username} 提及了你'
+        mentioned_by_others: '{username} 和其他{count}人提及了你'
+      user:
+        mentioned_link: 提及
+      composer:
+        mention_tooltip: '@{username}'
+    admin:
+      permissions:
+        mention_users_label: 提及用户
+        mention_groups_label: 提及用户组
+
+  # flarum/emoji
+  flarum-emoji:
+    forum:
+      composer:
+        emoji_button: 表情
+        emoji_tooltip: 插入表情
+    admin:
+      settings:
+        emoji_heading: 表情
+        emoji_driver_label: 表情驱动
+
+  # flarum/flags
+  flarum-flags:
+    forum:
+      post:
+        flag_button: 举报
+        flagged_text: 已举报
+        flag_tooltip: 举报此帖子
+        unflag_button: 取消举报
+      discussion:
+        flagged_badge: 已举报
+      flag_modal:
+        title: 举报帖子
+        reason_label: 举报原因
+        reason_placeholder: 请说明举报原因...
+        submit_button: 提交举报
+        cancel_button: 取消
+        thanks_message: 感谢你的举报
+    admin:
+      title: 举报
+      flags_heading: 举报
+      post_heading: 帖子
+      flagged_by: 举报者
+      flagged_at: 举报时间
+      reason_label: 原因
+      action_heading: 操作
+      dismiss_button: 忽略
+      delete_button: 删除帖子
+      suspend_user_button: 暂停用户
+      view_post_button: 查看帖子
+      no_flags: 没有举报
+      permissions:
+        flag_posts_label: 举报帖子
+        view_flags_label: 查看举报
+
+  # flarum/approval
+  flarum-approval:
+    forum:
+      discussion:
+        awaiting_approval_text: 等待审核
+        approved_text: 已审核
+      post:
+        awaiting_approval_text: 等待审核
+        approved_text: 已审核
+    admin:
+      permissions:
+        approve_posts_label: 审核帖子
+        reply_without_approval_label: 无需审核即可回复
+        start_discussions_without_approval_label: 无需审核即可开始讨论
+
+  # flarum/suspend
+  flarum-suspend:
+    forum:
+      user:
+        suspended_text: 已被禁言
+        suspended_until: '暂停至 {time}'
+        permanently_suspended: 永久暂停
+      suspend_user_button: 暂停用户
+      unsuspend_user_button: 取消暂停
+      suspend_modal:
+        title: 暂停用户
+        indefinitely_label: 无限期
+        until_label: 暂停至
+        reason_label: 原因
+        reason_placeholder: 请说明暂停原因...
+        submit_button: 暂停
+        cancel_button: 取消
+    admin:
+      permissions:
+        suspend_users_label: 暂停用户
+
+  # flarum/nicknames
+  flarum-nicknames:
+    forum:
+      user:
+        nickname_label: 昵称
+      settings:
+        nickname_heading: 昵称
+        nickname_label: 昵称
+        nickname_placeholder: 输入昵称...
+    admin:
+      settings:
+        nickname_heading: 昵称
+        nickname_required_label: 昵称必填
+        nickname_min_length_label: 最小长度
+        nickname_max_length_label: 最大长度
+
+  # flarum/sticky
+  flarum-sticky:
+    forum:
+      discussion:
+        stickied_text: 已置顶
+        sticky_button: 置顶
+        unsticky_button: 取消置顶
+    admin:
+      permissions:
+        sticky_discussions_label: 置顶讨论
+
+  # ============================================
+  # ============================================
+
+  # flarum/messages (私信)
+  flarum-messages:
+    forum:
+      composer:
+        send_message: 发送私信
+        message_placeholder: 输入私信内容...
+        recipient_label: 收件人
+        recipient_placeholder: 搜索用户...
+      nav:
+        messages: 私信
+        new_message: 新建私信
+      index:
+        title: 私信
+        no_messages: 暂无私信
+        start_conversation: 发起对话
+      notification:
+        new_message: '{username} 给你发送了私信'
+        message_received: 收到新私信
+      modal:
+        title: 发送私信
+        send_button: 发送
+        cancel_button: 取消
+      discussion:
+        reply_placeholder: 回复...
+        leave_conversation: 退出对话
+        delete_conversation: 删除对话
+        delete_confirmation: 确定要删除此对话吗？此操作不可撤销。
+      user:
+        send_message_button: 发私信
+        messages_link: 私信箱
+    admin:
+      permissions:
+        send_private_messages_label: 发送私信
+        receive_private_messages_label: 接收私信
+        create_private_messages_label: 创建私信对话
+      settings:
+        messages_heading: 私信设置
+        allow_messages_label: 允许私信功能
+        max_recipients_label: 单次私信最大收件人数
+        message_length_limit_label: 私信长度限制
+
+  # flarum/realtime (实时更新)
+  flarum-realtime:
+    forum:
+      connection:
+        connection_lost: 网络连接已断开
+        reconnecting: 正在重新连接...
+        reconnected: 已恢复连接
+        reconnect_failed: 重新连接失败
+        reconnect_retry: '{seconds}秒后重试'
+      push:
+        discussion_list_new_activity: '发现 {count} 条新动态'
+        new_discussion: '{username} 发布了新讨论'
+        new_post: '{username} 回复了讨论'
+        post_updated: 帖子已更新
+        discussion_renamed: 讨论已重命名
+      typing_indicator:
+        people_are_typing: '{number} 人正在输入...'
+        person_is_typing: '{username} 正在输入...'
+        typing_stopped: 已停止输入
+      notification:
+        push_permission_required: 需要推送通知权限
+        enable_push: 启用推送通知
+    admin:
+      settings:
+        realtime_heading: 实时更新
+        enable_realtime_label: 启用实时更新
+        push_notifications_label: 推送通知
+        typing_indicator_label: 正在输入提示
+
+  # flarum/extension-manager (扩展管理器)
+  flarum-extension-manager:
+    admin:
+      composer:
+        add_repository_label: 添加软件源
+        repository_url_placeholder: 输入软件源 URL...
+        delete_repository_confirmation: 确定要删除此软件源吗？
+        install_package: 安装扩展包
+        package_name_placeholder: 包名 (vendor/package)
+        install_button: 安装
+        remove_package: 移除扩展包
+        update_package: 更新扩展包
+      extensions:
+        install: 安装
+        remove: 移除
+        update: 更新
+        installed: 已安装
+        available: 可用
+        updates_available: '{count} 个更新可用'
+        update_all: 全部更新
+        checking_updates: 检查更新中...
+        no_updates: 没有可用更新
+        install_success: 扩展安装成功
+        remove_success: 扩展移除成功
+        update_success: 扩展更新成功
+        install_error: '安装失败：{error}'
+        remove_error: '移除失败：{error}'
+        update_error: '更新失败：{error}'
+        confirm_install: 确定要安装 {package} 吗？
+        confirm_remove: 确定要移除 {package} 吗？
+        confirm_update: 确定要更新 {package} 吗？
+      settings:
+        queue_jobs: 队列任务
+        task_retention_days: 任务保留天数
+        repositories_heading: 软件源
+        repositories_description: 管理 Composer 软件源
+        add_repository_button: 添加软件源
+        default_repositories: 默认软件源
+        packagist_url: 'https://packagist.org'
+        github_url: 'https://api.github.com'
+        allow_custom_repositories_label: 允许自定义软件源
+        require_https_label: 要求 HTTPS 连接
+    forum:
+      composer:
+        installing: '正在安装 {package}...'
+        removing: '正在移除 {package}...'
+        updating: '正在更新 {package}...'
+        completed: 完成
+        failed: 失败
+        retry_button: 重试
+        cancel_button: 取消
+
+  # ============================================
+  # API 翻译
+  # ============================================
+  api:
+    discussion:
+      title: 标题
+      content: 内容
+      slug: 别名
+      created_at: 创建时间
+      updated_at: 更新时间
+      last_posted_at: 最后回复时间
+      user: 用户
+      first_post: 首帖
+      last_post: 末帖
+    post:
+      content: 内容
+      created_at: 创建时间
+      updated_at: 更新时间
+      user: 用户
+      discussion: 讨论
+    user:
+      username: 用户名
+      email: 电子邮件
+      password: 密码
+      created_at: 创建时间
+      last_seen_at: 最后在线
+    group:
+      name: 名称
+      color: 颜色
+      icon: 图标
+    tag:
+      name: 名称
+      slug: 别名
+      description: 描述
+      color: 颜色
+      position: 位置
+
+  # ============================================
+  # Ref (引用)
+  # ============================================
+  ref:
+    discussion_title: 讨论标题
+    username: 用户名
+    post_number: '帖子 #{number}'
+    discussion: 讨论
+    post: 帖子
+    user: 用户
+    group: 用户组
+    tag: 标签
+    created: 创建
+    updated: 更新
+    deleted: 删除
+    restored: 恢复
