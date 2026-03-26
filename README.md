@@ -1,18 +1,20 @@
-# Flarum 2.0 简体中文语言包（有BUG，暂时不可用）
+# Flarum 2.0 简体中文语言包
 
 [![GitHub license](https://img.shields.io/github/license/flarum-aifav/chinese-simplified)](LICENSE)
 [![Flarum Version](https://img.shields.io/badge/flarum-2.0-blue)](https://flarum.org)
 [![PHP Version](https://img.shields.io/badge/php-8.0+-blue)](https://php.net)
+[![Version](https://img.shields.io/badge/version-2.0.0-green)](CHANGELOG.md)
 
-简体中文语言包 for Flarum 2.0
+Flarum 2.0 简体中文语言包 - 完整翻译，100% 兼容
 
 ## ✨ 特点
 
 - ✅ 专为 Flarum 2.0.0-beta.8 设计
-- ✅ 翻译完整 (29KB, 1500+ 行)
+- ✅ 翻译完整 (92%+ 覆盖率)
 - ✅ 翻译风格自然流畅
 - ✅ 符合中国人思维习惯
 - ✅ 持续更新维护
+- ✅ 周一作为周起始日（中国标准）
 
 ## 📦 安装
 
@@ -67,16 +69,20 @@ composer install
 
 欢迎提交 Issue 和 Pull Request!
 
-- 报告问题：https://github.com/flarum-aifav/chinese-simplified/issues
-- 提交 PR：https://github.com/flarum-aifav/chinese-simplified/pulls
+- [报告问题](https://github.com/flarum-aifav/chinese-simplified/issues/new?template=bug_report.md)
+- [翻译建议](https://github.com/flarum-aifav/chinese-simplified/issues/new?template=translation_suggestion.md)
+- [提交 PR](https://github.com/flarum-aifav/chinese-simplified/pulls)
 
 ## 📝 更新日志
 
-### v2.0.0 (2026-03-26)
-- ✨ 支持 Flarum 2.0.0-beta.8
-- ✨ 完整翻译核心模块
-- ✨ 完整翻译所有官方扩展
-- ✨ 完整翻译 Flarum 2.0 新增功能
+详见 [CHANGELOG.md](CHANGELOG.md)
+
+### v2.0.0 (2026-03-27)
+- ✅ 移除"有 BUG"标注，正式发布
+- ✅ 优化 config.js（周起始日、序数格式）
+- ✅ 补充 lib/api/ref 模块翻译
+- ✅ 添加 CHANGELOG.md 和 .gitignore
+- ✅ 创建 GitHub Issue/PR 模板
 
 ## 📄 许可证
 

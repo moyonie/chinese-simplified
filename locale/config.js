@@ -3,6 +3,20 @@ dayjs.locale('zh-cn');
 
 // 自定义配置
 dayjs.updateLocale('zh-cn', {
+  // 周起始日：周一（中国标准）
+  weekStart: 1,
+  
+  // 序数格式
+  ordinal: (number, period) => {
+    switch (period) {
+      case 'D':
+      case 'd':
+        return number + '日';
+      default:
+        return number + '号';
+    }
+  },
+  
   months: [
     '一月', '二月', '三月', '四月', '五月', '六月',
     '七月', '八月', '九月', '十月', '十一月', '十二月'
