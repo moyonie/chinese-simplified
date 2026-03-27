@@ -1,6 +1,6 @@
 {
     "name": "flarum-aifav/chinese-simplified",
-    "version": "2.0.1-beta.1",
+    "version": "2.0.0",
     "description": "Flarum 2.0 简体中文语言包 - 全 AI 驱动完成，100% 翻译覆盖率",
     "type": "flarum-extension",
     "keywords": ["flarum", "locale", "extension", "chinese", "simplified", "简体中文"],
