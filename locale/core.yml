@@ -182,13 +182,11 @@ core:
       empty_text: 这里似乎还没有讨论。
       load_more_button: 加载更多
       refresh_button: 刷新
-      replied_text: {username} 于 {ago} 回复
+      replied_text: '{username} 于 {ago} 回复'
       skip_discussion_list_pane: 跳过讨论列表面板
-      started_text: {username} 于 {ago} 开始
-      total_replies_a11y_label: {count, plural, one {# 条回复} other {# 条回复}}
-      unread_replies_a11y_label: 'TBD: {count, plural, one {# unread reply} other
-        {# unread replies}}. Mark unread {count, plural, one {reply} other {replies}}
-        as read.'
+      started_text: '{username} 于 {ago} 开始'
+      total_replies_a11y_label: '{count, plural, one {# 条回复} other {# 条回复}}'
+      unread_replies_a11y_label: '{count, plural, one {# 条未读回复} other {# 条未读回复}}。将未读{count, plural, one {回复} other {回复}}标记为已读。'
     search:
       discussions_heading: 讨论
       users_heading: 用户
@@ -244,8 +242,7 @@ core:
       submit_button: 更改密码
       success_message: 密码已更改
       send_button: 发送密码重置邮件
-      text: 'TBD: Click the button below and check your email for a link to change
-        your password.'
+      text: 点击下方按钮并检查您的电子邮件，获取更改密码的链接。
     settings:
       title: 设置
       account: 账号
@@ -264,8 +261,7 @@ core:
         dark_mode_label: => core.ref.dark_mode_label
         light_hc_mode_label: => core.ref.light_hc_mode_label
         light_mode_label: => core.ref.light_mode_label
-      notification_checkbox_a11y_label_template: 'TBD: Receive "{description}" notifications
-        via {method}'
+      notification_checkbox_a11y_label_template: '通过 {method} 接收"{description}"通知'
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: 网页
@@ -297,14 +293,13 @@ core:
       ignoring_button: 已忽略
     composer_discussion:
       body_placeholder: 撰写帖子...
-      discard_confirmation: 'TBD: You have not posted your discussion. Do you wish
-        to discard it?'
+      discard_confirmation: 您尚未发布讨论。确定要放弃吗？
       submit_button: 发布讨论
       title: 扩展健康
       title_placeholder: 讨论标题
     discussion_controls:
-      cannot_reply_button: 'TBD: Can''t Reply'
-      cannot_reply_text: 'TBD: You don''t have permission to reply to this discussion.'
+      cannot_reply_button: 无法回复
+      cannot_reply_text: 您没有权限回复此讨论。
       delete_button: => core.ref.delete
       delete_confirmation: 确定要删除此讨论吗？
       delete_forever_button: => core.ref.delete_forever
@@ -316,13 +311,10 @@ core:
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: 'TBD: If the email you entered is registered with this site,
-        we''ll send you an email containing a link to reset your password. Check your
-        spam folder if you don''t receive it within the next minute or two.'
+      email_sent_message: 如果您输入的电子邮件已在此网站注册，我们将向您发送一封包含重置密码链接的邮件。如果在一两分钟内未收到，请检查垃圾邮件文件夹。
       not_found_message: 没有使用该电子邮件地址注册的用户。
       submit_button: 恢复密码
-      text: 'TBD: Enter your email address and we will send you a link to reset your
-        password.'
+      text: 输入您的电子邮件地址，我们将向您发送重置密码的链接。
       title: 扩展健康
     index_sort:
       latest_button: 最新
@@ -336,15 +328,14 @@ core:
       invalid_login_message: => core.ref.invalid_login_message
       password_placeholder: => core.ref.password
       remember_me_label: => core.ref.remember_me_label
-      sign_up_text: 'TBD: Don''t have an account? <a>Sign Up</a>'
+      sign_up_text: 还没有账号？<a>注册</a>
       submit_button: => core.ref.log_in
       title: 扩展健康
       username_or_email_placeholder: => core.ref.username_or_email_placeholder
     notifications:
-      delete_all_confirm: 'TBD: Are you sure you want to delete all notifications?
-        This action is not reversible'
+      delete_all_confirm: 确定要删除所有通知吗？此操作不可撤销
       delete_all_tooltip: 删除所有通知
-      discussion_renamed_text: {username} 更改了标题
+      discussion_renamed_text: '{username} 更改了标题'
       empty_text: 没有通知
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       mark_as_read_tooltip: 标记为已读
@@ -353,8 +344,7 @@ core:
       tooltip: => core.ref.notifications
     post_controls:
       delete_button: => core.ref.delete
-      delete_confirmation: 'TBD: Are you sure you want to delete this post forever?
-        This action cannot be undone.'
+      delete_confirmation: 确定要永久删除此帖子吗？此操作无法撤销。
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
       hide_confirmation: 确定要删除此帖子吗？
@@ -367,15 +357,14 @@ core:
     post_scrubber:
       now_link: 现在
       original_post_link: 原始帖子
-      unread_text: {count} 条未读
-      viewing_text: 'TBD: {count, plural, one {{index} of {formattedCount} post} other
-        {{index} of {formattedCount} posts}}'
+      unread_text: '{count} 条未读'
+      viewing_text: '{count, plural, one {第 {index} 篇，共 {formattedCount} 篇} other {第 {index} 篇，共 {formattedCount} 篇}}'
     post_stream:
       discussion_renamed_old_tooltip: 旧标题是："{old}"
-      discussion_renamed_text: {username} 于 {time} 将标题更改为 {new}。
+      discussion_renamed_text: '{username} 于 {time} 将标题更改为 {new}。'
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
-      time_lapsed_text: {period} 后
+      time_lapsed_text: '{period} 后'
     posts_sort:
       newest_button: => core.ref.newest
       oldest_button: => core.ref.oldest
@@ -387,18 +376,15 @@ core:
       submit_button: => core.ref.rename
       title: 扩展健康
     security:
-      browser_on_operating_system: {os} 上的 {browser}
-      cannot_terminate_current_session: 'TBD: Cannot terminate the current active
-        session. Log out instead.'
+      browser_on_operating_system: '{os} 上的 {browser}'
+      cannot_terminate_current_session: 无法终止当前活动会话。请改为退出登录。
       created: 创建于
       current_active_session: 当前活动会话
       developer_tokens_heading: 开发者令牌
       empty_text: 看起来这里没有什么可查看的。
       global_logout:
         heading: 全局退出
-        help_text: 'TBD: Clears current cookie session, terminates all sessions, revokes
-          developer tokens, and invalidates any email confirmation or password reset
-          emails.'
+        help_text: 清除当前 cookie 会话，终止所有会话，撤销开发者令牌，并使所有电子邮件确认或密码重置邮件失效。
         log_out_button: => core.ref.log_out
       hide_access_token: 隐藏令牌
       last_activity: 最后活动
@@ -411,8 +397,7 @@ core:
       revoke_access_token: 撤销
       revoke_access_token_confirmation: => core.ref.generic_confirmation_message
       sessions_heading: 活动会话
-      session_terminated: 'TBD: {count, plural, one {Session terminated} other {#
-        Sessions terminated}}.'
+      session_terminated: '{count, plural, one {会话已终止} other {# 个会话已终止}}。'
       session_termination_failed: 终止会话时发生错误。
       show_access_token: 查看令牌
       terminate_all_other_sessions: 终止所有其他会话
@@ -420,7 +405,7 @@ core:
       terminate_session: 终止
       title: 扩展健康
       token_revoked: 令牌已撤销。
-      token_item_title: {title} - {token}
+      token_item_title: '{title} - {token}'
       token_title_placeholder: /
     sign_up:
       dismiss_button: => core.ref.okay
@@ -434,8 +419,7 @@ core:
     user_controls:
       button: 控制
       delete_button: => core.ref.delete
-      delete_confirmation: 'TBD: Are you sure you want to delete this user? The user''s
-        posts will NOT be deleted.'
+      delete_confirmation: 确定要删除此用户吗？该用户的帖子将不会被删除。
       delete_error_message: 删除用户 <i>{username} ({email})</i> 失败
       delete_success_message: 用户 <i>{username} ({email})</i> 已删除
       edit_button: => core.ref.edit
@@ -487,8 +471,7 @@ core:
         copy_button: 复制到剪贴板
         copy_success: 系统信息已复制到剪贴板
         copy_error: 复制到剪贴板失败
-      io_error_message: 'TBD: Could not write to filesystem. Check your filesystem
-        permissions and try again. Or try running from the command line.'
+      io_error_message: 无法写入文件系统。请检查文件系统权限后重试，或尝试从命令行运行。
       status:
         headers:
           scheduler-status: 调度器
@@ -648,7 +631,7 @@ core:
           user_id:
             title: 扩展健康
           username:
-            profile_link_tooltip: 'TBD: Visit {username}''s profile'
+            profile_link_tooltip: 访问 {username} 的个人资料
             title: 扩展健康
         invalid_column_content: 无效
       total_users: 总用户数：{count}
@@ -760,21 +743,14 @@ core:
           begin_button_text: 开始二分法
           continue_button_text: 继续二分法
           label: 调试模式已激活
-          help: 'TBD: Helps to identify the extension causing some issue you observed.
-            This automatically puts the forum in maintenance mode (low) until the
-            process is over.'
+          help: 帮助识别导致您观察到问题的扩展。此操作会自动将论坛置于维护模式（低）直到过程结束。
         bisect_modal:
           description: 配置您的论坛高级设置。
           end_button: 关闭并转到扩展页面
           issue_question: 问题是否仍然存在？
-          issue_question_help: 'TBD: Try reproducing the issue in a separate page
-            and answer based on the result.'
+          issue_question_help: 尝试在单独页面中重现问题并根据结果回答。
           no_button: 否
-          result_description: 'TBD: Forum is no longer in maintenance mode. Extension
-            bisect is over. Based on your responses to each step, the cause of the
-            issue is the following extension:
-
-            '
+          result_description: 论坛已退出维护模式。扩展二分法已结束。根据您对每个步骤的响应，问题原因是以下扩展：
           start_button: 开始二分法
           stop_button: 停止二分法
           steps_left: 剩余步骤：{steps}
@@ -783,28 +759,20 @@ core:
           yes_button: 是
         config_override:
           label: 调试模式已激活
-          help: 'TBD: You can still change these settings here, but they will not
-            take effect until you set <code>offline</code> to <code>0</code> in your
-            <code>config.php</code> file.'
-        help: 'TBD: Put your forum in maintenance mode to prevent users from accessing
-          it.'
+          help: 您仍可在此处更改这些设置，但只有在 <code>config.php</code> 文件中将 <code>offline</code> 设置为 <code>0</code> 后才会生效。
+        help: 将论坛置于维护模式以防止用户访问。
         options:
           none: 无维护。
-          high: 'TBD: High maintenance mode. No one can access the forum (can only
-            be enabled through config.php)'
+          high: 高维护模式。无人可以访问论坛（只能通过 config.php 启用）
           low: 低维护模式。管理员可以访问论坛。
-          safe: 'TBD: Safe mode. No extensions are booted and only admins can access
-            the forum.'
+          safe: 安全模式。不启动任何扩展，仅管理员可以访问论坛。
         safe_mode_extensions: 安全模式下允许启动的扩展
-        safe_mode_extensions_override_help: 'TBD: This setting is overridden by the
-          <code>safe_mode_extensions</code> key in your <code>config.php</code> file.
-          (<b>{extensions}</b>)'
+        safe_mode_extensions_override_help: 此设置被 <code>config.php</code> 文件中的 <code>safe_mode_extensions</code> 键覆盖。（<b>{extensions}</b>）
         section_label: 维护
       fontawesome:
         section_label: FontAwesome 图标
         source_label: 图标来源
-        source_help: 'TBD: Choose how FontAwesome icons are loaded. Local uses bundled
-          fonts, CDN loads from a CDN, and Kit uses FontAwesome Kits with custom icons.'
+        source_help: 选择 FontAwesome 图标的加载方式。本地使用捆绑字体，CDN 从 CDN 加载，Kit 使用 FontAwesome Kits 与自定义图标。
         source_local: 本地（捆绑）
         source_cdn: CDN
         source_kit: FontAwesome Kit
@@ -814,13 +782,11 @@ core:
         kit_url_help: 您的 FontAwesome Kit 脚本 URL（来自 kit.fontawesome.com）
         config_override:
           label: 调试模式已激活
-          help: 'TBD: FontAwesome settings are currently set in your config.php file
-            and cannot be changed here.'
+          help: FontAwesome 设置当前在 config.php 文件中设置，无法在此处更改。
         preview:
           button: 预览图标
           label: 调试模式已激活
-          help: 'TBD: Verify your FontAwesome setup. A rendered icon means that tier
-            is available; a broken box means it is not loaded.'
+          help: 验证您的 FontAwesome 设置。渲染的图标表示该层级可用；破损的方框表示未加载。
           fa5_fa6_label: FA5/FA6 别名
           fa7_label: FA7 类
           pro_label: 仅限专业版
@@ -828,34 +794,26 @@ core:
         search_configuration: 要使用的搜索配置
       queue:
         section_label: 队列
-        sync_info: 'TBD: Your forum is using the synchronous queue driver. Jobs are
-          processed immediately in the main process thread.'
-        sync_help: 'TBD: For better performance and user experience, consider using
-          the database queue driver. Learn more in the documentation.'
-        custom_driver: 'TBD: Your forum is using the {driver} queue driver, which
-          is provided by an extension.'
+        sync_info: 您的论坛正在使用同步队列驱动。作业在主进程线程中立即处理。
+        sync_help: 为了更好的性能和用户体验，请考虑使用数据库队列驱动。在文档中了解更多信息。
+        custom_driver: 您的论坛正在使用 {driver} 队列驱动，由扩展提供。
         retries_label: 作业重试
-        retries_help: 'TBD: Maximum number of times to attempt a job before marking
-          it as failed. Default is 1.'
+        retries_help: 在标记作业失败之前的最大重试次数。默认值为 1。
         memory_label: 内存限制（MB）
-        memory_help: 'TBD: Maximum memory the queue worker can use before restarting.
-          Default is 128 MB.'
+        memory_help: 队列工作进程在重启前可使用的最大内存。默认值为 128 MB。
         timeout_label: 作业超时（秒）
-        timeout_help: 'TBD: Maximum time a single job can run before timing out. Default
-          is 60 seconds.'
+        timeout_help: 单个作业在超时前可运行的最长时间。默认值为 60 秒。
         rest_label: 休息时间（秒）
         rest_help: 处理作业之间等待的时间。默认值为 0 秒。
         backoff_label: 退避（秒）
-        backoff_help: 'TBD: Time to wait before retrying a failed job. Default is
-          0 seconds.'
+        backoff_help: 重试失败作业前的等待时间。默认值为 0 秒。
       search:
         section_label: 搜索驱动
         driver_heading: 选择驱动程序
         driver_text: 选择用于搜索此模型的驱动。
         driver_options:
           default: 默认数据库搜索
-        no_other_drivers: 'TBD: No search drivers are available yet. Install a search
-          driver extension to be able to configure it.'
+        no_other_drivers: 暂无可用的搜索驱动。安装搜索驱动扩展以进行配置。
     mail:
       title: 邮件设置
       driver_label: 驱动
@@ -916,20 +874,13 @@ core:
       section_disabled_help: 这些扩展已安装但当前未启用。请从它们的设置页面启用它们，或不再需要时移除它们。
       suggested_by: 由 {extension} 建议
     debug-warning:
-      detail: 'TBD: When <code>debug</code> mode is active, Flarum will rebuild its
-        <code>JavaScript</code> and <code>CSS</code> assets on every request, and
-        could also potentially leak other information, such as database secrets, environment
-        variables, etc.
+      detail: |
+        当 <code>debug</code> 模式激活时，Flarum 将在每次请求时重建其 <code>JavaScript</code> 和 <code>CSS</code> 资源，并可能泄露其他信息，如数据库密钥、环境变量等。
 
-
-        It is highly recommended to disable <code>debug</code> in your <code>config.php</code>
-        file in production. See <link>Flarum docs</link> for more information.
-
-        '
+        强烈建议在生产环境的 <code>config.php</code> 文件中禁用 <code>debug</code>。更多信息请参见<link>Flarum 文档</link>。
       label: 调试模式已激活
     edit_css:
-      customize_text: 'TBD: Customize your forum''s appearance by adding your own
-        Less/CSS code to be applied on top of Flarum''s <a>default styles</a>.'
+      customize_text: 通过添加您自己的 Less/CSS 代码到 Flarum 的<a>默认样式</a>之上，来定制您的论坛外观。
       submit_button: => core.ref.save_changes
       title: 扩展健康
     edit_footer:
@@ -939,8 +890,7 @@ core:
     edit_group:
       color_label: => core.ref.color
       delete_button: 删除组
-      delete_confirmation: 'TBD: Are you sure you want to delete this group? The group
-        members will NOT be deleted.'
+      delete_confirmation: 确定要删除此用户组吗？用户组成员将不会被删除。
       hide_label: 在论坛上隐藏
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
@@ -963,17 +913,12 @@ core:
         plain_option: 纯文本
         html_option: HTML
       format_heading: 外发邮件格式
-      format_help: 'TBD: Choose the format that outgoing emails will be sent in. The
-        recommended option is <code>multipart</code>, as this will allow your user''s
-        email client to display the most appropriate format.'
+      format_help: 选择外发邮件的发送格式。推荐选项是 <code>multipart</code>，因为这将允许用户的电子邮件客户端显示最合适的格式。
       from_label: 发件人
       mail_encryption_label: 加密
-      mail_encryption_tls_help: 'TBD: Connection starts unencrypted and upgrades to
-        TLS (STARTTLS). Typically used with port 587 or 25.'
-      mail_encryption_ssl_help: 'TBD: Connection is encrypted from the start (Implicit
-        TLS). Typically used with port 465.'
-      mail_encryption_none_help: 'TBD: No encryption. Not recommended for production
-        use.'
+      mail_encryption_tls_help: 连接开始未加密，然后升级到 TLS（STARTTLS）。通常使用端口 587 或 25。
+      mail_encryption_ssl_help: 连接从一开始就加密（隐式 TLS）。通常使用端口 465。
+      mail_encryption_none_help: 无加密。不推荐用于生产环境。
       mail_host_label: 主机
       mail_mailgun_domain_label: 域名
       mail_mailgun_region_label: 区域
@@ -983,34 +928,25 @@ core:
       mail_postmark_message_stream_label: 消息流
       mail_postmark_token_label: 服务器令牌
       mail_smtp_verify_peer_label: 验证 SSL 证书
-      mail_smtp_verify_peer_help: 'TBD: Verify the server''s SSL certificate when
-        using TLS or SSL encryption. Disable only if your mail server uses a self-signed
-        certificate.'
+      mail_smtp_verify_peer_help: 使用 TLS 或 SSL 加密时验证服务器的 SSL 证书。仅当邮件服务器使用自签名证书时禁用。
       mail_username_label: => core.ref.username
       mailgun_heading: Mailgun 设置
       postmark_heading: Postmark 设置
-      postmark_description: 'TBD: Send email via Postmark''s HTTP API. Optionally
-        specify a message stream to use a non-default stream.'
-      not_sending_message: 'TBD: Flarum currently does not send emails. This can be
-        due to the selected driver, or errors in its configuration.'
+      postmark_description: 通过 Postmark 的 HTTP API 发送电子邮件。可选指定消息流以使用非默认流。
+      not_sending_message: Flarum 当前不发送电子邮件。这可能是由于所选驱动或其配置错误。
       send_test_mail_button: 发送
       send_test_mail_heading: 发送测试邮件
       send_test_mail_success: 测试邮件发送成功！
-      send_test_mail_text: 'TBD: This will send an email using the above configuration
-        to your email, {email}.'
+      send_test_mail_text: 这将使用上述配置向您的电子邮件 {email} 发送一封邮件。
       smtp_heading: SMTP 设置
-      smtp_description: 'TBD: Configure SMTP connection settings. Common configurations:
-        Port 587 with TLS, or Port 465 with SSL.'
+      smtp_description: 配置 SMTP 连接设置。常见配置：端口 587 使用 TLS，或端口 465 使用 SSL。
       title: 扩展健康
     extension:
       abandoned_no_replacement: 无可用替代品
       abandoned_with_replacement: 已被 {replacement} 替代
       configure_scopes: 配置范围
-      confirm_purge: 'TBD: Purging will remove all database entries and assets related
-        to the extension. It will not uninstall the extension; that must be done via
-        Composer. Are you sure you want to continue?'
-      database_driver_mismatch: 'TBD: This extension does not support your configured
-        database driver.'
+      confirm_purge: 清除将删除与扩展相关的所有数据库条目和资源。不会卸载扩展；必须通过 Composer 完成。确定要继续吗？
+      database_driver_mismatch: 此扩展不支持您配置的数据库驱动。
       deprecated: 已弃用
       disabled: 已禁用
       enable_to_see: 启用扩展以查看和更改设置。
@@ -1032,8 +968,7 @@ core:
         no_readme: 此扩展似乎没有自述文件
         title: 扩展健康
       replaced: 已替换
-      safe_mode_warning: 'TBD: Safe mode is currently enabled. Extensions are not
-        booted and their settings are therefore inaccessible.'
+      safe_mode_warning: 安全模式当前已启用。扩展未启动，因此其设置无法访问。
     header:
       get_help: 获取帮助
       log_out_button: => core.ref.log_out
@@ -1076,8 +1011,7 @@ core:
     permissions_controls:
       allow_indefinitely_button: 无限期
       allow_never_button: => core.ref.never
-      allow_some_minutes_button: 'TBD: {count, plural, one {For # minute} other {For
-        # minutes}}'
+      allow_some_minutes_button: '{count, plural, one {# 分钟} other {# 分钟}}'
       allow_ten_minutes_button: 10 分钟
       allow_until_reply_button: 直到下次回复
       everyone_button: 所有人
