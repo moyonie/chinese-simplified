@@ -9,16 +9,16 @@ core:
       user_menu: 用户菜单
       toggle_navigation: 切换导航
       aria_label: 页眉
-      admin_button: 'TBD: Administration'
-      back_to_index_tooltip: 'TBD: Back to Discussion List'
-      locale_dropdown_accessible_label: 'TBD: Change forum locale'
-      log_in_link: 'TBD: => ref.log_in'
-      log_out_button: 'TBD: => ref.log_out'
-      profile_button: 'TBD: Profile'
-      search_role_label: 'TBD: Search Forum'
-      session_dropdown_accessible_label: 'TBD: Toggle session options dropdown menu'
-      settings_button: 'TBD: => ref.settings'
-      sign_up_link: 'TBD: => ref.sign_up'
+      admin_button: 管理
+      back_to_index_tooltip: 返回讨论列表
+      locale_dropdown_accessible_label: 更改论坛语言
+      log_in_link: => core.ref.log_in
+      log_out_button: => core.ref.log_out
+      profile_button: 个人资料
+      search_role_label: 搜索论坛
+      session_dropdown_accessible_label: 切换会话选项下拉菜单
+      settings_button: => core.ref.settings
+      sign_up_link: => core.ref.sign_up
     lib:
       loading_indicator:
         accessible_label: 加载中...
@@ -86,18 +86,18 @@ core:
       joined_time: 加入于 {time}
       online_badge: 在线
       offline_badge: 离线
-      avatar_remove_button: 'TBD: => ref.remove'
-      avatar_upload_button: 'TBD: Upload'
-      avatar_upload_tooltip: 'TBD: Upload a new avatar'
-      discussions_link: 'TBD: => ref.discussions'
-      in_discussion_text: 'TBD: In {discussion}'
-      joined_date_text: 'TBD: Joined {ago}'
-      online_text: 'TBD: Online'
-      posts_empty_text: 'TBD: It looks like there are no posts here.'
-      posts_link: 'TBD: => ref.posts'
-      posts_load_more_button: 'TBD: => ref.load_more'
-      security_link: 'TBD: => ref.security'
-      settings_link: 'TBD: => ref.settings'
+      avatar_remove_button: => core.ref.remove
+      avatar_upload_button: 上传
+      avatar_upload_tooltip: 上传新头像
+      discussions_link: => core.ref.discussions
+      in_discussion_text: 在 {discussion} 中
+      joined_date_text: 加入于 {ago}
+      online_text: 在线
+      posts_empty_text: 看起来这里还没有帖子。
+      posts_link: => core.ref.posts
+      posts_load_more_button: => core.ref.load_more
+      security_link: => core.ref.security
+      settings_link: => core.ref.settings
     composer:
       submit_button: 发布
       title_placeholder: 标题
@@ -123,23 +123,23 @@ core:
       heading_button: 标题
       separator_button: 分隔线
       spoiler_button: 剧透
-      close_tooltip: 'TBD: Close'
-      exit_full_screen_tooltip: 'TBD: Exit Full Screen'
-      full_screen_tooltip: 'TBD: Full Screen'
-      minimize_tooltip: 'TBD: Minimize'
-      preview_tooltip: 'TBD: Preview'
+      close_tooltip: 关闭
+      exit_full_screen_tooltip: 退出全屏
+      full_screen_tooltip: 全屏
+      minimize_tooltip: 最小化
+      preview_tooltip: 预览
     composer_reply:
       body_placeholder: 撰写回复...
       discard_confirmation: 您尚未发布回复。确定要放弃吗？
-      posted_message: 'TBD: Your reply was posted.'
-      submit_button: 'TBD: Post Reply'
-      view_button: 'TBD: => ref.view'
+      posted_message: 您的回复已发布。
+      submit_button: 发布回复
+      view_button: => core.ref.view
     composer_edit:
       discard_confirmation: 您尚未保存更改。确定要放弃吗？
-      edited_message: 'TBD: Your edit was made.'
-      post_link: 'TBD: Post #{number} in {discussion}'
-      submit_button: 'TBD: => ref.save_changes'
-      view_button: 'TBD: => ref.view'
+      edited_message: 您的编辑已完成。
+      post_link: 讨论 {discussion} 中的第 #{number} 篇帖子
+      submit_button: => core.ref.save_changes
+      view_button: => core.ref.view
     notification:
       tooltip: 通知
       mark_as_read: 标记为已读
@@ -169,24 +169,23 @@ core:
       refresh_button: 刷新
       filter_label: 筛选
       sort_label: 排序
-      all_discussions_link: 'TBD: => ref.all_discussions'
-      cannot_start_discussion_button: 'TBD: Can''t Start Discussion'
-      mark_all_as_read_confirmation: 'TBD: Are you sure you want to mark all discussions
-        as read?'
-      mark_all_as_read_tooltip: 'TBD: => ref.mark_all_as_read'
-      meta_title_text: 'TBD: => ref.all_discussions'
-      refresh_tooltip: 'TBD: => ref.refresh'
-      start_discussion_button: 'TBD: => ref.start_a_discussion'
-      skip_to_main_content: 'TBD: Skip to main content'
-      toggle_sidenav_dropdown_accessible_label: 'TBD: Toggle navigation dropdown menu'
+      all_discussions_link: => core.ref.all_discussions
+      cannot_start_discussion_button: 无法开始讨论
+      mark_all_as_read_confirmation: 确定要将所有讨论标记为已读吗？
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      meta_title_text: => core.ref.all_discussions
+      refresh_tooltip: => core.ref.refresh
+      start_discussion_button: => core.ref.start_a_discussion
+      skip_to_main_content: 跳转到主要内容
+      toggle_sidenav_dropdown_accessible_label: 切换导航下拉菜单
     discussion_list:
       empty_text: 这里似乎还没有讨论。
       load_more_button: 加载更多
       refresh_button: 刷新
-      replied_text: 'TBD: {username} replied {ago}'
-      skip_discussion_list_pane: 'TBD: Skip the discussion list pane'
-      started_text: 'TBD: {username} started {ago}'
-      total_replies_a11y_label: 'TBD: {count, plural, one {# reply} other {# replies}}'
+      replied_text: {username} 于 {ago} 回复
+      skip_discussion_list_pane: 跳过讨论列表面板
+      started_text: {username} 于 {ago} 开始
+      total_replies_a11y_label: {count, plural, one {# 条回复} other {# 条回复}}
       unread_replies_a11y_label: 'TBD: {count, plural, one {# unread reply} other
         {# unread replies}}. Mark unread {count, plural, one {reply} other {replies}}
         as read.'
@@ -234,9 +233,9 @@ core:
       password_label: 当前密码
       submit_button: 更改电子邮件
       confirmation_message: 确认邮件已发送
-      confirm_password_placeholder: 'TBD: => ref.confirm_password'
-      dismiss_button: 'TBD: => ref.okay'
-      incorrect_password_message: 'TBD: The password you entered is incorrect.'
+      confirm_password_placeholder: => core.ref.confirm_password
+      dismiss_button: => core.ref.okay
+      incorrect_password_message: 您输入的密码不正确。
     change_password:
       title: 更改密码
       old_password_label: 当前密码
@@ -244,7 +243,7 @@ core:
       confirm_password_label: 确认新密码
       submit_button: 更改密码
       success_message: 密码已更改
-      send_button: 'TBD: Send Password Reset Email'
+      send_button: 发送密码重置邮件
       text: 'TBD: Click the button below and check your email for a link to change
         your password.'
     settings:
@@ -257,25 +256,25 @@ core:
       log_out_button: 退出登录
       delete_account_button: 删除账号
       delete_account_confirmation: 确定要删除账号吗？此操作不可撤销。
-      account_heading: 'TBD: Account'
-      color_scheme_heading: 'TBD: Color Scheme'
+      account_heading: 账户
+      color_scheme_heading: 配色方案
       color_schemes:
-        auto_mode_label: 'TBD: System preference'
-        dark_hc_mode_label: 'TBD: => ref.dark_hc_mode_label'
-        dark_mode_label: 'TBD: => ref.dark_mode_label'
-        light_hc_mode_label: 'TBD: => ref.light_hc_mode_label'
-        light_mode_label: 'TBD: => ref.light_mode_label'
+        auto_mode_label: 系统偏好
+        dark_hc_mode_label: => core.ref.dark_hc_mode_label
+        dark_mode_label: => core.ref.dark_mode_label
+        light_hc_mode_label: => core.ref.light_hc_mode_label
+        light_mode_label: => core.ref.light_mode_label
       notification_checkbox_a11y_label_template: 'TBD: Receive "{description}" notifications
         via {method}'
-      notifications_heading: 'TBD: => ref.notifications'
-      notify_by_email_heading: 'TBD: => ref.email'
-      notify_by_web_heading: 'TBD: Web'
-      notify_discussion_renamed_label: 'TBD: Someone renames a discussion I started'
-      device_heading: 'TBD: Device'
-      haptic_feedback_help: 'TBD: Only available on supported mobile devices'
-      haptic_feedback_label: 'TBD: Enable haptic feedback'
-      privacy_disclose_online_label: 'TBD: Allow others to see when I am online'
-      privacy_heading: 'TBD: Privacy'
+      notifications_heading: => core.ref.notifications
+      notify_by_email_heading: => core.ref.email
+      notify_by_web_heading: 网页
+      notify_discussion_renamed_label: 有人重命名了我发起的讨论
+      device_heading: 设备
+      haptic_feedback_help: 仅适用于支持的移动设备
+      haptic_feedback_label: 启用触觉反馈
+      privacy_disclose_online_label: 允许他人查看我的在线状态
+      privacy_heading: 隐私
     user_notifications:
       title: 通知设置
       alert_label: 提醒
@@ -297,154 +296,154 @@ core:
       unignore_button: 取消忽略
       ignoring_button: 已忽略
     composer_discussion:
-      body_placeholder: 'TBD: Write a Post...'
+      body_placeholder: 撰写帖子...
       discard_confirmation: 'TBD: You have not posted your discussion. Do you wish
         to discard it?'
-      submit_button: 'TBD: Post Discussion'
+      submit_button: 发布讨论
       title: 扩展健康
-      title_placeholder: 'TBD: Discussion Title'
+      title_placeholder: 讨论标题
     discussion_controls:
       cannot_reply_button: 'TBD: Can''t Reply'
       cannot_reply_text: 'TBD: You don''t have permission to reply to this discussion.'
-      delete_button: 'TBD: => ref.delete'
-      delete_confirmation: 'TBD: Are you sure you want to delete this discussion?'
-      delete_forever_button: 'TBD: => ref.delete_forever'
-      log_in_to_reply_button: 'TBD: Log In to Reply'
-      rename_button: 'TBD: => ref.rename'
-      reply_button: 'TBD: => ref.reply'
-      restore_button: 'TBD: => ref.restore'
-      toggle_dropdown_accessible_label: 'TBD: Toggle discussion actions dropdown menu'
+      delete_button: => core.ref.delete
+      delete_confirmation: 确定要删除此讨论吗？
+      delete_forever_button: => core.ref.delete_forever
+      log_in_to_reply_button: 登录后回复
+      rename_button: => core.ref.rename
+      reply_button: => core.ref.reply
+      restore_button: => core.ref.restore
+      toggle_dropdown_accessible_label: 切换讨论操作下拉菜单
     forgot_password:
-      dismiss_button: 'TBD: => ref.okay'
-      email_placeholder: 'TBD: => ref.email'
+      dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
       email_sent_message: 'TBD: If the email you entered is registered with this site,
         we''ll send you an email containing a link to reset your password. Check your
         spam folder if you don''t receive it within the next minute or two.'
-      not_found_message: 'TBD: There is no user registered with that email address.'
-      submit_button: 'TBD: Recover Password'
+      not_found_message: 没有使用该电子邮件地址注册的用户。
+      submit_button: 恢复密码
       text: 'TBD: Enter your email address and we will send you a link to reset your
         password.'
       title: 扩展健康
     index_sort:
-      latest_button: 'TBD: Latest'
-      newest_button: 'TBD: => ref.newest'
-      oldest_button: 'TBD: => ref.oldest'
-      relevance_button: 'TBD: => ref.relevance'
-      toggle_dropdown_accessible_label: 'TBD: Change discussion list sorting'
-      top_button: 'TBD: Top'
+      latest_button: 最新
+      newest_button: => core.ref.newest
+      oldest_button: => core.ref.oldest
+      relevance_button: => core.ref.relevance
+      toggle_dropdown_accessible_label: 更改讨论列表排序
+      top_button: 热门
     log_in:
-      forgot_password_link: 'TBD: Forgot password?'
-      invalid_login_message: 'TBD: => ref.invalid_login_message'
-      password_placeholder: 'TBD: => ref.password'
-      remember_me_label: 'TBD: => ref.remember_me_label'
+      forgot_password_link: 忘记密码？
+      invalid_login_message: => core.ref.invalid_login_message
+      password_placeholder: => core.ref.password
+      remember_me_label: => core.ref.remember_me_label
       sign_up_text: 'TBD: Don''t have an account? <a>Sign Up</a>'
-      submit_button: 'TBD: => ref.log_in'
+      submit_button: => core.ref.log_in
       title: 扩展健康
-      username_or_email_placeholder: 'TBD: => ref.username_or_email_placeholder'
+      username_or_email_placeholder: => core.ref.username_or_email_placeholder
     notifications:
       delete_all_confirm: 'TBD: Are you sure you want to delete all notifications?
         This action is not reversible'
-      delete_all_tooltip: 'TBD: Delete all notifications'
-      discussion_renamed_text: 'TBD: {username} changed the title'
-      empty_text: 'TBD: No Notifications'
-      mark_all_as_read_tooltip: 'TBD: => ref.mark_all_as_read'
-      mark_as_read_tooltip: 'TBD: Mark as Read'
+      delete_all_tooltip: 删除所有通知
+      discussion_renamed_text: {username} 更改了标题
+      empty_text: 没有通知
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      mark_as_read_tooltip: 标记为已读
       title: 扩展健康
-      toggle_dropdown_accessible_label: 'TBD: View notifications'
-      tooltip: 'TBD: => ref.notifications'
+      toggle_dropdown_accessible_label: 查看通知
+      tooltip: => core.ref.notifications
     post_controls:
-      delete_button: 'TBD: => ref.delete'
+      delete_button: => core.ref.delete
       delete_confirmation: 'TBD: Are you sure you want to delete this post forever?
         This action cannot be undone.'
-      delete_forever_button: 'TBD: => ref.delete_forever'
-      edit_button: 'TBD: => ref.edit'
-      hide_confirmation: 'TBD: Are you sure you want to delete this post?'
-      restore_button: 'TBD: => ref.restore'
-      toggle_dropdown_accessible_label: 'TBD: Toggle post controls dropdown menu'
+      delete_forever_button: => core.ref.delete_forever
+      edit_button: => core.ref.edit
+      hide_confirmation: 确定要删除此帖子吗？
+      restore_button: => core.ref.restore
+      toggle_dropdown_accessible_label: 切换帖子控制下拉菜单
     post_list:
-      empty_text: 'TBD: It looks as though there are no posts here.'
-      in_discussion_text: 'TBD: In {discussion}'
-      load_more_button: 'TBD: => ref.load_more'
+      empty_text: 看起来这里还没有帖子。
+      in_discussion_text: 在 {discussion} 中
+      load_more_button: => core.ref.load_more
     post_scrubber:
-      now_link: 'TBD: Now'
-      original_post_link: 'TBD: Original Post'
-      unread_text: 'TBD: {count} unread'
+      now_link: 现在
+      original_post_link: 原始帖子
+      unread_text: {count} 条未读
       viewing_text: 'TBD: {count, plural, one {{index} of {formattedCount} post} other
         {{index} of {formattedCount} posts}}'
     post_stream:
-      discussion_renamed_old_tooltip: 'TBD: The old title was: "{old}"'
-      discussion_renamed_text: 'TBD: {username} changed the title to {new} {time}.'
-      load_more_button: 'TBD: => ref.load_more'
-      reply_placeholder: 'TBD: => ref.write_a_reply'
-      time_lapsed_text: 'TBD: {period} later'
+      discussion_renamed_old_tooltip: 旧标题是："{old}"
+      discussion_renamed_text: {username} 于 {time} 将标题更改为 {new}。
+      load_more_button: => core.ref.load_more
+      reply_placeholder: => core.ref.write_a_reply
+      time_lapsed_text: {period} 后
     posts_sort:
-      newest_button: 'TBD: => ref.newest'
-      oldest_button: 'TBD: => ref.oldest'
-      relevance_button: 'TBD: => ref.relevance'
+      newest_button: => core.ref.newest
+      oldest_button: => core.ref.oldest
+      relevance_button: => core.ref.relevance
     posts:
-      meta_title_text: 'TBD: Post search results'
-      refresh_tooltip: 'TBD: => ref.refresh'
+      meta_title_text: 帖子搜索结果
+      refresh_tooltip: => core.ref.refresh
     rename_discussion:
-      submit_button: 'TBD: => ref.rename'
+      submit_button: => core.ref.rename
       title: 扩展健康
     security:
-      browser_on_operating_system: 'TBD: {browser} on {os}'
+      browser_on_operating_system: {os} 上的 {browser}
       cannot_terminate_current_session: 'TBD: Cannot terminate the current active
         session. Log out instead.'
-      created: 'TBD: Created'
-      current_active_session: 'TBD: Current Active Session'
-      developer_tokens_heading: 'TBD: Developer Tokens'
-      empty_text: 'TBD: It looks like there is nothing to see here.'
+      created: 创建于
+      current_active_session: 当前活动会话
+      developer_tokens_heading: 开发者令牌
+      empty_text: 看起来这里没有什么可查看的。
       global_logout:
-        heading: 'TBD: Global Logout'
+        heading: 全局退出
         help_text: 'TBD: Clears current cookie session, terminates all sessions, revokes
           developer tokens, and invalidates any email confirmation or password reset
           emails.'
-        log_out_button: 'TBD: => ref.log_out'
-      hide_access_token: 'TBD: Hide Token'
-      last_activity: 'TBD: Last activity'
-      never: 'TBD: => ref.never'
-      new_access_token_button: 'TBD: => ref.new_token'
+        log_out_button: => core.ref.log_out
+      hide_access_token: 隐藏令牌
+      last_activity: 最后活动
+      never: => core.ref.never
+      new_access_token_button: => core.ref.new_token
       new_access_token_modal:
-        submit_button: 'TBD: Create Token'
+        submit_button: 创建令牌
         title: 扩展健康
-        title_placeholder: 'TBD: Title'
-      revoke_access_token: 'TBD: Revoke'
-      revoke_access_token_confirmation: 'TBD: => ref.generic_confirmation_message'
-      sessions_heading: 'TBD: Active Sessions'
+        title_placeholder: 标题
+      revoke_access_token: 撤销
+      revoke_access_token_confirmation: => core.ref.generic_confirmation_message
+      sessions_heading: 活动会话
       session_terminated: 'TBD: {count, plural, one {Session terminated} other {#
         Sessions terminated}}.'
-      session_termination_failed: 'TBD: An error occurred while terminating your sessions.'
-      show_access_token: 'TBD: View Token'
-      terminate_all_other_sessions: 'TBD: Terminate all other sessions'
-      terminate_all_other_sessions_confirmation: 'TBD: => ref.generic_confirmation_message'
-      terminate_session: 'TBD: Terminate'
+      session_termination_failed: 终止会话时发生错误。
+      show_access_token: 查看令牌
+      terminate_all_other_sessions: 终止所有其他会话
+      terminate_all_other_sessions_confirmation: => core.ref.generic_confirmation_message
+      terminate_session: 终止
       title: 扩展健康
-      token_revoked: 'TBD: Token revoked.'
-      token_item_title: 'TBD: {title} - {token}'
-      token_title_placeholder: 'TBD: /'
+      token_revoked: 令牌已撤销。
+      token_item_title: {title} - {token}
+      token_title_placeholder: /
     sign_up:
-      dismiss_button: 'TBD: => ref.okay'
-      email_placeholder: 'TBD: => ref.email'
-      log_in_text: 'TBD: Already have an account? <a>Log In</a>'
-      password_placeholder: 'TBD: => ref.password'
-      submit_button: 'TBD: => ref.sign_up'
+      dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
+      log_in_text: 已有账户？<a>登录</a>
+      password_placeholder: => core.ref.password
+      submit_button: => core.ref.sign_up
       title: 扩展健康
-      username_placeholder: 'TBD: => ref.username'
-      welcome_text: 'TBD: Welcome, {username}!'
+      username_placeholder: => core.ref.username
+      welcome_text: 欢迎，{username}！
     user_controls:
-      button: 'TBD: Controls'
-      delete_button: 'TBD: => ref.delete'
+      button: 控制
+      delete_button: => core.ref.delete
       delete_confirmation: 'TBD: Are you sure you want to delete this user? The user''s
         posts will NOT be deleted.'
-      delete_error_message: 'TBD: Deletion of user <i>{username} ({email})</i> failed'
-      delete_success_message: 'TBD: User <i>{username} ({email})</i> was deleted'
-      edit_button: 'TBD: => ref.edit'
-      toggle_dropdown_accessible_label: 'TBD: Toggle user controls dropdown menu'
+      delete_error_message: 删除用户 <i>{username} ({email})</i> 失败
+      delete_success_message: 用户 <i>{username} ({email})</i> 已删除
+      edit_button: => core.ref.edit
+      toggle_dropdown_accessible_label: 切换用户控制下拉菜单
     user_email_confirmation:
-      alert_message: 'TBD: => ref.confirmation_email_sent'
-      resend_button: 'TBD: Resend Confirmation Email'
-      sent_message: 'TBD: Sent'
+      alert_message: => core.ref.confirmation_email_sent
+      resend_button: 重新发送确认邮件
+      sent_message: 已发送
     welcome_hero:
       hide: 隐藏公告
   admin:
@@ -485,20 +484,20 @@ core:
       info_button: 系统信息
       info_modal:
         title: 扩展健康
-        copy_button: 'TBD: Copy to Clipboard'
-        copy_success: 'TBD: System information copied to clipboard'
-        copy_error: 'TBD: Failed to copy to clipboard'
+        copy_button: 复制到剪贴板
+        copy_success: 系统信息已复制到剪贴板
+        copy_error: 复制到剪贴板失败
       io_error_message: 'TBD: Could not write to filesystem. Check your filesystem
         permissions and try again. Or try running from the command line.'
       status:
         headers:
-          scheduler-status: 'TBD: Scheduler'
-          queue-driver: 'TBD: Queue Driver'
-          session-driver: 'TBD: Session Driver'
+          scheduler-status: 调度器
+          queue-driver: 队列驱动
+          session-driver: 会话驱动
         scheduler:
-          active: 'TBD: Active'
-          inactive: 'TBD: Inactive'
-          never-run: 'TBD: Never run'
+          active: 活动
+          inactive: 不活动
+          never-run: 从未运行
       toggle_advanced_page_button: 切换高级页面
       tools_button: 工具
     extensions:
@@ -545,8 +544,8 @@ core:
       tag_count_label: 标签数量
       discussion_count_label: 讨论数量
       user_count_label: 用户数量
-      select_dropdown_custom_label: 'TBD: Custom'
-      submit_button: 'TBD: => ref.save_changes'
+      select_dropdown_custom_label: 自定义
+      submit_button: => core.ref.save_changes
     permissions:
       title: 权限
       allow_post_editing: 允许编辑帖子
@@ -574,7 +573,7 @@ core:
       manage_users: 管理用户
       global_moderate: 全局管理
       allow_hide_own_posts_label: 允许隐藏自己的帖子
-      allow_post_editing_label: 'TBD: Allow post editing'
+      allow_post_editing_label: 允许帖子编辑
       allow_renaming_label: 允许重命名
       create_access_token_label: 创建访问令牌
       create_heading: 创建
@@ -583,7 +582,7 @@ core:
       delete_posts_forever_label: 永久删除帖子
       delete_posts_label: 删除帖子
       description: 配置您的论坛高级设置。
-      edit_posts_label: 'TBD: Edit posts'
+      edit_posts_label: 编辑帖子
       edit_users_label: 编辑用户
       edit_users_credentials_label: 编辑用户凭证
       edit_users_groups_label: 编辑用户组
@@ -596,11 +595,11 @@ core:
       read_heading: 阅读
       remove_scope_label: 移除 {scope} 范围
       remove_scope_confirmation: 确定要移除 {scope} 范围吗？
-      rename_discussions_label: 'TBD: Rename discussions'
-      reply_to_discussions_label: 'TBD: Reply to discussions'
-      search_users_label: 'TBD: => ref.search_users'
-      sign_up_label: 'TBD: Sign up'
-      start_discussions_label: 'TBD: Start discussions'
+      rename_discussions_label: 重命名讨论
+      reply_to_discussions_label: 回复讨论
+      search_users_label: => core.ref.search_users
+      sign_up_label: 注册
+      start_discussions_label: 开始讨论
       view_forum_label: 查看论坛（讨论和用户）
       view_hidden_groups_label: 查看隐藏用户组徽章
       view_last_seen_at_label: 查看最后在线时间
@@ -634,24 +633,24 @@ core:
             title: 扩展健康
           email:
             title: 扩展健康
-            visibility_hide: 'TBD: Hide email address'
-            visibility_show: 'TBD: Show email address'
+            visibility_hide: 隐藏电子邮件地址
+            visibility_show: 显示电子邮件地址
           group_badges:
-            no_badges: 'TBD: None'
+            no_badges: 无
             title: 扩展健康
           join_time:
             title: 扩展健康
           user_actions:
             title: 扩展健康
             edit_user:
-              button: 'TBD: => ref.edit'
-              tooltip: 'TBD: Edit {username}'
+              button: => core.ref.edit
+              tooltip: 编辑 {username}
           user_id:
             title: 扩展健康
           username:
             profile_link_tooltip: 'TBD: Visit {username}''s profile'
             title: 扩展健康
-        invalid_column_content: 'TBD: Invalid'
+        invalid_column_content: 无效
       total_users: 总用户数：{count}
     appearance:
       title: 外观
@@ -674,15 +673,15 @@ core:
       allow_user_color_scheme_label: 允许用户选择自己的配色方案
       colored_header_label: 彩色页眉
       colors_text: 选择两种颜色来定制您的论坛主题。第一种将用作高亮颜色，第二种将用于样式化背景元素。
-      custom_footer_text: 'TBD: => ref.custom_footer_text'
-      custom_header_text: 'TBD: => ref.custom_header_text'
+      custom_footer_text: => core.ref.custom_footer_text
+      custom_header_text: => core.ref.custom_header_text
       custom_styles_cannot_use_less_features: 自定义 Less 中不允许使用 @import 和 data-uri 功能。
       custom_styles_heading: 自定义样式
       custom_styles_text: 通过添加您自己的 Less/CSS 代码到 Flarum 默认样式之上，来定制您的论坛外观。
       description: 配置您的论坛高级设置。
       edit_css_button: 编辑自定义 CSS
-      edit_footer_button: 'TBD: => ref.custom_footer_title'
-      edit_header_button: 'TBD: => ref.custom_header_title'
+      edit_footer_button: => core.ref.custom_footer_title
+      edit_header_button: => core.ref.custom_header_title
       enter_hex_message: 请输入十六进制颜色代码。
       favicon_text: 上传图片以显示为论坛的快捷方式图标。
       logo_text: 上传图片以替代论坛标题显示。
@@ -690,11 +689,11 @@ core:
       logo_dark_mode_text: 上传备用 Logo 以在启用深色模式时显示。
       color_scheme_label: 配色方案（默认）
       color_schemes:
-        auto_mode_label: 'TBD: User system or configured preference'
-        dark_hc_mode_label: 'TBD: => ref.dark_hc_mode_label'
-        dark_mode_label: 'TBD: => ref.dark_mode_label'
-        light_hc_mode_label: 'TBD: => ref.light_hc_mode_label'
-        light_mode_label: 'TBD: => ref.light_mode_label'
+        auto_mode_label: 用户系统或配置的偏好
+        dark_hc_mode_label: => core.ref.dark_hc_mode_label
+        dark_mode_label: => core.ref.dark_mode_label
+        light_hc_mode_label: => core.ref.light_hc_mode_label
+        light_mode_label: => core.ref.light_mode_label
     basics:
       title: 基础设置
       site_heading: 站点
@@ -706,15 +705,15 @@ core:
       allow_sign_up_label: 允许注册
       welcome_banner_label: 欢迎横幅
       community_heading: 社区
-      all_discussions_label: 'TBD: => ref.all_discussions'
+      all_discussions_label: => core.ref.all_discussions
       default_language_heading: 默认语言
       description: 配置您的论坛高级设置。
       display_name_driver_options:
-        username: 'TBD: Username'
+        username: 用户名
       display_name_heading: 用户显示名称
       display_name_text: 选择应用于用户显示名称的驱动程序。默认情况下，显示用户名。
       avatar_driver_options:
-        default: 'TBD: Default'
+        default: 默认
       avatar_driver_heading: 用户头像
       avatar_driver_text: 选择当用户未上传头像时应使用的头像驱动程序。默认情况下，当用户未上传头像时，不显示头像。
       forum_description_heading: 论坛描述
@@ -724,12 +723,12 @@ core:
       show_language_selector_label: 显示语言选择器
       slug_driver_options:
         discussions:
-          default: 'TBD: ID with slug'
-          utf8: 'TBD: ID with UTF-8 slug'
+          default: 带别名的 ID
+          utf8: 带 UTF-8 别名的 ID
         users:
-          default: 'TBD: Username'
-          id: 'TBD: ID'
-          id_with_display_name: 'TBD: ID with Display Name'
+          default: 用户名
+          id: ID
+          id_with_display_name: 带显示名称的 ID
       slug_driver_heading: Slug 驱动程序：{model}
       slug_driver_text: 选择用于此模型 slug 的驱动程序。
       welcome_banner_heading: 欢迎横幅
@@ -758,30 +757,30 @@ core:
       description: 配置您的论坛高级设置。
       maintenance:
         bisect:
-          begin_button_text: 'TBD: Begin Bisect'
-          continue_button_text: 'TBD: Continue Bisect'
+          begin_button_text: 开始二分法
+          continue_button_text: 继续二分法
           label: 调试模式已激活
           help: 'TBD: Helps to identify the extension causing some issue you observed.
             This automatically puts the forum in maintenance mode (low) until the
             process is over.'
         bisect_modal:
           description: 配置您的论坛高级设置。
-          end_button: 'TBD: Close and go to extension page'
-          issue_question: 'TBD: Does the issue still occur?'
+          end_button: 关闭并转到扩展页面
+          issue_question: 问题是否仍然存在？
           issue_question_help: 'TBD: Try reproducing the issue in a separate page
             and answer based on the result.'
-          no_button: 'TBD: False'
+          no_button: 否
           result_description: 'TBD: Forum is no longer in maintenance mode. Extension
             bisect is over. Based on your responses to each step, the cause of the
             issue is the following extension:
 
             '
-          start_button: 'TBD: Start bisect'
-          stop_button: 'TBD: Stop bisect'
-          steps_left: 'TBD: Steps left: {steps}'
-          total_steps: 'TBD: This will take around {steps} steps.'
+          start_button: 开始二分法
+          stop_button: 停止二分法
+          steps_left: 剩余步骤：{steps}
+          total_steps: 这大约需要 {steps} 个步骤。
           title: 扩展健康
-          yes_button: 'TBD: True'
+          yes_button: 是
         config_override:
           label: 调试模式已激活
           help: 'TBD: You can still change these settings here, but they will not
@@ -790,71 +789,71 @@ core:
         help: 'TBD: Put your forum in maintenance mode to prevent users from accessing
           it.'
         options:
-          none: 'TBD: No maintenance.'
+          none: 无维护。
           high: 'TBD: High maintenance mode. No one can access the forum (can only
             be enabled through config.php)'
-          low: 'TBD: Low maintenance mode. Admins can access the forum.'
+          low: 低维护模式。管理员可以访问论坛。
           safe: 'TBD: Safe mode. No extensions are booted and only admins can access
             the forum.'
-        safe_mode_extensions: 'TBD: Extensions allowed to boot during safe mode'
+        safe_mode_extensions: 安全模式下允许启动的扩展
         safe_mode_extensions_override_help: 'TBD: This setting is overridden by the
           <code>safe_mode_extensions</code> key in your <code>config.php</code> file.
           (<b>{extensions}</b>)'
-        section_label: 'TBD: Maintenance'
+        section_label: 维护
       fontawesome:
-        section_label: 'TBD: FontAwesome Icons'
-        source_label: 'TBD: Icon Source'
+        section_label: FontAwesome 图标
+        source_label: 图标来源
         source_help: 'TBD: Choose how FontAwesome icons are loaded. Local uses bundled
           fonts, CDN loads from a CDN, and Kit uses FontAwesome Kits with custom icons.'
-        source_local: 'TBD: Local (Bundled)'
-        source_cdn: 'TBD: CDN'
-        source_kit: 'TBD: FontAwesome Kit'
-        cdn_url_label: 'TBD: CDN URL'
-        cdn_url_help: 'TBD: Full URL to the FontAwesome CSS file on a CDN'
-        kit_url_label: 'TBD: Kit URL'
-        kit_url_help: 'TBD: Your FontAwesome Kit script URL (from kit.fontawesome.com)'
+        source_local: 本地（捆绑）
+        source_cdn: CDN
+        source_kit: FontAwesome Kit
+        cdn_url_label: CDN URL
+        cdn_url_help: CDN 上 FontAwesome CSS 文件的完整 URL
+        kit_url_label: Kit URL
+        kit_url_help: 您的 FontAwesome Kit 脚本 URL（来自 kit.fontawesome.com）
         config_override:
           label: 调试模式已激活
           help: 'TBD: FontAwesome settings are currently set in your config.php file
             and cannot be changed here.'
         preview:
-          button: 'TBD: Preview Icons'
+          button: 预览图标
           label: 调试模式已激活
           help: 'TBD: Verify your FontAwesome setup. A rendered icon means that tier
             is available; a broken box means it is not loaded.'
-          fa5_fa6_label: 'TBD: FA5/FA6 aliases'
-          fa7_label: 'TBD: FA7 classes'
-          pro_label: 'TBD: Pro only'
+          fa5_fa6_label: FA5/FA6 别名
+          fa7_label: FA7 类
+          pro_label: 仅限专业版
       pgsql:
-        search_configuration: 'TBD: Search configuration to use'
+        search_configuration: 要使用的搜索配置
       queue:
-        section_label: 'TBD: Queue'
+        section_label: 队列
         sync_info: 'TBD: Your forum is using the synchronous queue driver. Jobs are
           processed immediately in the main process thread.'
         sync_help: 'TBD: For better performance and user experience, consider using
           the database queue driver. Learn more in the documentation.'
         custom_driver: 'TBD: Your forum is using the {driver} queue driver, which
           is provided by an extension.'
-        retries_label: 'TBD: Job Retries'
+        retries_label: 作业重试
         retries_help: 'TBD: Maximum number of times to attempt a job before marking
           it as failed. Default is 1.'
-        memory_label: 'TBD: Memory Limit (MB)'
+        memory_label: 内存限制（MB）
         memory_help: 'TBD: Maximum memory the queue worker can use before restarting.
           Default is 128 MB.'
-        timeout_label: 'TBD: Job Timeout (seconds)'
+        timeout_label: 作业超时（秒）
         timeout_help: 'TBD: Maximum time a single job can run before timing out. Default
           is 60 seconds.'
-        rest_label: 'TBD: Rest Time (seconds)'
-        rest_help: 'TBD: Time to wait between processing jobs. Default is 0 seconds.'
-        backoff_label: 'TBD: Backoff (seconds)'
+        rest_label: 休息时间（秒）
+        rest_help: 处理作业之间等待的时间。默认值为 0 秒。
+        backoff_label: 退避（秒）
         backoff_help: 'TBD: Time to wait before retrying a failed job. Default is
           0 seconds.'
       search:
-        section_label: 'TBD: Search Drivers'
+        section_label: 搜索驱动
         driver_heading: 选择驱动程序
-        driver_text: 'TBD: Select a driver to be used for searching this model.'
+        driver_text: 选择用于搜索此模型的驱动。
         driver_options:
-          default: 'TBD: Default database search'
+          default: 默认数据库搜索
         no_other_drivers: 'TBD: No search drivers are available yet. Install a search
           driver extension to be able to configure it.'
     mail:
@@ -880,14 +879,14 @@ core:
       is_hidden_label: 隐藏
       member_count: '{count} 个成员'
     create_user:
-      email_placeholder: 'TBD: => ref.email'
+      email_placeholder: => core.ref.email
       email_confirmed_label: 要求用户确认此电子邮件
-      password_placeholder: 'TBD: => ref.password'
+      password_placeholder: => core.ref.password
       submit_and_create_another_button: 创建并添加另一个
-      submit_button: 'TBD: Create user'
+      submit_button: 创建用户
       title: 扩展健康
       use_random_password: 生成随机密码
-      username_placeholder: 'TBD: => ref.username'
+      username_placeholder: => core.ref.username
     announcements:
       comments_label: '{count, plural, one {# 条评论} other {# 条评论}}'
       description: 配置您的论坛高级设置。
@@ -931,28 +930,28 @@ core:
     edit_css:
       customize_text: 'TBD: Customize your forum''s appearance by adding your own
         Less/CSS code to be applied on top of Flarum''s <a>default styles</a>.'
-      submit_button: 'TBD: => ref.save_changes'
+      submit_button: => core.ref.save_changes
       title: 扩展健康
     edit_footer:
-      customize_text: 'TBD: => ref.custom_footer_text'
-      submit_button: 'TBD: => ref.save_changes'
+      customize_text: => core.ref.custom_footer_text
+      submit_button: => core.ref.save_changes
       title: 扩展健康
     edit_group:
-      color_label: 'TBD: => ref.color'
-      delete_button: 'TBD: Delete Group'
+      color_label: => core.ref.color
+      delete_button: 删除组
       delete_confirmation: 'TBD: Are you sure you want to delete this group? The group
         members will NOT be deleted.'
-      hide_label: 'TBD: Hide on forum'
-      icon_label: 'TBD: => ref.icon'
-      icon_text: 'TBD: => ref.icon_text'
-      name_label: 'TBD: Name'
-      plural_placeholder: 'TBD: Plural (e.g. Mods)'
-      singular_placeholder: 'TBD: Singular (e.g. Mod)'
-      submit_button: 'TBD: => ref.save_changes'
+      hide_label: 在论坛上隐藏
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
+      name_label: 名称
+      plural_placeholder: 复数（例如：管理员）
+      singular_placeholder: 单数（例如：管理员）
+      submit_button: => core.ref.save_changes
       title: 扩展健康
     edit_header:
-      customize_text: 'TBD: => ref.custom_header_text'
-      submit_button: 'TBD: => ref.save_changes'
+      customize_text: => core.ref.custom_header_text
+      submit_button: => core.ref.save_changes
       title: 扩展健康
     email:
       addresses_heading: 地址
@@ -960,9 +959,9 @@ core:
       driver_heading: 选择驱动程序
       driver_label: 驱动程序
       format:
-        multipart_option: 'TBD: Multipart (recommended)'
-        plain_option: 'TBD: Plain Text'
-        html_option: 'TBD: HTML'
+        multipart_option: 多部分（推荐）
+        plain_option: 纯文本
+        html_option: HTML
       format_heading: 外发邮件格式
       format_help: 'TBD: Choose the format that outgoing emails will be sent in. The
         recommended option is <code>multipart</code>, as this will allow your user''s
@@ -975,122 +974,122 @@ core:
         TLS). Typically used with port 465.'
       mail_encryption_none_help: 'TBD: No encryption. Not recommended for production
         use.'
-      mail_host_label: 'TBD: Host'
-      mail_mailgun_domain_label: 'TBD: Domain'
-      mail_mailgun_region_label: 'TBD: Region'
-      mail_mailgun_secret_label: 'TBD: Secret key'
-      mail_password_label: 'TBD: => ref.password'
-      mail_port_label: 'TBD: Port'
-      mail_postmark_message_stream_label: 'TBD: Message stream'
-      mail_postmark_token_label: 'TBD: Server token'
-      mail_smtp_verify_peer_label: 'TBD: Verify SSL Certificate'
+      mail_host_label: 主机
+      mail_mailgun_domain_label: 域名
+      mail_mailgun_region_label: 区域
+      mail_mailgun_secret_label: 密钥
+      mail_password_label: => core.ref.password
+      mail_port_label: 端口
+      mail_postmark_message_stream_label: 消息流
+      mail_postmark_token_label: 服务器令牌
+      mail_smtp_verify_peer_label: 验证 SSL 证书
       mail_smtp_verify_peer_help: 'TBD: Verify the server''s SSL certificate when
         using TLS or SSL encryption. Disable only if your mail server uses a self-signed
         certificate.'
-      mail_username_label: 'TBD: => ref.username'
-      mailgun_heading: 'TBD: Mailgun Settings'
-      postmark_heading: 'TBD: Postmark Settings'
+      mail_username_label: => core.ref.username
+      mailgun_heading: Mailgun 设置
+      postmark_heading: Postmark 设置
       postmark_description: 'TBD: Send email via Postmark''s HTTP API. Optionally
         specify a message stream to use a non-default stream.'
       not_sending_message: 'TBD: Flarum currently does not send emails. This can be
         due to the selected driver, or errors in its configuration.'
-      send_test_mail_button: 'TBD: Send'
-      send_test_mail_heading: 'TBD: Send Test Mail'
-      send_test_mail_success: 'TBD: Test mail sent successfully!'
+      send_test_mail_button: 发送
+      send_test_mail_heading: 发送测试邮件
+      send_test_mail_success: 测试邮件发送成功！
       send_test_mail_text: 'TBD: This will send an email using the above configuration
         to your email, {email}.'
-      smtp_heading: 'TBD: SMTP Settings'
+      smtp_heading: SMTP 设置
       smtp_description: 'TBD: Configure SMTP connection settings. Common configurations:
         Port 587 with TLS, or Port 465 with SSL.'
       title: 扩展健康
     extension:
       abandoned_no_replacement: 无可用替代品
       abandoned_with_replacement: 已被 {replacement} 替代
-      configure_scopes: 'TBD: Configure Scopes'
+      configure_scopes: 配置范围
       confirm_purge: 'TBD: Purging will remove all database entries and assets related
         to the extension. It will not uninstall the extension; that must be done via
         Composer. Are you sure you want to continue?'
       database_driver_mismatch: 'TBD: This extension does not support your configured
         database driver.'
-      deprecated: 'TBD: Deprecated'
-      disabled: 'TBD: Disabled'
-      enable_to_see: 'TBD: Enable the extension to view and change settings.'
-      enabled: 'TBD: Enabled'
+      deprecated: 已弃用
+      disabled: 已禁用
+      enable_to_see: 启用扩展以查看和更改设置。
+      enabled: 已启用
       info_links:
-        discuss: 'TBD: Discuss'
-        documentation: 'TBD: Documentation'
-        donate: 'TBD: Donate'
-        source: 'TBD: Source'
-        support: 'TBD: Support'
-        website: 'TBD: Website'
-      no_permissions: 'TBD: This extension has no permissions.'
-      no_settings: 'TBD: This extension has no settings.'
-      open_modal: 'TBD: Open Settings'
-      permissions_title: 'TBD: Permissions'
-      purge_button: 'TBD: Purge'
+        discuss: 讨论
+        documentation: 文档
+        donate: 捐赠
+        source: 源码
+        support: 支持
+        website: 网站
+      no_permissions: 此扩展没有权限。
+      no_settings: 此扩展没有设置。
+      open_modal: 打开设置
+      permissions_title: 权限
+      purge_button: 清除
       readme:
-        button_label: 'TBD: README'
-        no_readme: 'TBD: This extension does not appear to have a README file'
+        button_label: 自述文件
+        no_readme: 此扩展似乎没有自述文件
         title: 扩展健康
-      replaced: 'TBD: Replaced'
+      replaced: 已替换
       safe_mode_warning: 'TBD: Safe mode is currently enabled. Extensions are not
         booted and their settings are therefore inaccessible.'
     header:
-      get_help: 'TBD: Get Help'
-      log_out_button: 'TBD: => ref.log_out'
-      search_placeholder: 'TBD: Search...'
-      search_role_label: 'TBD: Search'
+      get_help: 获取帮助
+      log_out_button: => core.ref.log_out
+      search_placeholder: 搜索...
+      search_role_label: 搜索
     loading:
       title: 扩展健康
     models:
-      discussions: 'TBD: => ref.discussions'
-      posts: 'TBD: => ref.posts'
-      users: 'TBD: => ref.users'
+      discussions: => core.ref.discussions
+      posts: => core.ref.posts
+      users: => core.ref.users
     nav:
-      advanced_button: 'TBD: => core.admin.advanced.title'
-      advanced_title: 'TBD: => core.admin.advanced.description'
-      appearance_button: 'TBD: => core.admin.appearance.title'
-      appearance_title: 'TBD: => core.admin.appearance.description'
-      basics_button: 'TBD: => core.admin.basics.title'
-      basics_title: 'TBD: => core.admin.basics.description'
+      advanced_button: => core.admin.advanced.title
+      advanced_title: => core.admin.advanced.description
+      appearance_button: => core.admin.appearance.title
+      appearance_title: => core.admin.appearance.description
+      basics_button: => core.admin.basics.title
+      basics_title: => core.admin.basics.description
       categories:
-        analytics: 'TBD: Analytics'
-        authentication: 'TBD: Authentication'
-        core: 'TBD: Core Configuration'
-        discussion: 'TBD: Discussion'
-        feature: 'TBD: Features'
-        formatting: 'TBD: Formatting'
-        infrastructure: 'TBD: Infrastructure'
-        language: 'TBD: Languages'
-        moderation: 'TBD: Moderation'
-        other: 'TBD: Other Extensions'
-        theme: 'TBD: Themes'
-      dashboard_button: 'TBD: => core.admin.dashboard.title'
-      dashboard_title: 'TBD: => core.admin.dashboard.description'
-      email_button: 'TBD: => ref.email'
-      email_title: 'TBD: => core.admin.email.description'
-      permissions_button: 'TBD: => core.admin.permissions.title'
-      permissions_title: 'TBD: => core.admin.permissions.description'
-      userlist_button: 'TBD: => core.admin.users.title'
-      userlist_title: 'TBD: => core.admin.users.description'
-      search_placeholder: 'TBD: Search Extensions'
+        analytics: 分析
+        authentication: 认证
+        core: 核心配置
+        discussion: 讨论
+        feature: 功能
+        formatting: 格式化
+        infrastructure: 基础设施
+        language: 语言
+        moderation: 审核
+        other: 其他扩展
+        theme: 主题
+      dashboard_button: => core.admin.dashboard.title
+      dashboard_title: => core.admin.dashboard.description
+      email_button: => core.ref.email
+      email_title: => core.admin.email.description
+      permissions_button: => core.admin.permissions.title
+      permissions_title: => core.admin.permissions.description
+      userlist_button: => core.admin.users.title
+      userlist_title: => core.admin.users.description
+      search_placeholder: 搜索扩展
     permissions_controls:
-      allow_indefinitely_button: 'TBD: Indefinitely'
-      allow_never_button: 'TBD: => ref.never'
+      allow_indefinitely_button: 无限期
+      allow_never_button: => core.ref.never
       allow_some_minutes_button: 'TBD: {count, plural, one {For # minute} other {For
         # minutes}}'
-      allow_ten_minutes_button: 'TBD: For 10 minutes'
-      allow_until_reply_button: 'TBD: Until next reply'
-      everyone_button: 'TBD: Everyone'
-      members_button: 'TBD: => core.group.members'
-      signup_closed_button: 'TBD: Closed'
-      signup_open_button: 'TBD: Open'
+      allow_ten_minutes_button: 10 分钟
+      allow_until_reply_button: 直到下次回复
+      everyone_button: 所有人
+      members_button: => core.group.members
+      signup_closed_button: 关闭
+      signup_open_button: 开放
     search_source:
       general:
-        heading: 'TBD: General'
+        heading: 常规
     upload_image:
-      remove_button: 'TBD: => ref.remove'
-      upload_button: 'TBD: Choose an Image...'
+      remove_button: => core.ref.remove
+      upload_button: 选择图片...
   ref:
     all_discussions: 所有讨论
     change_email: 更改电子邮件
