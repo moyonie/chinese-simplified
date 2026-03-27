@@ -1,0 +1,76 @@
+fof-user-directory:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Settings
+    settings:
+      enable_label: 启用用户目录
+      enable_help: 启用用户目录页面
+      allow_guests_label: 允许访客访问
+      allow_guests_help: 是否允许未登录用户访问用户目录
+      sort_default_label: 默认排序方式
+      sort_default_help: 用户列表的默认排序方式
+      sort_options:
+        newest: 最新注册
+        oldest: 最早注册
+        alphabetical: 字母顺序
+        most_discussions: 最多讨论
+        most_posts: 最多帖子
+
+    # Permissions
+    permissions:
+      view_user_directory: 查看用户目录
+
+  forum:
+    # Navigation
+    nav:
+      users: 用户
+      user_directory: 用户目录
+
+    # User Directory
+    user_directory:
+      title: 用户目录
+      search_placeholder: 搜索用户...
+      sort_label: 排序方式
+      sort_options:
+        newest: 最新注册
+        oldest: 最早注册
+        alphabetical: 字母顺序
+        most_discussions: 最多讨论
+        most_posts: 最多帖子
+      filter_label: 筛选
+      filter_options:
+        all: 所有用户
+        online: 在线用户
+        admins: 管理员
+        moderators: 版主
+      user_count: "{count, plural, one {# 位用户} other {# 位用户}}"
+      no_users: 暂无用户
+      load_more: 加载更多
+
+    # User Card
+    user_card:
+      discussions_count: "{count, plural, one {# 篇讨论} other {# 篇讨论}}"
+      posts_count: "{count, plural, one {# 篇帖子} other {# 篇帖子}}"
+      joined_date: "加入于 {date}"
+      last_seen: "最后在线 {time}"
+      currently_online: 当前在线
+      view_profile: 查看个人资料
+      send_message: 发送私信
+
+    # Errors
+    error:
+      user_not_found: 用户不存在
+      permission_denied: 您没有权限查看用户目录
+
+  lib:
+    user:
+      badge_admin: 管理员
+      badge_moderator: 版主
+      badge_member: 会员
+
+  ref:
+    user_directory: 用户目录
+    users: 用户

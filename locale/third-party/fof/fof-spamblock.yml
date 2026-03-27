@@ -1,0 +1,65 @@
+fof-spamblock:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Settings
+    settings:
+      enable_label: 启用反垃圾邮件
+      enable_help: 启用反垃圾邮件保护功能
+      stop_forum_spam_label: 启用 StopForumSpam
+      stop_forum_spam_help: 使用 StopForumSpam 数据库检查垃圾邮件
+      stop_forum_spam_min_confidence_label: 最低置信度
+      stop_forum_spam_min_confidence_help: 标记为垃圾邮件的最低置信度（0-100）
+      akismet_api_key_label: Akismet API 密钥
+      akismet_api_key_help: 用于 Akismet 垃圾邮件检测的 API 密钥
+      akismet_api_key_placeholder: 输入 Akismet API 密钥
+      check_emails_label: 检查邮箱
+      check_emails_help: 是否在注册时检查邮箱
+      check_ips_label: 检查 IP 地址
+      check_ips_help: 是否在注册时检查 IP 地址
+      check_usernames_label: 检查用户名
+      check_usernames_help: 是否在注册时检查用户名
+      action_label: 检测到垃圾邮件时的操作
+      action_help: 检测到垃圾邮件时采取的操作
+      action_options:
+        nothing: 仅记录
+        reject: 拒绝注册
+        approve: 需要审核
+        suspend: 自动禁言
+
+    # Permissions
+    permissions:
+      bypass_spamblock: 绕过反垃圾邮件检查
+      view_spamblock_log: 查看反垃圾邮件日志
+
+  forum:
+    # Registration
+    registration:
+      spam_detected: 检测到垃圾邮件
+      email_blocked: 该邮箱地址被标记为垃圾邮件
+      ip_blocked: 该 IP 地址被标记为垃圾邮件
+      username_blocked: 该用户名被标记为垃圾邮件
+      please_contact_admin: 如有疑问，请联系管理员
+
+    # Errors
+    error:
+      spam_detected: 您的请求被标记为垃圾邮件
+      too_many_attempts: 尝试次数过多，请稍后再试
+      akismet_error: Akismet 服务暂时不可用
+
+    # Messages
+    message:
+      under_review: 您的注册正在审核中
+      contact_admin: 如有疑问，请联系管理员
+
+  lib:
+    spamblock:
+      check_passed: 垃圾邮件检查通过
+      check_failed: 垃圾邮件检查失败
+      confidence: "置信度：{percentage}%"
+
+  ref:
+    spamblock: 反垃圾邮件
+    spam: 垃圾邮件

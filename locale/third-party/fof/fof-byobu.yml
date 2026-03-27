@@ -1,0 +1,59 @@
+fof-byobu:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Permissions
+    permissions:
+      start_byobu: 发起私密对话
+      view_byobu: 查看私密对话
+      edit_recipients: 编辑收件人
+      edit_posts: 编辑私密对话中的帖子
+      delete_posts: 删除私密对话中的帖子
+
+  forum:
+    # Composer
+    composer:
+      byobu_title: 私密对话标题
+      byobu_placeholder: 输入私密对话标题...
+      add_recipients_label: 添加收件人
+      add_recipients_placeholder: 输入用户名...
+      submit_button: 发起私密对话
+      edit_recipients_button: 编辑收件人
+
+    # Discussion
+    discussion:
+      byobu_badge: 私密
+      byobu_tooltip: 私密对话
+      recipients_label: "收件人："
+      no_recipients: 无收件人
+      you_and_others: "您和其他 {count} 人"
+      byobu_icon_tooltip: 私密对话
+
+    # Navigation
+    nav:
+      byobu: 私密对话
+      byobu_tooltip: 查看您的私密对话
+
+    # Settings
+    settings:
+      byobu_notifications_label: 接收私密对话通知
+      byobu_notifications_help: 当您被添加到私密对话时接收通知
+
+    # Alerts
+    alert:
+      byobu_created: 私密对话已创建
+      byobu_updated: 私密对话已更新
+      byobu_deleted: 私密对话已删除
+
+    # Errors
+    error:
+      byobu_disabled: 私密对话功能已禁用
+      no_recipients: 请至少添加一个收件人
+      recipient_not_found: 找不到收件人用户
+      permission_denied: 您没有权限执行此操作
+
+  ref:
+    byobu: 私密对话
+    byobus: 私密对话

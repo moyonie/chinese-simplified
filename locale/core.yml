@@ -91,7 +91,7 @@ core:
       avatar_upload_tooltip: 上传新头像
       discussions_link: => core.ref.discussions
       in_discussion_text: 在 {discussion} 中
-      joined_date_text: 加入于 {ago}
+      joined_date_text: '加入于 {ago}'
       online_text: 在线
       posts_empty_text: 看起来这里还没有帖子。
       posts_link: => core.ref.posts
@@ -415,7 +415,7 @@ core:
       submit_button: => core.ref.sign_up
       title: 注册
       username_placeholder: => core.ref.username
-      welcome_text: 欢迎，{username}！
+      welcome_text: '欢迎，{username}！'
     user_controls:
       button: 控制
       delete_button: => core.ref.delete

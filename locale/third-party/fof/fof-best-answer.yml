@@ -1,0 +1,58 @@
+fof-best-answer:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Permissions
+    permissions:
+      best_answer: 标记最佳答案
+      view_best_answer: 查看最佳答案
+
+    # Settings
+    settings:
+      choose_extension_label: 选择扩展
+      choose_extension_help: 选择用于标记最佳答案的扩展
+      enable_label: 启用最佳答案
+      enable_help: 启用最佳答案功能
+      allow_select_label: 允许提问者选择最佳答案
+      allow_select_help: 允许提问者选择最佳答案
+      only_allow_author_label: 仅允许作者
+      only_allow_author_help: 仅允许讨论作者选择最佳答案
+      select_best_answer_time_limit_label: 选择最佳答案时间限制（天）
+      select_best_answer_time_limit_help: 超过此时间后无法选择最佳答案，0 表示无限制
+      highlight_best_answer_label: 高亮显示最佳答案
+      highlight_best_answer_help: 高亮显示最佳答案帖子
+      best_answer_icon_label: 最佳答案图标
+      best_answer_icon_help: 用于表示最佳答案的图标类名（如 fas fa-check）
+
+  forum:
+    # Post stream
+    post_stream:
+      best_answer_selected: "{username} 标记了最佳答案"
+      best_answer_selected_time: "{username} 在 {time} 标记了最佳答案"
+      best_answer_changed: "{username} 更改了最佳答案"
+
+    # Discussion
+    discussion:
+      best_answer_button: 标记为最佳答案
+      best_answer_remove_button: 移除最佳答案
+      best_answer_badge: 最佳答案
+      best_answer_label: "最佳答案："
+      no_best_answer: 暂无最佳答案
+      view_best_answer: 查看最佳答案
+      best_answer_by: "最佳答案由 {username} 提供"
+
+    # Composer
+    composer:
+      best_answer_title: 标记最佳答案
+      best_answer_help: 选择一个帖子作为此讨论的最佳答案
+
+    # Notifications
+    notifications:
+      best_answer_selected: 您的回答被标记为最佳答案
+      best_answer_selected_text: "{username} 将您的回答标记为最佳答案"
+
+  ref:
+    best_answer: 最佳答案
+    best_answers: 最佳答案

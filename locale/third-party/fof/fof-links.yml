@@ -1,0 +1,53 @@
+fof-links:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Navigation
+    nav:
+      links_button: 链接管理
+      links_title: 链接
+      links_description: 管理导航链接
+
+    # Link Management
+    links:
+      create_button: 创建链接
+      edit_button: 编辑
+      delete_button: 删除
+      delete_confirmation: 确定要删除此链接吗？
+      position_label: 位置
+      position_help: 链接显示的位置
+      position_options:
+        header: 页眉
+        footer: 页脚
+        primary: 主导航
+        secondary: 次导航
+      title_label: 标题
+      title_placeholder: 链接标题
+      url_label: URL
+      url_placeholder: "https://example.com"
+      icon_label: 图标
+      icon_help: FontAwesome 图标类名（如 fas fa-home）
+      new_tab_label: 新窗口打开
+      new_tab_help: 是否在新窗口/标签页中打开链接
+      permission_label: 可见权限
+      permission_help: 哪些用户组可以看到此链接
+      enabled_label: 启用
+      enabled_help: 是否显示此链接
+
+    # Permissions
+    permissions:
+      manage_links: 管理链接
+
+  forum:
+    # Navigation
+    nav:
+      home: 首页
+      discussions: 讨论
+      tags: 标签
+      users: 用户
+
+  ref:
+    links: 链接
+    link: 链接

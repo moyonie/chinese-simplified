@@ -1,0 +1,46 @@
+fof-drafts:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  forum:
+    # Composer
+    composer:
+      draft_saved: 草稿已保存
+      draft_saving: 正在保存草稿...
+      draft_save_failed: 草稿保存失败
+      load_draft_button: 加载草稿
+      discard_draft_button: 丢弃草稿
+      discard_draft_confirmation: 确定要丢弃此草稿吗？
+
+    # User Settings
+    settings:
+      drafts_heading: 草稿
+      drafts_help: 管理您的草稿
+      view_drafts_button: 查看草稿
+      drafts_count: "{count, plural, one {# 篇草稿} other {# 篇草稿}}"
+
+    # Draft List
+    draft_list:
+      title: 我的草稿
+      empty_message: 暂无草稿
+      load_draft_button: 加载草稿
+      delete_draft_button: 删除草稿
+      delete_draft_confirmation: 确定要删除此草稿吗？
+      last_saved: 最后保存于 {time}
+      discussion_title: "讨论：{title}"
+      no_discussion: 新讨论
+
+    # Notifications
+    notifications:
+      draft_saved: 草稿已自动保存
+
+  lib:
+    draft:
+      delete_button: 删除草稿
+      edit_button: 编辑草稿
+      view_button: 查看草稿
+
+  ref:
+    drafts: 草稿
+    draft: 草稿

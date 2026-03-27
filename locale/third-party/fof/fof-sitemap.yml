@@ -1,0 +1,42 @@
+fof-sitemap:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Settings
+    settings:
+      enable_label: 启用站点地图
+      enable_help: 启用站点地图生成功能
+      cache_time_label: 缓存时间（小时）
+      cache_time_help: 站点地图缓存的时长，0 表示不缓存
+      max_discussions_label: 最大讨论数
+      max_discussions_help: 站点地图中包含的最大讨论数量，0 表示无限制
+      include_tags_label: 包含标签
+      include_tags_help: 是否在站点地图中包含标签页面
+      include_users_label: 包含用户
+      include_users_help: 是否在站点地图中包含用户页面
+      public_only_label: 仅公开内容
+      public_only_help: 只包含公开的讨论和标签
+      lastmod_label: 包含最后修改时间
+      lastmod_help: 是否在站点地图中包含最后修改时间
+
+    # Permissions
+    permissions:
+      view_sitemap: 查看站点地图
+
+  forum:
+    # Messages
+    message:
+      sitemap_disabled: 站点地图已禁用
+      sitemap_not_found: 站点地图不存在
+
+  lib:
+    sitemap:
+      generated: 站点地图已生成
+      cached: 使用缓存的站点地图
+      generation_failed: 站点地图生成失败
+
+  ref:
+    sitemap: 站点地图
+    sitemaps: 站点地图

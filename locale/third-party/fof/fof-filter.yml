@@ -1,0 +1,57 @@
+fof-filter:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Settings
+    settings:
+      enable_label: 启用内容过滤
+      enable_help: 启用内容过滤功能
+      filter_patterns_label: 过滤模式
+      filter_patterns_help: |
+        每行一个正则表达式模式，用于匹配需要过滤的内容。
+        匹配的内容将被替换或移除。
+      replacement_label: 替换文本
+      replacement_help: 用于替换匹配内容的文本，留空则直接移除
+      case_sensitive_label: 区分大小写
+      case_sensitive_help: 匹配时是否区分大小写
+      filter_titles_label: 过滤标题
+      filter_titles_help: 是否过滤讨论标题
+      filter_posts_label: 过滤帖子
+      filter_posts_help: 是否过滤帖子内容
+      filter_usernames_label: 过滤用户名
+      filter_usernames_help: 是否过滤用户名
+      log_matches_label: 记录匹配
+      log_matches_help: 记录匹配的内容到日志
+
+    # Permissions
+    permissions:
+      bypass_filter: 绕过内容过滤
+      view_filter_log: 查看过滤日志
+
+  forum:
+    # Alerts
+    alert:
+      content_filtered: 内容包含被过滤的词语
+      post_filtered: 您的帖子包含被过滤的内容，已自动修改
+
+    # Errors
+    error:
+      filtered_content: 内容包含不允许的词语
+      filtered_title: 标题包含不允许的词语
+      filtered_username: 用户名包含不允许的词语
+
+    # Messages
+    message:
+      content_removed: 部分内容已被移除
+      content_replaced: 部分内容已被替换
+
+  lib:
+    filter:
+      pattern_count: "{count, plural, one {# 个过滤规则} other {# 个过滤规则}}"
+      match_count: "{count, plural, one {# 次匹配} other {# 次匹配}}"
+
+  ref:
+    filter: 过滤
+    filtered: 已过滤

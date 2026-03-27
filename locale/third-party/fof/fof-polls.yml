@@ -1,0 +1,94 @@
+fof-polls:
+  ##
+  # UNIQUE KEYS
+  ##
+
+  admin:
+    # Permissions
+    permissions:
+      create_polls: 创建投票
+      vote_polls: 参与投票
+      view_results_without_voting: 未投票查看结果
+      edit_polls: 编辑投票
+      delete_polls: 删除投票
+      self_edit: 编辑自己的投票
+      self_delete: 删除自己的投票
+
+    # Settings
+    settings:
+      allow_multiple_choices_label: 允许多选
+      allow_multiple_choices_help: 允许用户在一个投票中选择多个选项
+      public_voters_label: 公开投票人
+      public_voters_help: 是否公开显示投票人信息
+      change_vote_label: 允许更改投票
+      change_vote_help: 允许用户更改自己的投票
+      max_options_label: 最大选项数
+      max_options_help: 单个投票最多允许的选项数量
+      min_options_label: 最小选项数
+      min_options_help: 单个投票最少需要的选项数量
+
+  forum:
+    # Composer
+    composer:
+      add_poll_button: 添加投票
+      poll_title_label: 投票标题
+      poll_title_placeholder: 输入投票问题...
+      poll_options_label: 投票选项
+      poll_options_help: 每行一个选项
+      poll_settings_label: 投票设置
+      allow_multiple_choices: 允许多选
+      public_voters: 公开投票人
+      change_vote: 允许更改投票
+      end_date: 结束日期
+      remove_poll_button: 移除投票
+
+    # Poll Display
+    poll:
+      vote_button: 投票
+      view_results_button: 查看结果
+      edit_poll_button: 编辑投票
+      delete_poll_button: 删除投票
+      total_votes: "{count, plural, one {# 票} other {# 票}}"
+      your_vote: 您的投票
+      no_vote: 尚未投票
+      voting_end: "投票结束于 {date}"
+      voting_ended: 投票已结束
+      multiple_choices_allowed: 最多可选择 {count} 项
+      change_vote_button: 更改投票
+      revoke_vote_button: 撤销投票
+
+    # Results
+    poll_results:
+      title: 投票结果
+      option_votes: "{count, plural, one {# 票} other {# 票}} ({percentage}%)"
+      total_votes: 总计 {count} 票
+      voters: 投票人
+      no_voters: 暂无投票
+      your_option: 您的选择
+
+    # Notifications
+    notifications:
+      poll_created: 创建了投票
+      poll_ended: 投票已结束
+
+    # Alerts
+    alert:
+      poll_created: 投票已创建
+      poll_updated: 投票已更新
+      poll_deleted: 投票已删除
+      vote_submitted: 投票已提交
+      vote_changed: 投票已更改
+
+    # Errors
+    error:
+      poll_required: 请添加投票选项
+      poll_min_options: "至少需要 {count} 个选项"
+      poll_max_options: "最多允许 {count} 个选项"
+      poll_already_voted: 您已经投过票了
+      poll_ended: 投票已结束
+      poll_not_found: 投票不存在
+      permission_denied: 您没有权限执行此操作
+
+  ref:
+    poll: 投票
+    polls: 投票

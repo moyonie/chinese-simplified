@@ -1,0 +1,14 @@
+flarum-markdown:
+  lib:
+    composer:
+      bold_tooltip: 添加粗体文本
+      code_tooltip: 插入代码
+      header_tooltip: 添加标题文本
+      image_tooltip: 添加图片
+      italic_tooltip: 添加斜体文本
+      link_tooltip: 添加链接
+      ordered_list_tooltip: 添加编号列表
+      quote_tooltip: 插入引用
+      spoiler_tooltip: 插入剧透
+      strikethrough_tooltip: 添加删除线文本
+      unordered_list_tooltip: 添加项目符号列表

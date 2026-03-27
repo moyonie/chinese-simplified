@@ -1,8 +1,8 @@
 // DayJS 中文配置
-dayjs.locale('zh-cn');
+dayjs.locale('zh');
 
 // 自定义配置
-dayjs.updateLocale('zh-cn', {
+dayjs.updateLocale('zh', {
   // 周起始日：周一（中国标准）
   weekStart: 1,
   
